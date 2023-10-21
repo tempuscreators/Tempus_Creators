@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "272451151531",
+    "project_id": "tempus-creators-db",
+    "storage_bucket": "tempus-creators-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272451151531:android:7ccdd881904262fd6079ee",
+        "android_client_info": {
+          "package_name": "com.tempus.admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbeERn_PPHCE4_wWCTnW3NgmSQHoxiPUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
