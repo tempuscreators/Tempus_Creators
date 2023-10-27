@@ -29,7 +29,6 @@ dependencies:
   auto_size_text: 3.0.0
   blurhash_dart: ^1.2.1
   cached_network_image: 3.2.1
-  carousel_slider: 4.2.1
   cloud_firestore: 4.8.0
   cloud_firestore_platform_interface: 5.15.0
   cloud_firestore_web: 3.6.0

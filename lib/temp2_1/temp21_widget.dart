@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -70,7 +69,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
               : FocusScope.of(context).unfocus(),
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: Colors.white,
+            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
             drawer: Drawer(
               elevation: 16.0,
             ),
@@ -91,15 +90,25 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 width: 515.0,
                                 height: 125.0,
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryBackground,
                                 ),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/crazy.png',
-                                    width: 349.0,
-                                    height: 200.0,
-                                    fit: BoxFit.contain,
+                                child: InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    context.pushNamed('temp2_1');
+                                  },
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/yeye.png',
+                                      width: 349.0,
+                                      height: 200.0,
+                                      fit: BoxFit.contain,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -177,16 +186,33 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                               ),
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    290.0, 15.0, 0.0, 0.0),
-                                child: Text(
-                                  'Contact',
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .override(
-                                        fontFamily: 'Outfit',
-                                        color: Colors.black,
-                                        fontSize: 18.0,
-                                      ),
+                                    230.0, 15.0, 0.0, 0.0),
+                                child: FFButtonWidget(
+                                  onPressed: () {
+                                    print('Button pressed ...');
+                                  },
+                                  text: 'Contact',
+                                  options: FFButtonOptions(
+                                    height: 40.0,
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        24.0, 0.0, 24.0, 0.0),
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 0.0),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          color: Color(0xFF838383),
+                                          fontSize: 20.0,
+                                        ),
+                                    elevation: 3.0,
+                                    borderSide: BorderSide(
+                                      width: 1.0,
+                                    ),
+                                    borderRadius: BorderRadius.circular(100.0),
+                                  ),
                                 ),
                               ),
                               Padding(
@@ -203,16 +229,17 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                         24.0, 0.0, 24.0, 0.0),
                                     iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: Colors.white,
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
                                           fontFamily: 'Outfit',
-                                          color: Colors.black,
-                                          fontSize: 18.0,
+                                          color: Color(0xFF838383),
+                                          fontSize: 20.0,
                                         ),
                                     elevation: 3.0,
-                                    borderRadius: BorderRadius.circular(8.0),
+                                    borderRadius: BorderRadius.circular(100.0),
                                   ),
                                 ),
                               ),
@@ -263,11 +290,12 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
+                                borderRadius: BorderRadius.circular(30.0),
                               ),
                               child: Stack(
                                 children: [
                                   ClipRRect(
-                                    borderRadius: BorderRadius.circular(0.0),
+                                    borderRadius: BorderRadius.circular(30.0),
                                     child: Image.asset(
                                       'assets/images/flat,550x550,075,f.jpg',
                                       width: 999.0,
@@ -284,7 +312,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Lato',
-                                            color: Colors.black,
+                                            color: Color(0xFF303138),
                                             fontSize: 50.0,
                                           ),
                                     ),
@@ -308,19 +336,20 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                       width: 700.0,
                                       height: 100.0,
                                       decoration: BoxDecoration(
-                                        color: Colors.white,
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                       ),
                                       child: Align(
                                         alignment:
                                             AlignmentDirectional(-1.00, 0.00),
                                         child: Text(
-                                          'Create, schedule, publish, and easily manage your social media content at scale with FeedHive\'s AI-powered platform.',
+                                          'With our comprehensive analytics dashboard paired with a cutting-edge team of AI agents, gives you everything and more to grow your platform and develop your impact.',
                                           textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Outfit',
-                                                color: Colors.black,
+                                                color: Color(0xFF838383),
                                                 fontSize: 26.0,
                                                 fontWeight: FontWeight.w500,
                                               ),
@@ -343,11 +372,11 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   borderColor: Colors.transparent,
                                   borderRadius: 10.0,
                                   buttonSize: 48.0,
-                                  fillColor: Colors.black,
+                                  fillColor: FlutterFlowTheme.of(context)
+                                      .primaryBackground,
                                   icon: Icon(
                                     FFIcons.ktwitch,
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
+                                    color: Color(0xFFDBDBDB),
                                     size: 30.0,
                                   ),
                                   onPressed: () {
@@ -361,7 +390,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     borderColor: Colors.transparent,
                                     borderRadius: 10.0,
                                     buttonSize: 48.0,
-                                    fillColor: Colors.black,
+                                    fillColor: FlutterFlowTheme.of(context)
+                                        .primaryBackground,
                                     icon: Icon(
                                       FFIcons.kinstagram,
                                       color: FlutterFlowTheme.of(context)
@@ -380,28 +410,10 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     borderColor: Colors.transparent,
                                     borderRadius: 10.0,
                                     buttonSize: 48.0,
-                                    fillColor: Colors.black,
-                                    icon: Icon(
-                                      FFIcons.ktwitter,
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      size: 30.0,
-                                    ),
-                                    onPressed: () {
-                                      print('IconButton pressed ...');
-                                    },
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 0.0, 0.0, 0.0),
-                                  child: FlutterFlowIconButton(
-                                    borderColor: Colors.transparent,
-                                    borderRadius: 10.0,
-                                    buttonSize: 48.0,
-                                    fillColor: Colors.black,
+                                    fillColor: FlutterFlowTheme.of(context)
+                                        .primaryBackground,
                                     icon: FaIcon(
-                                      FontAwesomeIcons.pinterestP,
+                                      FontAwesomeIcons.youtube,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       size: 30.0,
@@ -418,7 +430,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     borderColor: Colors.transparent,
                                     borderRadius: 10.0,
                                     buttonSize: 48.0,
-                                    fillColor: Colors.black,
+                                    fillColor: FlutterFlowTheme.of(context)
+                                        .primaryBackground,
                                     icon: Icon(
                                       FFIcons.kfacebook,
                                       color: FlutterFlowTheme.of(context)
@@ -468,6 +481,9 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   color: Colors.transparent,
                                 ),
                                 borderRadius: BorderRadius.circular(100.0),
+                                hoverColor: FlutterFlowTheme.of(context)
+                                    .secondaryBackground,
+                                hoverTextColor: Color(0xFF6580D9),
                               ),
                             ),
                           ),
@@ -485,7 +501,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   0.0, 150.0, 0.0, 0.0),
                               child: Container(
                                 width: 1250.0,
-                                height: 450.0,
+                                height: 825.0,
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
@@ -493,10 +509,10 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(0.0),
                                   child: Image.asset(
-                                    'assets/images/flat,550x550,075,f.jpg',
+                                    'assets/images/dashboard2.jpeg',
                                     width: 300.0,
                                     height: 200.0,
-                                    fit: BoxFit.cover,
+                                    fit: BoxFit.fill,
                                   ),
                                 ),
                               ),
@@ -515,7 +531,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                             width: 269.0,
                             height: 42.0,
                             decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
                             ),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -555,7 +572,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                               width: 891.0,
                               height: 100.0,
                               decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: FlutterFlowTheme.of(context)
+                                    .secondaryBackground,
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -567,7 +585,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Noto Serif',
-                                          color: Colors.black,
+                                          color: Color(0xFFDBDBDB),
                                           fontSize: 50.0,
                                         ),
                                   ),
@@ -587,19 +605,24 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Noto Serif',
-                                    color: Colors.black,
+                                    color: Color(0xFFDBDBDB),
                                     fontSize: 50.0,
                                   ),
                         ),
-                        Text(
-                          ' grow on social.',
-                          textAlign: TextAlign.center,
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Noto Serif',
-                                    color: Color(0xFF6580D9),
-                                    fontSize: 50.0,
-                                  ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 0.0, 0.0, 0.0),
+                          child: Text(
+                            ' grow on social.',
+                            textAlign: TextAlign.center,
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Noto Serif',
+                                  color: Color(0xFF6580D9),
+                                  fontSize: 50.0,
+                                ),
+                          ),
                         ),
                       ],
                     ),
@@ -607,23 +630,28 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Container(
-                          width: 574.0,
-                          height: 100.0,
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                          ),
-                          child: Text(
-                            'We give you everything you need to build a dedicated fanbase, nurture your audience, create leads, and grow your business.',
-                            textAlign: TextAlign.center,
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Outfit',
-                                  color: Colors.black,
-                                  fontSize: 22.0,
-                                  fontWeight: FontWeight.normal,
-                                ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 25.0, 0.0, 0.0),
+                          child: Container(
+                            width: 574.0,
+                            height: 100.0,
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                            ),
+                            child: Text(
+                              'We give you everything you need to build a dedicated fanbase, nurture your audience, create leads, and grow your business.',
+                              textAlign: TextAlign.center,
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .override(
+                                    fontFamily: 'Outfit',
+                                    color: Color(0xFF838383),
+                                    fontSize: 22.0,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                            ),
                           ),
                         ),
                       ],
@@ -635,7 +663,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           width: 1512.0,
                           height: 800.0,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
                           ),
                           child: Stack(
                             children: [
@@ -655,15 +684,17 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     width: 350.0,
                                     height: 275.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                       boxShadow: [
                                         BoxShadow(
                                           blurRadius: 8.0,
-                                          color: Color(0x33000000),
-                                          offset: Offset(0.0, 10.0),
-                                          spreadRadius: 10.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 8.0,
                                         )
                                       ],
+                                      borderRadius: BorderRadius.circular(30.0),
                                     ),
                                     child: Align(
                                       alignment:
@@ -674,34 +705,40 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                           Align(
                                             alignment: AlignmentDirectional(
                                                 -1.00, -1.00),
-                                            child: Icon(
-                                              Icons.calendar_month,
-                                              color: Color(0xFF4AFFD5),
-                                              size: 80.0,
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      10.0, 10.0, 0.0, 0.0),
+                                              child: FaIcon(
+                                                FontAwesomeIcons.images,
+                                                color: Color(0xFF6580D9),
+                                                size: 80.0,
+                                              ),
                                             ),
                                           ),
                                           Align(
                                             alignment: AlignmentDirectional(
-                                                -1.00, 0.00),
+                                                0.00, 0.00),
                                             child: Text(
-                                              'Scheduleing ',
+                                              ' DALL-E image creation ',
                                               textAlign: TextAlign.start,
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
-                                                        fontSize: 30.0,
+                                                        color:
+                                                            Color(0xFF545454),
+                                                        fontSize: 26.0,
                                                       ),
                                             ),
                                           ),
                                           Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 20.0, 0.0, 0.0),
+                                                    10.0, 5.0, 10.0, 0.0),
                                             child: Text(
-                                              'Visually plan and schedule your content delivery with click, drag and drop and automation.\nIt\'s as easy as that.',
+                                              'Access to DALL-E enhances creativity, enabling instant generation of unique visuals, aiding storytelling, and increasing engagement in your content.',
                                               textAlign: TextAlign.center,
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -709,10 +746,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .tertiaryText,
-                                                        fontSize: 22.0,
+                                                            Color(0xFF838383),
+                                                        fontSize: 20.0,
                                                       ),
                                             ),
                                           ),
@@ -723,62 +758,107 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, 1.00),
+                                alignment: AlignmentDirectional(0.00, 1.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      320.0, 0.0, 0.0, 50.0),
+                                      0.0, 0.0, 0.0, 15.0),
                                   child: Container(
-                                    width: 350.0,
-                                    height: 275.0,
+                                    width: 800.0,
+                                    height: 400.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                       boxShadow: [
                                         BoxShadow(
                                           blurRadius: 8.0,
-                                          color: Color(0x33000000),
-                                          offset: Offset(0.0, 10.0),
-                                          spreadRadius: 10.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 8.0,
                                         )
                                       ],
+                                      borderRadius: BorderRadius.circular(30.0),
                                     ),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
+                                    child: Stack(
                                       children: [
                                         Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
-                                          child: Icon(
-                                            Icons.analytics_outlined,
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                            size: 80.0,
+                                          alignment:
+                                              AlignmentDirectional(0.00, -1.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 50.0, 0.0, 0.0),
+                                            child: Text(
+                                              'Tempus-AI',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFFC1C1C1),
+                                                        fontSize: 40.0,
+                                                      ),
+                                            ),
                                           ),
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.00, 0.00),
-                                          child: Text(
-                                            'Analytics  ',
-                                            textAlign: TextAlign.start,
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color: Colors.black,
-                                                  fontSize: 30.0,
-                                                ),
+                                              AlignmentDirectional(0.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    20.0, 118.0, 20.0, 0.0),
+                                            child: Text(
+                                              'OurAI can significantly empower a content creator by automating mundane tasks, generating ideas, and suggesting improvements in real-time. It can analyze trends, providing insights on what content resonates with the audience, ensuring relevancy and increased engagement. Additionally, it aids in editing, ensuring grammatical accuracy and coherent flow, saving time and enhancing the quality of the content. By streamlining the creative process, Tempus AI allows creators to focus more on innovation and storytelling, leading to higher quality and more impactful content.',
+                                              textAlign: TextAlign.center,
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFF838383),
+                                                        fontSize: 22.0,
+                                                      ),
+                                            ),
                                           ),
                                         ),
-                                        Text(
-                                          'FeedHive visualizes follower activity and post engagements, presenting you with actionable, easy-to-read insights that will help you grow.',
-                                          textAlign: TextAlign.center,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Outfit',
-                                                color: Color(0xFFABABAB),
-                                                fontSize: 22.0,
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -1.00, -1.00),
+                                          child: Container(
+                                            width: 125.0,
+                                            height: 125.0,
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                              borderRadius: BorderRadius.only(
+                                                bottomLeft:
+                                                    Radius.circular(0.0),
+                                                bottomRight:
+                                                    Radius.circular(0.0),
+                                                topLeft: Radius.circular(30.0),
+                                                topRight: Radius.circular(0.0),
                                               ),
+                                            ),
+                                            child: ClipRRect(
+                                              borderRadius: BorderRadius.only(
+                                                bottomLeft:
+                                                    Radius.circular(0.0),
+                                                bottomRight:
+                                                    Radius.circular(0.0),
+                                                topLeft: Radius.circular(30.0),
+                                                topRight: Radius.circular(0.0),
+                                              ),
+                                              child: Image.asset(
+                                                'assets/images/ooooooo.png',
+                                                width: 300.0,
+                                                height: 200.0,
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
+                                          ),
                                         ),
                                       ],
                                     ),
@@ -794,15 +874,17 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     width: 350.0,
                                     height: 275.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                       boxShadow: [
                                         BoxShadow(
                                           blurRadius: 8.0,
-                                          color: Color(0x33000000),
-                                          offset: Offset(0.0, 10.0),
-                                          spreadRadius: 10.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 8.0,
                                         )
                                       ],
+                                      borderRadius: BorderRadius.circular(30.0),
                                       shape: BoxShape.rectangle,
                                     ),
                                     child: Column(
@@ -811,103 +893,47 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                         Align(
                                           alignment: AlignmentDirectional(
                                               -1.00, -1.00),
-                                          child: Icon(
-                                            Icons.mail,
-                                            color: Color(0xFFFF895C),
-                                            size: 80.0,
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    10.0, 10.0, 0.0, 0.0),
+                                            child: FaIcon(
+                                              FontAwesomeIcons
+                                                  .assistiveListeningSystems,
+                                              color: Color(0xFF6580D9),
+                                              size: 80.0,
+                                            ),
                                           ),
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.00, 0.00),
+                                              AlignmentDirectional(0.00, 0.00),
                                           child: Text(
-                                            'Social Inbox ',
+                                            'Social listening  ',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Outfit',
-                                                  color: Colors.black,
-                                                  fontSize: 30.0,
+                                                  color: Color(0xFF545454),
+                                                  fontSize: 26.0,
                                                 ),
                                           ),
                                         ),
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 20.0, 0.0, 0.0),
+                                                  10.0, 5.0, 10.0, 0.0),
                                           child: Text(
-                                            'Reply, like, engage - even retweet and quote tweet - to all mentions and comments directly from FeedHive\'s Social Inbox.',
+                                            'Social listening helps you understand audience preferences, identify trending topics, and tailor content for increased engagement and relevance.',
                                             textAlign: TextAlign.center,
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Outfit',
-                                                  color: Color(0xFFABABAB),
-                                                  fontSize: 22.0,
+                                                  color: Color(0xFF838383),
+                                                  fontSize: 20.0,
                                                 ),
                                           ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Align(
-                                alignment: AlignmentDirectional(1.00, 1.00),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 320.0, 50.0),
-                                  child: Container(
-                                    width: 350.0,
-                                    height: 275.0,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      boxShadow: [
-                                        BoxShadow(
-                                          blurRadius: 8.0,
-                                          color: Color(0x33000000),
-                                          offset: Offset(0.0, 10.0),
-                                          spreadRadius: 10.0,
-                                        )
-                                      ],
-                                    ),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
-                                          child: Icon(
-                                            Icons.label_outline_sharp,
-                                            color: FlutterFlowTheme.of(context)
-                                                .warning,
-                                            size: 80.0,
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(-1.00, 0.00),
-                                          child: Text(
-                                            'White Lable ',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color: Colors.black,
-                                                  fontSize: 30.0,
-                                                ),
-                                          ),
-                                        ),
-                                        Text(
-                                          'Our white label solution let\'s you customize the platform with your name, logo, colors, custom widgets and much more.',
-                                          textAlign: TextAlign.center,
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium
-                                              .override(
-                                                fontFamily: 'Outfit',
-                                                color: Color(0xFFABABAB),
-                                                fontSize: 22.0,
-                                              ),
                                         ),
                                       ],
                                     ),
@@ -923,15 +949,17 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     width: 350.0,
                                     height: 275.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                       boxShadow: [
                                         BoxShadow(
                                           blurRadius: 8.0,
-                                          color: Color(0x33000000),
-                                          offset: Offset(0.0, 10.0),
-                                          spreadRadius: 10.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 8.0,
                                         )
                                       ],
+                                      borderRadius: BorderRadius.circular(30.0),
                                     ),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -939,75 +967,50 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                         Align(
                                           alignment: AlignmentDirectional(
                                               -1.00, -1.00),
-                                          child: Icon(
-                                            Icons.panorama_rounded,
-                                            color: Color(0xFF633F99),
-                                            size: 80.0,
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    10.0, 10.0, 0.0, 0.0),
+                                            child: Icon(
+                                              Icons
+                                                  .sentiment_satisfied_outlined,
+                                              color: Color(0xFF6580D9),
+                                              size: 80.0,
+                                            ),
                                           ),
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.00, 0.00),
+                                              AlignmentDirectional(0.00, 0.00),
                                           child: Text(
-                                            'Tempus Creators AI',
+                                            'Sentiment analysis',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Outfit',
-                                                  color: Colors.black,
-                                                  fontSize: 30.0,
+                                                  color: Color(0xFF545454),
+                                                  fontSize: 26.0,
                                                 ),
                                           ),
                                         ),
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 10.0, 0.0, 0.0),
+                                                  10.0, 5.0, 10.0, 0.0),
                                           child: Text(
-                                            'Post when your audience are active and listening, generate the right hashtags and predict how well your post will do - before publishing.',
+                                            'Sentiment analysis will help yo gauge audience reactions, tailor messaging, improve engagement, and build stronger connections with their community.',
                                             textAlign: TextAlign.center,
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Outfit',
-                                                  color: Color(0xFFABABAB),
-                                                  fontSize: 22.0,
+                                                  color: Color(0xFF838383),
+                                                  fontSize: 20.0,
                                                 ),
                                           ),
                                         ),
                                       ],
                                     ),
-                                  ),
-                                ),
-                              ),
-                              Align(
-                                alignment: AlignmentDirectional(0.00, 0.00),
-                                child: FFButtonWidget(
-                                  onPressed: () async {
-                                    context.pushNamed('priceings');
-                                  },
-                                  text: 'Read More',
-                                  options: FFButtonOptions(
-                                    width: 150.0,
-                                    height: 60.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        24.0, 0.0, 24.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
-                                    color: Color(0xFF6580D9),
-                                    textStyle: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .override(
-                                          fontFamily: 'Outfit',
-                                          color: Colors.white,
-                                          fontSize: 25.0,
-                                        ),
-                                    elevation: 3.0,
-                                    borderSide: BorderSide(
-                                      color: Colors.transparent,
-                                      width: 1.0,
-                                    ),
-                                    borderRadius: BorderRadius.circular(30.0),
                                   ),
                                 ),
                               ),
@@ -1023,7 +1026,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           width: 1512.0,
                           height: 150.0,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
                           ),
                           child: Stack(
                             children: [
@@ -1055,9 +1059,9 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                       width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(100.0),
-                                    hoverColor:
-                                        FlutterFlowTheme.of(context).primary,
-                                    hoverTextColor: Colors.black,
+                                    hoverColor: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                    hoverTextColor: Color(0xFF6580D9),
                                   ),
                                 ),
                               ),
@@ -1073,7 +1077,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           width: 1512.0,
                           height: 1000.0,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
                           ),
                           child: Stack(
                             children: [
@@ -1081,49 +1086,21 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 alignment: AlignmentDirectional(1.00, -1.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 150.0, 0.0, 0.0),
-                                  child: Container(
-                                    width: 650.0,
-                                    height: 700.0,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                    ),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 100.0, 0.0),
-                                      child: ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(15.0),
-                                        child: Image.network(
-                                          'https://picsum.photos/seed/414/600',
-                                          width: 300.0,
-                                          height: 200.0,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      75.0, 150.0, 0.0, 0.0),
+                                      0.0, 75.0, 50.0, 0.0),
                                   child: Container(
                                     width: 595.0,
-                                    height: 155.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                     ),
                                     child: Text(
-                                      'Publish to all your socials.\nWith a single click.',
+                                      'How we support you!',
                                       textAlign: TextAlign.center,
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Mukta',
-                                            color: Colors.black,
+                                            color: Color(0xFF6580D9),
                                             fontSize: 50.0,
                                           ),
                                     ),
@@ -1131,79 +1108,47 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-0.98, -0.17),
+                                alignment: AlignmentDirectional(1.00, 0.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      75.0, 0.0, 0.0, 0.0),
+                                      0.0, 0.0, 140.0, 0.0),
                                   child: Container(
-                                    width: 595.0,
-                                    height: 215.0,
+                                    width: 400.0,
+                                    height: 575.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 8.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 8.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(30.0),
                                     ),
                                     child: Stack(
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, -1.00),
+                                              AlignmentDirectional(0.00, 0.00),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 20.0, 0.0, 0.0),
+                                                    25.0, 0.0, 25.0, 0.0),
                                             child: Text(
-                                              'Cross post - with a single click',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        color: Colors.black,
-                                                        fontSize: 30.0,
-                                                      ),
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    15.0, 15.0, 0.0, 0.0),
-                                            child: Icon(
-                                              Icons.near_me,
-                                              color: Color(0xFF8AFFE6),
-                                              size: 70.0,
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(-0.04, 0.10),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 25.0, 0.0, 0.0),
-                                            child: Container(
-                                              width: 405.0,
-                                              height: 100.0,
-                                              decoration: BoxDecoration(
-                                                color: Colors.white,
-                                              ),
-                                              child: Text(
-                                                'Choose which social channels you want to post to - create once, publish everywhere.  ',
-                                                textAlign: TextAlign.center,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          color: Colors.black,
-                                                          fontSize: 25.0,
-                                                          fontWeight:
-                                                              FontWeight.normal,
-                                                        ),
-                                              ),
+                                              'Our  24/7 AI support team represents a cutting-edge solution designed to provide continuous assistance and problem resolution for you around the clock. Leveraging advanced machine learning algorithms and natural language processing, this virtual team is capable of understanding and responding to a wide array of customer inquiries with impressive accuracy and efficiency. Whether it’s troubleshooting technical issues, answering product-related questions, or guiding you through complex processes, our AI support team ensures that help is always available  irrespective of time zones or holidays.',
+                                              textAlign: TextAlign.center,
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Outfit',
+                                                    color: Color(0xFF838383),
+                                                    fontSize: 23.0,
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
                                             ),
                                           ),
                                         ),
@@ -1213,85 +1158,36 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, 0.39),
+                                alignment: AlignmentDirectional(-1.00, 0.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      75.0, 75.0, 0.0, 0.0),
+                                      50.0, 0.0, 0.0, 0.0),
                                   child: Container(
-                                    width: 595.0,
-                                    height: 215.0,
+                                    width: 800.0,
+                                    height: 500.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
-                                    ),
-                                    child: Stack(
-                                      children: [
-                                        Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    15.0, 15.0, 0.0, 0.0),
-                                            child: Icon(
-                                              Icons.flag_rounded,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .alternate,
-                                              size: 70.0,
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(0.00, -1.00),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 15.0, 0.0, 0.0),
-                                            child: Text(
-                                              'Adjust to the platform',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        color: Colors.black,
-                                                        fontSize: 30.0,
-                                                      ),
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(-0.04, 0.20),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 15.0, 0.0, 0.0),
-                                            child: Container(
-                                              width: 306.0,
-                                              height: 100.0,
-                                              decoration: BoxDecoration(
-                                                color: Colors.white,
-                                              ),
-                                              child: Text(
-                                                'Adjust your posts to fit each channel in just the right format👌',
-                                                textAlign: TextAlign.center,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          color: Colors.black,
-                                                          fontSize: 25.0,
-                                                          fontWeight:
-                                                              FontWeight.normal,
-                                                        ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 8.0,
+                                          color: Color(0xFF6580D9),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 4.0,
+                                        )
                                       ],
+                                      borderRadius:
+                                          BorderRadius.circular(100.0),
+                                    ),
+                                    child: ClipRRect(
+                                      borderRadius:
+                                          BorderRadius.circular(100.0),
+                                      child: Image.asset(
+                                        'assets/images/DALLE_2023-10-24_10.10.15_-_Vector_image_of_an_AI_support_team_in_a_digital_landscape._The_team_consists_of_men_and_women_of_different_backgrounds,_working_together_amidst_glowin.png',
+                                        width: 300.0,
+                                        height: 200.0,
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -1308,26 +1204,37 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           width: 1512.0,
                           height: 800.0,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
                           ),
                           child: Stack(
                             children: [
-                              Container(
-                                width: 650.0,
-                                height: 700.0,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                ),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      100.0, 0.0, 0.0, 0.0),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    100.0, 0.0, 0.0, 0.0),
+                                child: Container(
+                                  width: 650.0,
+                                  height: 700.0,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                    boxShadow: [
+                                      BoxShadow(
+                                        blurRadius: 8.0,
+                                        color: Color(0xFF838383),
+                                        offset: Offset(0.0, 0.0),
+                                        spreadRadius: 8.0,
+                                      )
+                                    ],
+                                    borderRadius: BorderRadius.circular(100.0),
+                                  ),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15.0),
-                                    child: Image.network(
-                                      'https://picsum.photos/seed/176/600',
+                                    borderRadius: BorderRadius.circular(100.0),
+                                    child: Image.asset(
+                                      'assets/images/DALLE_2023-10-24_11.34.25_-_Vector_design_showcasing_a_network_of_interconnected_AI_agents,_with_lines_and_nodes_representing_their_connections_and_interactions.png',
                                       width: 300.0,
                                       height: 200.0,
-                                      fit: BoxFit.cover,
+                                      fit: BoxFit.fill,
                                     ),
                                   ),
                                 ),
@@ -1341,16 +1248,17 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     width: 595.0,
                                     height: 155.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                     ),
                                     child: Text(
-                                      'Our AI Writing Assistant is here to help you!',
+                                      'Our multi multi agent AI is here to help you!',
                                       textAlign: TextAlign.center,
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Mukta',
-                                            color: Colors.black,
+                                            color: Color(0xFFC1C1C1),
                                             fontSize: 50.0,
                                           ),
                                     ),
@@ -1361,21 +1269,21 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 alignment: AlignmentDirectional(1.00, 0.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 75.0, 200.0),
+                                      0.0, 0.0, 75.0, 330.0),
                                   child: Container(
                                     width: 595.0,
-                                    height: 215.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                     ),
                                     child: Text(
-                                      'Our AI Writing Assistant will help you come up with ideas,\nimprove your content and write more engaging posts.',
+                                      'Streamline your content creation process with innovative tools that enhance efficiency, improve quality, and boost audience engagement across various platforms',
                                       textAlign: TextAlign.center,
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Outfit',
-                                            color: Colors.black,
+                                            color: Color(0xFF838383),
                                             fontSize: 27.0,
                                             fontWeight: FontWeight.w500,
                                           ),
@@ -1387,22 +1295,28 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 alignment: AlignmentDirectional(1.00, 1.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 75.0, 120.0),
+                                      0.0, 0.0, 75.0, 50.0),
                                   child: Container(
-                                    width: 595.0,
-                                    height: 300.0,
+                                    width: 600.0,
+                                    height: 400.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                     ),
                                     child: Stack(
                                       children: [
                                         Align(
-                                          alignment:
-                                              AlignmentDirectional(0.00, -1.00),
-                                          child: FaIcon(
-                                            FontAwesomeIcons.pencilAlt,
-                                            color: Color(0xFFFF6884),
-                                            size: 75.0,
+                                          alignment: AlignmentDirectional(
+                                              -1.00, -1.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 20.0, 0.0, 0.0),
+                                            child: Icon(
+                                              Icons.analytics_outlined,
+                                              color: Color(0xFF6580D9),
+                                              size: 75.0,
+                                            ),
                                           ),
                                         ),
                                         Align(
@@ -1411,21 +1325,51 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 30.0, 0.0, 0.0),
-                                            child: Icon(
-                                              Icons.hail,
-                                              color: Color(0xFF764DB8),
-                                              size: 75.0,
+                                                    75.0, 195.0, 0.0, 0.0),
+                                            child: Text(
+                                              'Revenue Increase: A 10% rise in monthly income from content creation activities, including ad revenues, sponsorships, and merchandise sales, due to better-targeted content and higher audience engagement.',
+                                              textAlign: TextAlign.center,
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFF838383),
+                                                        fontSize: 25.0,
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment: AlignmentDirectional(
+                                              -1.00, -1.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    75.0, 20.0, 0.0, 0.0),
+                                            child: Text(
+                                              'Audience Growth: A 20% increase in follower count on social media platforms within a quarter, attributed to consistent posting and engagement strategies informed by audience analytics.',
+                                              textAlign: TextAlign.center,
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFF838383),
+                                                        fontSize: 25.0,
+                                                      ),
                                             ),
                                           ),
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.00, 1.00),
+                                              AlignmentDirectional(-1.00, 0.00),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 30.0),
+                                                    0.0, 60.0, 1000.0, 0.0),
                                             child: Icon(
                                               Icons.add_to_home_screen_outlined,
                                               color: Color(0xFF764DB8),
@@ -1433,171 +1377,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                             ),
                                           ),
                                         ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(0.00, 1.00),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 30.0),
-                                            child: Icon(
-                                              Icons.auto_graph,
-                                              color: Color(0xFFFF6884),
-                                              size: 75.0,
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    75.0, 50.0, 0.0, 0.0),
-                                            child: Text(
-                                              'Inbuilt AI chat',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        color: Colors.black,
-                                                        fontSize: 25.0,
-                                                      ),
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(0.00, -1.00),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    290.0, 30.0, 0.0, 0.0),
-                                            child: Text(
-                                              'Trained for writing',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        color: Colors.black,
-                                                        fontSize: 25.0,
-                                                      ),
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(-1.00, 1.00),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    75.0, 0.0, 0.0, 35.0),
-                                            child: Text(
-                                              'Fine-tuned\n AI model',
-                                              textAlign: TextAlign.center,
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        color: Colors.black,
-                                                        fontSize: 25.0,
-                                                      ),
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(0.00, 1.00),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    265.0, 0.0, 0.0, 50.0),
-                                            child: Text(
-                                              'Based on GPT-4',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        color: Colors.black,
-                                                        fontSize: 25.0,
-                                                      ),
-                                            ),
-                                          ),
-                                        ),
                                       ],
                                     ),
-                                  ),
-                                ),
-                              ),
-                              Align(
-                                alignment: AlignmentDirectional(1.00, 1.00),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 450.0, 30.0),
-                                  child: Text(
-                                    '+75%',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Outfit',
-                                          color: Color(0xFF764DB8),
-                                          fontSize: 75.0,
-                                        ),
-                                  ),
-                                ),
-                              ),
-                              Align(
-                                alignment: AlignmentDirectional(1.00, 1.00),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 145.0, 30.0),
-                                  child: Text(
-                                    '+2.5X',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Outfit',
-                                          color: Color(0xFFFF6884),
-                                          fontSize: 75.0,
-                                        ),
-                                  ),
-                                ),
-                              ),
-                              Align(
-                                alignment: AlignmentDirectional(1.00, 1.00),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 450.0, 0.0),
-                                  child: Text(
-                                    'More engaging',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Outfit',
-                                          color: Color(0xFF838383),
-                                          fontSize: 25.0,
-                                        ),
-                                  ),
-                                ),
-                              ),
-                              Align(
-                                alignment: AlignmentDirectional(1.00, 1.00),
-                                child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 150.0, 0.0),
-                                  child: Text(
-                                    'Faster growth',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Outfit',
-                                          color: Color(0xFF838383),
-                                          fontSize: 25.0,
-                                        ),
                                   ),
                                 ),
                               ),
@@ -1616,7 +1397,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                             width: 1512.0,
                             height: 450.0,
                             decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
                             ),
                             child: Stack(
                               children: [
@@ -1723,7 +1505,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                           opacity: 0.4,
                                           child: Align(
                                             alignment: AlignmentDirectional(
-                                                0.97, -1.84),
+                                                0.95, -0.89),
                                             child: FaIcon(
                                               FontAwesomeIcons.gripVertical,
                                               color: Colors.white,
@@ -1739,7 +1521,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   opacity: 0.4,
                                   child: Align(
                                     alignment:
-                                        AlignmentDirectional(-0.94, -1.37),
+                                        AlignmentDirectional(-0.87, -0.83),
                                     child: FaIcon(
                                       FontAwesomeIcons.gripHorizontal,
                                       color: Colors.white,
@@ -1760,13 +1542,14 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           width: 1512.0,
                           height: 400.0,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
                           ),
                           child: Align(
                             alignment: AlignmentDirectional(-1.00, 1.00),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  115.0, 0.0, 0.0, 0.0),
+                                  80.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 'Integrations',
                                 style: FlutterFlowTheme.of(context)
@@ -1774,7 +1557,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     .override(
                                       fontFamily: 'Outfit',
                                       color: Color(0xFF6580D9),
-                                      fontSize: 22.0,
+                                      fontSize: 28.0,
                                     ),
                               ),
                             ),
@@ -1792,7 +1575,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                             width: 1512.0,
                             height: 125.0,
                             decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
                             ),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1801,12 +1585,12 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       75.0, 0.0, 0.0, 0.0),
                                   child: Text(
-                                    'Integrations with all major \nsocial platforms',
+                                    'Integrations with these major \nsocial platforms',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Outfit',
-                                          color: Colors.black,
+                                          color: Color(0xFF838383),
                                           fontSize: 45.0,
                                           fontWeight: FontWeight.bold,
                                         ),
@@ -1825,411 +1609,189 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           width: 1512.0,
                           height: 300.0,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
                           ),
-                          child: Container(
-                            width: double.infinity,
-                            height: 100.0,
-                            child: CarouselSlider(
-                              items: [
-                                Container(
-                                  width: 100.0,
-                                  height: 0.0,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xFF6441A5),
-                                    borderRadius: BorderRadius.circular(100.0),
-                                  ),
-                                  child: Align(
-                                    alignment:
-                                        AlignmentDirectional(0.00, -1.00),
-                                    child: Stack(
-                                      children: [
-                                        Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    25.0, 25.0, 0.0, 0.0),
-                                            child: Icon(
-                                              FFIcons.ktwitch,
-                                              color: Colors.white,
-                                              size: 115.0,
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(0.00, -1.00),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 30.0, 0.0, 0.0),
-                                            child: Text(
-                                              'Twitch',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        fontSize: 50.0,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                      ),
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(0.00, -1.00),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 115.0, 0.0, 0.0),
-                                            child: Text(
-                                              'Hello World',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        color: Colors.white,
-                                                        fontSize: 25.0,
-                                                        fontWeight:
-                                                            FontWeight.normal,
-                                                      ),
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(0.00, 1.00),
-                                          child: Container(
-                                            width: 415.0,
-                                            height: 125.0,
-                                            decoration: BoxDecoration(
-                                              color: Color(0xFF6441A5),
-                                            ),
-                                            child: Align(
-                                              alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
-                                              child: Text(
-                                                'Hello World',
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          fontSize: 25.0,
-                                                        ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
+                          child: Stack(
+                            children: [
+                              Align(
+                                alignment: AlignmentDirectional(0.00, 0.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 800.0, 0.0),
+                                  child: Container(
+                                    width: 200.0,
+                                    height: 200.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 8.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 6.0,
+                                        )
                                       ],
+                                      borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(100.0),
+                                        bottomRight: Radius.circular(100.0),
+                                        topLeft: Radius.circular(0.0),
+                                        topRight: Radius.circular(100.0),
+                                      ),
+                                    ),
+                                    child: InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
+                                        context.pushNamed('priceings');
+                                      },
+                                      child: Icon(
+                                        FFIcons.kyoutube,
+                                        color: Color(0xFFFF073A),
+                                        size: 100.0,
+                                      ),
                                     ),
                                   ),
                                 ),
-                                Container(
-                                  width: 100.0,
-                                  height: 100.0,
-                                  decoration: BoxDecoration(
-                                    color: Color(0xFFDB07BC),
-                                    borderRadius: BorderRadius.circular(100.0),
-                                  ),
-                                  child: Stack(
-                                    children: [
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-1.00, -1.00),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  25.0, 25.0, 0.0, 0.0),
-                                          child: Icon(
-                                            FFIcons.kinstagram,
-                                            color: Colors.white,
-                                            size: 115.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.00, -1.00),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 30.0, 0.0, 0.0),
-                                          child: Text(
-                                            'Instagram',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color: Colors.white,
-                                                  fontSize: 50.0,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.00, -1.00),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 115.0, 0.0, 0.0),
-                                          child: Text(
-                                            'Posts, Carousels & Reels',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color: Colors.white,
-                                                  fontSize: 25.0,
-                                                  fontWeight: FontWeight.normal,
-                                                ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-0.07, 0.75),
-                                        child: Container(
-                                          width: 415.0,
-                                          height: 125.0,
-                                          decoration: BoxDecoration(
-                                            color: Color(0xFFDB07BC),
-                                          ),
-                                          child: Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, 1.00),
-                                            child: Text(
-                                              'Publish your content as regular posts, stories, carousels, and videos on the Reels page.',
-                                              textAlign: TextAlign.center,
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        fontSize: 25.0,
-                                                      ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Container(
-                                  width: 100.0,
-                                  height: 100.0,
-                                  decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context).primary,
-                                    borderRadius: BorderRadius.circular(100.0),
-                                  ),
-                                  child: Stack(
-                                    children: [
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-1.00, -1.00),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  25.0, 25.0, 0.0, 0.0),
-                                          child: Icon(
-                                            FFIcons.kfacebook,
-                                            color: Colors.white,
-                                            size: 115.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.00, -1.00),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 30.0, 0.0, 0.0),
-                                          child: Text(
-                                            'Facebook',
-                                            textAlign: TextAlign.center,
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color: Colors.white,
-                                                  fontSize: 50.0,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.00, -1.00),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 115.0, 0.0, 0.0),
-                                          child: Text(
-                                            'Pages, Groups & Reels',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color: Colors.white,
-                                                  fontSize: 25.0,
-                                                  fontWeight: FontWeight.normal,
-                                                ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.00, 1.00),
-                                        child: Container(
-                                          width: 415.0,
-                                          height: 125.0,
-                                          decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .primary,
-                                          ),
-                                          child: Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, 1.00),
-                                            child: Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      0.0, 0.0, 0.0, 18.0),
-                                              child: Text(
-                                                'Schedule and publish posts on your Facebook Page, in your groups, and videos as Reels.',
-                                                textAlign: TextAlign.center,
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Outfit',
-                                                          fontSize: 25.0,
-                                                        ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Container(
-                                  width: 100.0,
-                                  height: 100.0,
-                                  decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context).error,
-                                    borderRadius: BorderRadius.circular(100.0),
-                                  ),
-                                  child: Stack(
-                                    children: [
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(-1.00, -1.00),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  25.0, 25.0, 0.0, 0.0),
-                                          child: Icon(
-                                            FFIcons.kyoutube,
-                                            color: Colors.white,
-                                            size: 115.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.00, -1.00),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 30.0, 0.0, 0.0),
-                                          child: Text(
-                                            'YouTube',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color: Colors.white,
-                                                  fontSize: 50.0,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.00, -1.00),
-                                        child: Padding(
-                                          padding:
-                                              EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 115.0, 0.0, 0.0),
-                                          child: Text(
-                                            'YouTube Shorts ',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color: Colors.white,
-                                                  fontSize: 25.0,
-                                                  fontWeight: FontWeight.normal,
-                                                ),
-                                          ),
-                                        ),
-                                      ),
-                                      Align(
-                                        alignment:
-                                            AlignmentDirectional(0.00, 1.00),
-                                        child: Container(
-                                          width: 415.0,
-                                          height: 125.0,
-                                          decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                          ),
-                                          child: Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, 0.00),
-                                            child: Text(
-                                              'Publish videos to YouTube\'s Short page. Combine with a custom thumbnail and a first-comment.',
-                                              textAlign: TextAlign.center,
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        fontSize: 25.0,
-                                                      ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                              carouselController: _model.carouselController ??=
-                                  CarouselController(),
-                              options: CarouselOptions(
-                                initialPage: 1,
-                                viewportFraction: 0.5,
-                                disableCenter: true,
-                                enlargeCenterPage: true,
-                                enlargeFactor: 0.25,
-                                enableInfiniteScroll: true,
-                                scrollDirection: Axis.horizontal,
-                                autoPlay: false,
-                                onPageChanged: (index, _) =>
-                                    _model.carouselCurrentIndex = index,
                               ),
-                            ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, 0.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      275.0, 0.0, 0.0, 0.0),
+                                  child: Container(
+                                    width: 200.0,
+                                    height: 200.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 8.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 6.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(100.0),
+                                        bottomRight: Radius.circular(0.0),
+                                        topLeft: Radius.circular(100.0),
+                                        topRight: Radius.circular(100.0),
+                                      ),
+                                    ),
+                                    child: InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
+                                        context.pushNamed('priceings');
+                                      },
+                                      child: Icon(
+                                        FFIcons.kfacebook,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primary,
+                                        size: 100.0,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, 0.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 275.0, 0.0),
+                                  child: Container(
+                                    width: 200.0,
+                                    height: 200.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 8.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 6.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(0.0),
+                                        bottomRight: Radius.circular(100.0),
+                                        topLeft: Radius.circular(100.0),
+                                        topRight: Radius.circular(100.0),
+                                      ),
+                                    ),
+                                    child: Align(
+                                      alignment:
+                                          AlignmentDirectional(0.00, 0.00),
+                                      child: InkWell(
+                                        splashColor: Colors.transparent,
+                                        focusColor: Colors.transparent,
+                                        hoverColor: Colors.transparent,
+                                        highlightColor: Colors.transparent,
+                                        onTap: () async {
+                                          context.pushNamed('priceings');
+                                        },
+                                        child: FaIcon(
+                                          FontAwesomeIcons.instagram,
+                                          color: Color(0xFFDB07BC),
+                                          size: 100.0,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, 0.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      800.0, 0.0, 0.0, 0.0),
+                                  child: Container(
+                                    width: 200.0,
+                                    height: 200.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 8.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 6.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(100.0),
+                                        bottomRight: Radius.circular(100.0),
+                                        topLeft: Radius.circular(100.0),
+                                        topRight: Radius.circular(0.0),
+                                      ),
+                                    ),
+                                    child: InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
+                                        context.pushNamed('priceings');
+                                      },
+                                      child: Icon(
+                                        FFIcons.ktwitch,
+                                        color: Color(0xFF6441A5),
+                                        size: 100.0,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],
@@ -2242,7 +1804,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                             width: 1512.0,
                             height: 850.0,
                             decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
                             ),
                             child: Stack(
                               children: [
@@ -2251,16 +1814,25 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 125.0, 0.0, 0.0),
-                                    child: Text(
-                                      'About us',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Outfit',
-                                            color: Color(0xFF6580D9),
-                                            fontSize: 22.0,
-                                            fontWeight: FontWeight.w600,
-                                          ),
+                                    child: InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
+                                        context.pushNamed('about_us');
+                                      },
+                                      child: Text(
+                                        'About us',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Outfit',
+                                              color: Color(0xFF6580D9),
+                                              fontSize: 22.0,
+                                              fontWeight: FontWeight.w600,
+                                            ),
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -2293,7 +1865,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Outfit',
-                                            color: Colors.black,
+                                            color: Color(0xFF838383),
                                             fontSize: 40.0,
                                             fontWeight: FontWeight.normal,
                                           ),
@@ -2311,7 +1883,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Outfit',
-                                            color: Colors.black,
+                                            color: Color(0xFF838383),
                                             fontSize: 40.0,
                                             fontWeight: FontWeight.normal,
                                           ),
@@ -2322,14 +1894,15 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   alignment: AlignmentDirectional(1.00, 0.00),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 200.0, 65.0, 0.0),
+                                        0.0, 200.0, 100.0, 0.0),
                                     child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(15.0),
-                                      child: Image.network(
-                                        'https://picsum.photos/seed/869/600',
-                                        width: 858.0,
+                                      borderRadius:
+                                          BorderRadius.circular(100.0),
+                                      child: Image.asset(
+                                        'assets/images/DALLE_2023-10-24_12.30.47_-_Illustration_of_a_clock_tower_being_built_by_a_group_of_artisans,_blending_traditional_craftsmanship_with_futuristic_elements.png',
+                                        width: 700.0,
                                         height: 475.0,
-                                        fit: BoxFit.cover,
+                                        fit: BoxFit.fill,
                                       ),
                                     ),
                                   ),
@@ -2338,10 +1911,10 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   alignment: AlignmentDirectional(-1.00, -1.00),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        65.0, 288.0, 0.0, 0.0),
+                                        150.0, 288.0, 0.0, 0.0),
                                     child: Icon(
                                       Icons.account_balance_outlined,
-                                      color: Colors.black,
+                                      color: Color(0xFF6580D9),
                                       size: 85.0,
                                     ),
                                   ),
@@ -2350,15 +1923,16 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   alignment: AlignmentDirectional(-1.00, 0.00),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        65.0, 0.0, 0.0, 20.0),
+                                        150.0, 0.0, 0.0, 35.0),
                                     child: Text(
-                                      'AI Writing Assistant',
+                                      'The Tempus Creators \nAdvantage: Data Meets Creativity',
+                                      textAlign: TextAlign.center,
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Outfit',
-                                            color: Colors.black,
-                                            fontSize: 45.0,
+                                            color: Color(0xFFC1C1C1),
+                                            fontSize: 28.0,
                                           ),
                                     ),
                                   ),
@@ -2367,32 +1941,15 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   alignment: AlignmentDirectional(-1.00, 0.00),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        65.0, 170.0, 0.0, 0.0),
+                                        150.0, 270.0, 925.0, 0.0),
                                     child: Text(
-                                      'Our fine-tuned AI Writing assistant is only\n a click away, ready to help you come up with \nideas and improve your posts.\n',
+                                      '\nThat\'s where Tempus Creators comes into the picture. We\'re not just another tool; we\'re your comprehensive solution to analytics overwhelm and creative stalemate. We bring together all your performance metrics into a single, easy-to-navigate dashboard while our AI-powered assistant provides actionable insights and unique content ideas—just for you.',
+                                      textAlign: TextAlign.center,
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Outfit',
-                                            color: Colors.black,
-                                            fontSize: 22.0,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(-1.00, 0.00),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        65.0, 330.0, 0.0, 0.0),
-                                    child: Text(
-                                      'Spike new ideas in seconds.\nNever get stuck in writer\'s-block again!',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Outfit',
-                                            color: Colors.black,
+                                            color: Color(0xFF838383),
                                             fontSize: 22.0,
                                             fontWeight: FontWeight.normal,
                                           ),
@@ -2403,7 +1960,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   alignment: AlignmentDirectional(-1.00, 1.00),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        130.0, 0.0, 0.0, 86.0),
+                                        260.0, 0.0, 0.0, 86.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
                                         context.pushNamed('priceings');
@@ -2432,43 +1989,10 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                         ),
                                         borderRadius:
                                             BorderRadius.circular(100.0),
+                                        hoverColor: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                        hoverTextColor: Color(0xFF6580D9),
                                       ),
-                                    ),
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(-1.00, 1.00),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        65.0, 0.0, 0.0, 175.0),
-                                    child: Text(
-                                      'Replaces:',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Outfit',
-                                            color: Color(0xFF6F6E6E),
-                                            fontSize: 22.0,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(-1.00, 1.00),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        160.0, 0.0, 0.0, 175.0),
-                                    child: Text(
-                                      'ChatGPT | Copy.ai | Peppertype',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Outfit',
-                                            color: Colors.black,
-                                            fontSize: 22.0,
-                                            fontWeight: FontWeight.w500,
-                                          ),
                                     ),
                                   ),
                                 ),
@@ -2486,7 +2010,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                               50.0, 0.0, 0.0, 0.0),
                           child: FaIcon(
                             FontAwesomeIcons.featherAlt,
-                            color: Colors.black,
+                            color: Color(0xFF838383),
                             size: 75.0,
                           ),
                         ),
@@ -2495,7 +2019,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Outfit',
-                                    color: Colors.black,
+                                    color: Color(0xFF838383),
                                     fontSize: 25.0,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -2505,7 +2029,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                               15.0, 0.0, 0.0, 0.0),
                           child: Icon(
                             Icons.api_outlined,
-                            color: Colors.black,
+                            color: Color(0xFF838383),
                             size: 75.0,
                           ),
                         ),
@@ -2514,7 +2038,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Outfit',
-                                    color: Colors.black,
+                                    color: Color(0xFF545454),
                                     fontSize: 25.0,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -2524,7 +2048,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                               15.0, 0.0, 0.0, 0.0),
                           child: Icon(
                             Icons.mail,
-                            color: Colors.black,
+                            color: Color(0xFF838383),
                             size: 75.0,
                           ),
                         ),
@@ -2533,7 +2057,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Outfit',
-                                    color: Colors.black,
+                                    color: Color(0xFF838383),
                                     fontSize: 25.0,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -2543,7 +2067,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                               15.0, 0.0, 0.0, 0.0),
                           child: Icon(
                             Icons.co_present_outlined,
-                            color: Colors.black,
+                            color: Color(0xFF838383),
                             size: 75.0,
                           ),
                         ),
@@ -2552,7 +2076,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Outfit',
-                                    color: Colors.black,
+                                    color: Color(0xFF838383),
                                     fontSize: 25.0,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -2587,6 +2111,9 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 width: 1.0,
                               ),
                               borderRadius: BorderRadius.circular(30.0),
+                              hoverColor: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              hoverTextColor: Color(0xFF6580D9),
                             ),
                           ),
                         ),
@@ -2599,7 +2126,12 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           width: 1512.0,
                           height: 900.0,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                            border: Border.all(
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                            ),
                           ),
                           child: Stack(
                             children: [
@@ -2630,7 +2162,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     width: 700.0,
                                     height: 500.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                       boxShadow: [
                                         BoxShadow(
                                           blurRadius: 8.0,
@@ -2680,7 +2213,9 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                 width: 325.0,
                                                 height: 139.0,
                                                 decoration: BoxDecoration(
-                                                  color: Colors.white,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryBackground,
                                                 ),
                                                 child: Text(
                                                   'We would love to here form you if you have any questions, comments or concerns regarding our services. ',
@@ -2690,7 +2225,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 25.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -2723,10 +2259,11 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                         .override(
                                                           fontFamily:
                                                               'Noto Sans HK',
-                                                          color: Colors.black,
-                                                          fontSize: 22.0,
+                                                          color:
+                                                              Color(0xFF838383),
+                                                          fontSize: 23.0,
                                                           fontWeight:
-                                                              FontWeight.normal,
+                                                              FontWeight.w600,
                                                           useGoogleFonts: false,
                                                         ),
                                                     hintStyle: FlutterFlowTheme
@@ -2795,7 +2332,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 23.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -2831,10 +2369,11 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                         .override(
                                                           fontFamily:
                                                               'Noto Sans HK',
-                                                          color: Colors.black,
-                                                          fontSize: 22.0,
+                                                          color:
+                                                              Color(0xFF838383),
+                                                          fontSize: 23.0,
                                                           fontWeight:
-                                                              FontWeight.normal,
+                                                              FontWeight.w600,
                                                           useGoogleFonts: false,
                                                         ),
                                                     hintStyle:
@@ -2895,7 +2434,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 23.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -2932,10 +2472,11 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                         .override(
                                                           fontFamily:
                                                               'Noto Sans HK',
-                                                          color: Colors.black,
-                                                          fontSize: 22.0,
+                                                          color:
+                                                              Color(0xFF838383),
+                                                          fontSize: 23.0,
                                                           fontWeight:
-                                                              FontWeight.normal,
+                                                              FontWeight.w600,
                                                           useGoogleFonts: false,
                                                         ),
                                                     hintStyle:
@@ -2996,7 +2537,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 23.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -3033,10 +2575,11 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                         .override(
                                                           fontFamily:
                                                               'Noto Sans HK',
-                                                          color: Colors.black,
-                                                          fontSize: 22.0,
+                                                          color:
+                                                              Color(0xFF838383),
+                                                          fontSize: 23.0,
                                                           fontWeight:
-                                                              FontWeight.normal,
+                                                              FontWeight.w600,
                                                           useGoogleFonts: false,
                                                         ),
                                                     hintStyle:
@@ -3097,7 +2640,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 23.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -3133,10 +2677,11 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                         .override(
                                                           fontFamily:
                                                               'Noto Sans HK',
-                                                          color: Colors.black,
-                                                          fontSize: 22.0,
+                                                          color:
+                                                              Color(0xFF838383),
+                                                          fontSize: 23.0,
                                                           fontWeight:
-                                                              FontWeight.normal,
+                                                              FontWeight.w600,
                                                           useGoogleFonts: false,
                                                         ),
                                                     hintStyle:
@@ -3197,10 +2742,11 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 23.0,
                                                         fontWeight:
-                                                            FontWeight.normal,
+                                                            FontWeight.w600,
                                                       ),
                                                   validator: _model
                                                       .textController5Validator
@@ -3289,7 +2835,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     width: 612.0,
                                     height: 125.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                       borderRadius: BorderRadius.circular(0.0),
                                     ),
                                     child: Stack(
@@ -3309,7 +2856,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 24.0,
                                                       ),
                                             ),
@@ -3330,7 +2878,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -3352,7 +2901,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     width: 612.0,
                                     height: 125.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                     ),
                                     child: Stack(
                                       children: [
@@ -3371,7 +2921,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 24.0,
                                                       ),
                                             ),
@@ -3392,7 +2943,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -3414,7 +2966,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     width: 612.0,
                                     height: 125.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                     ),
                                     child: Stack(
                                       children: [
@@ -3433,7 +2986,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 24.0,
                                                       ),
                                             ),
@@ -3453,7 +3007,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -3475,7 +3030,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     width: 612.0,
                                     height: 125.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                       borderRadius: BorderRadius.circular(0.0),
                                     ),
                                     child: Stack(
@@ -3495,7 +3051,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 24.0,
                                                       ),
                                             ),
@@ -3516,7 +3073,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -3563,6 +3121,9 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                       ),
                                       borderRadius:
                                           BorderRadius.circular(100.0),
+                                      hoverColor: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      hoverTextColor: Color(0xFF6580D9),
                                     ),
                                   ),
                                 ),
@@ -3579,7 +3140,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           width: 1512.0,
                           height: 50.0,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
                           ),
                           child: Stack(
                             children: [
@@ -3591,7 +3153,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Outfit',
-                                        color: Color(0xFF6F6E6E),
+                                        color: Color(0xFFDBDBDB),
                                         fontSize: 15.0,
                                         fontWeight: FontWeight.normal,
                                       ),
@@ -3601,30 +3163,34 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 alignment: AlignmentDirectional(1.00, 1.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 50.0, 0.0),
+                                      0.0, 0.0, 65.0, 0.0),
                                   child: Icon(
                                     FFIcons.ktwitch,
-                                    color: Colors.black,
+                                    color: Color(0xFF838383),
                                     size: 50.0,
                                   ),
                                 ),
                               ),
                               Align(
                                 alignment: AlignmentDirectional(1.00, 1.00),
-                                child: Icon(
-                                  FFIcons.klinkedin,
-                                  color: Colors.black,
-                                  size: 50.0,
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 25.0, 0.0),
+                                  child: FaIcon(
+                                    FontAwesomeIcons.facebookF,
+                                    color: Color(0xFF838383),
+                                    size: 50.0,
+                                  ),
                                 ),
                               ),
                               Align(
                                 alignment: AlignmentDirectional(1.00, 1.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 150.0, 0.0),
+                                      0.0, 0.0, 185.0, 0.0),
                                   child: Icon(
                                     FFIcons.kinstagram,
-                                    color: Colors.black,
+                                    color: Color(0xFF838383),
                                     size: 50.0,
                                   ),
                                 ),
@@ -3633,10 +3199,10 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 alignment: AlignmentDirectional(1.00, 1.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 100.0, 0.0),
-                                  child: Icon(
-                                    FFIcons.ktwitter,
-                                    color: Colors.black,
+                                      0.0, 0.0, 120.0, 0.0),
+                                  child: FaIcon(
+                                    FontAwesomeIcons.youtube,
+                                    color: Color(0xFF838383),
                                     size: 50.0,
                                   ),
                                 ),
@@ -3655,10 +3221,10 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     width: 100.0,
                                     height: 100.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
                                       borderRadius:
                                           BorderRadius.circular(100.0),
                                       border: Border.all(
+                                        color: Color(0xFF838383),
                                         width: 2.0,
                                       ),
                                     ),
@@ -3679,7 +3245,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Outfit',
-                                                color: Colors.black,
+                                                color: Color(0xFF838383),
                                                 fontSize: 30.0,
                                               ),
                                         ),
@@ -3705,10 +3271,12 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                       width: 203.0,
                                       height: 100.0,
                                       decoration: BoxDecoration(
-                                        color: Colors.white,
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                         borderRadius:
                                             BorderRadius.circular(100.0),
                                         border: Border.all(
+                                          color: Color(0xFF838383),
                                           width: 2.0,
                                         ),
                                       ),
@@ -3730,7 +3298,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Outfit',
-                                                  color: Colors.black,
+                                                  color: Color(0xFF838383),
                                                   fontSize: 30.0,
                                                 ),
                                           ),

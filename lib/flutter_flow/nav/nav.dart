@@ -174,6 +174,46 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'Account_2',
               path: 'account2',
               builder: (context, params) => Account2Widget(),
+            ),
+            FFRoute(
+              name: 'blogs1',
+              path: 'blogs1',
+              builder: (context, params) => Blogs1Widget(),
+            ),
+            FFRoute(
+              name: 'blogs2',
+              path: 'blogs2',
+              builder: (context, params) => Blogs2Widget(),
+            ),
+            FFRoute(
+              name: 'blogs3',
+              path: 'blogs3',
+              builder: (context, params) => Blogs3Widget(),
+            ),
+            FFRoute(
+              name: 'blogs4',
+              path: 'blogs4',
+              builder: (context, params) => Blogs4Widget(),
+            ),
+            FFRoute(
+              name: 'blogs5',
+              path: 'blogs5',
+              builder: (context, params) => Blogs5Widget(),
+            ),
+            FFRoute(
+              name: 'blogs6',
+              path: 'blogs6',
+              builder: (context, params) => Blogs6Widget(),
+            ),
+            FFRoute(
+              name: 'blogs7',
+              path: 'blogs7',
+              builder: (context, params) => Blogs7Widget(),
+            ),
+            FFRoute(
+              name: 'blogs8',
+              path: 'blogs8',
+              builder: (context, params) => Blogs8Widget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

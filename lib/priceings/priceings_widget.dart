@@ -58,7 +58,1111 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
               : FocusScope.of(context).unfocus(),
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+            drawer: Container(
+              width: 900.0,
+              child: Drawer(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                  ),
+                  child: Stack(
+                    children: [
+                      Align(
+                        alignment: AlignmentDirectional(0.00, 0.00),
+                        child: Container(
+                          width: 850.0,
+                          height: 550.0,
+                          decoration: BoxDecoration(
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 8.0,
+                                color: Color(0xFF303138),
+                                offset: Offset(0.0, 0.0),
+                                spreadRadius: 8.0,
+                              )
+                            ],
+                            borderRadius: BorderRadius.circular(100.0),
+                          ),
+                          child: Stack(
+                            children: [
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 100.0, 0.0, 0.0),
+                                  child: Container(
+                                    width: 800.0,
+                                    height: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 4.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    25.0, 0.0, 0.0, 0.0),
+                                            child: Text(
+                                              'Total',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFFC1C1C1),
+                                                        fontSize: 30.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 50.0, 0.0),
+                                            child: Text(
+                                              '\$34.85',
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Outfit',
+                                                    color: Color(0xFFC1C1C1),
+                                                    fontSize: 30.0,
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.00, -1.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 10.0, 0.0),
+                                            child: Text(
+                                              'USD',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFF838383),
+                                                        fontSize: 18.0,
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, 1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 30.0),
+                                  child: FFButtonWidget(
+                                    onPressed: () async {
+                                      if (scaffoldKey
+                                              .currentState!.isDrawerOpen ||
+                                          scaffoldKey
+                                              .currentState!.isEndDrawerOpen) {
+                                        Navigator.pop(context);
+                                      }
+                                    },
+                                    text: 'Submit Payment',
+                                    options: FFButtonOptions(
+                                      width: 350.0,
+                                      height: 50.0,
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          24.0, 0.0, 24.0, 0.0),
+                                      iconPadding:
+                                          EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
+                                      color: Color(0xFF6580D9),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .override(
+                                            fontFamily: 'Outfit',
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
+                                            fontSize: 25.0,
+                                          ),
+                                      elevation: 3.0,
+                                      borderSide: BorderSide(
+                                        color: Colors.transparent,
+                                        width: 1.0,
+                                      ),
+                                      borderRadius:
+                                          BorderRadius.circular(100.0),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(1.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 400.0, 35.0, 0.0),
+                                  child: Container(
+                                    width: 200.0,
+                                    height: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 4.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    15.0, 0.0, 0.0, 0.0),
+                                            child: Text(
+                                              'MM/YY',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFFC1C1C1),
+                                                        fontSize: 25.0,
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 15.0, 0.0),
+                                            child: Icon(
+                                              Icons.check_circle,
+                                              color: Color(0xFF545454),
+                                              size: 40.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(1.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 300.0, 35.0, 0.0),
+                                  child: Container(
+                                    width: 200.0,
+                                    height: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 4.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    child: Align(
+                                      alignment:
+                                          AlignmentDirectional(-1.00, 0.00),
+                                      child: Stack(
+                                        children: [
+                                          Align(
+                                            alignment: AlignmentDirectional(
+                                                1.00, 0.00),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      0.0, 0.0, 15.0, 0.0),
+                                              child: Icon(
+                                                Icons.check_circle,
+                                                color: Color(0xFF545454),
+                                                size: 40.0,
+                                              ),
+                                            ),
+                                          ),
+                                          Align(
+                                            alignment: AlignmentDirectional(
+                                                -1.00, 0.00),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      15.0, 0.0, 0.0, 0.0),
+                                              child: FaIcon(
+                                                FontAwesomeIcons
+                                                    .solidCreditCard,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryText,
+                                                size: 35.0,
+                                              ),
+                                            ),
+                                          ),
+                                          Align(
+                                            alignment: AlignmentDirectional(
+                                                -1.00, 0.00),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      60.0, 0.0, 0.0, 0.0),
+                                              child: Text(
+                                                'CVV',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Outfit',
+                                                          color:
+                                                              Color(0xFFC1C1C1),
+                                                          fontSize: 25.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      35.0, 300.0, 0.0, 0.0),
+                                  child: Container(
+                                    width: 450.0,
+                                    height: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 4.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    60.0, 0.0, 0.0, 0.0),
+                                            child: Text(
+                                              'Card Number',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFFC1C1C1),
+                                                        fontSize: 25.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 15.0, 0.0),
+                                            child: Icon(
+                                              Icons.check_circle,
+                                              color: Color(0xFF545454),
+                                              size: 40.0,
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    15.0, 0.0, 0.0, 0.0),
+                                            child: FaIcon(
+                                              FontAwesomeIcons.creditCard,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryText,
+                                              size: 35.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      35.0, 200.0, 0.0, 0.0),
+                                  child: Container(
+                                    width: 350.0,
+                                    height: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 4.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    15.0, 0.0, 0.0, 0.0),
+                                            child: Text(
+                                              'First Name',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFFC1C1C1),
+                                                        fontSize: 25.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 15.0, 0.0),
+                                            child: Icon(
+                                              Icons.check_circle,
+                                              color: Color(0xFF545454),
+                                              size: 40.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(1.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 200.0, 35.0, 0.0),
+                                  child: Container(
+                                    width: 350.0,
+                                    height: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 4.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    15.0, 0.0, 0.0, 0.0),
+                                            child: Text(
+                                              'Last Name',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFFC1C1C1),
+                                                        fontSize: 25.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 15.0, 0.0),
+                                            child: Icon(
+                                              Icons.check_circle,
+                                              color: Color(0xFF545454),
+                                              size: 40.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 20.0, 0.0, 0.0),
+                                  child: Text(
+                                    'Creator Basic',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          color: Color(0xFF6580D9),
+                                          fontSize: 30.0,
+                                        ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            endDrawer: Container(
+              width: 900.0,
+              child: Drawer(
+                elevation: 16.0,
+                child: Container(
+                  height: double.infinity,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                  ),
+                  child: Stack(
+                    children: [
+                      Align(
+                        alignment: AlignmentDirectional(0.00, 0.00),
+                        child: Container(
+                          width: 850.0,
+                          height: 550.0,
+                          decoration: BoxDecoration(
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 8.0,
+                                color: Color(0xFF303138),
+                                offset: Offset(0.0, 0.0),
+                                spreadRadius: 8.0,
+                              )
+                            ],
+                            borderRadius: BorderRadius.circular(100.0),
+                          ),
+                          child: Stack(
+                            children: [
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 100.0, 0.0, 0.0),
+                                  child: Container(
+                                    width: 800.0,
+                                    height: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 4.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    25.0, 0.0, 0.0, 0.0),
+                                            child: Text(
+                                              'Total',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFFC1C1C1),
+                                                        fontSize: 30.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 50.0, 0.0),
+                                            child: Text(
+                                              '\$102.85',
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Outfit',
+                                                    color: Color(0xFFC1C1C1),
+                                                    fontSize: 30.0,
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.00, -1.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 10.0, 0.0),
+                                            child: Text(
+                                              'USD',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFF838383),
+                                                        fontSize: 18.0,
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, 1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 30.0),
+                                  child: FFButtonWidget(
+                                    onPressed: () async {
+                                      if (scaffoldKey
+                                              .currentState!.isDrawerOpen ||
+                                          scaffoldKey
+                                              .currentState!.isEndDrawerOpen) {
+                                        Navigator.pop(context);
+                                      }
+                                    },
+                                    text: 'Submit Payment',
+                                    options: FFButtonOptions(
+                                      width: 350.0,
+                                      height: 50.0,
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          24.0, 0.0, 24.0, 0.0),
+                                      iconPadding:
+                                          EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
+                                      color: Color(0xFF6580D9),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .override(
+                                            fontFamily: 'Outfit',
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
+                                            fontSize: 25.0,
+                                          ),
+                                      elevation: 3.0,
+                                      borderSide: BorderSide(
+                                        color: Colors.transparent,
+                                        width: 1.0,
+                                      ),
+                                      borderRadius:
+                                          BorderRadius.circular(100.0),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(1.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 400.0, 35.0, 0.0),
+                                  child: Container(
+                                    width: 200.0,
+                                    height: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 4.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    15.0, 0.0, 0.0, 0.0),
+                                            child: Text(
+                                              'MM/YY',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFFC1C1C1),
+                                                        fontSize: 25.0,
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 15.0, 0.0),
+                                            child: Icon(
+                                              Icons.check_circle,
+                                              color: Color(0xFF545454),
+                                              size: 40.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(1.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 300.0, 35.0, 0.0),
+                                  child: Container(
+                                    width: 200.0,
+                                    height: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 4.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    child: Align(
+                                      alignment:
+                                          AlignmentDirectional(-1.00, 0.00),
+                                      child: Stack(
+                                        children: [
+                                          Align(
+                                            alignment: AlignmentDirectional(
+                                                1.00, 0.00),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      0.0, 0.0, 15.0, 0.0),
+                                              child: Icon(
+                                                Icons.check_circle,
+                                                color: Color(0xFF545454),
+                                                size: 40.0,
+                                              ),
+                                            ),
+                                          ),
+                                          Align(
+                                            alignment: AlignmentDirectional(
+                                                -1.00, 0.00),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      15.0, 0.0, 0.0, 0.0),
+                                              child: FaIcon(
+                                                FontAwesomeIcons
+                                                    .solidCreditCard,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryText,
+                                                size: 35.0,
+                                              ),
+                                            ),
+                                          ),
+                                          Align(
+                                            alignment: AlignmentDirectional(
+                                                -1.00, 0.00),
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      60.0, 0.0, 0.0, 0.0),
+                                              child: Text(
+                                                'CVV',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Outfit',
+                                                          color:
+                                                              Color(0xFFC1C1C1),
+                                                          fontSize: 25.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      35.0, 300.0, 0.0, 0.0),
+                                  child: Container(
+                                    width: 450.0,
+                                    height: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 4.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    60.0, 0.0, 0.0, 0.0),
+                                            child: Text(
+                                              'Card Number',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFFC1C1C1),
+                                                        fontSize: 25.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 15.0, 0.0),
+                                            child: Icon(
+                                              Icons.check_circle,
+                                              color: Color(0xFF545454),
+                                              size: 40.0,
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    15.0, 0.0, 0.0, 0.0),
+                                            child: FaIcon(
+                                              FontAwesomeIcons.creditCard,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryText,
+                                              size: 35.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      35.0, 200.0, 0.0, 0.0),
+                                  child: Container(
+                                    width: 350.0,
+                                    height: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 4.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    15.0, 0.0, 0.0, 0.0),
+                                            child: Text(
+                                              'First Name',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFFC1C1C1),
+                                                        fontSize: 25.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 15.0, 0.0),
+                                            child: Icon(
+                                              Icons.check_circle,
+                                              color: Color(0xFF545454),
+                                              size: 40.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(1.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 200.0, 35.0, 0.0),
+                                  child: Container(
+                                    width: 350.0,
+                                    height: 50.0,
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          blurRadius: 4.0,
+                                          color: Color(0xFF303138),
+                                          offset: Offset(0.0, 0.0),
+                                          spreadRadius: 4.0,
+                                        )
+                                      ],
+                                      borderRadius: BorderRadius.circular(10.0),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(-1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    15.0, 0.0, 0.0, 0.0),
+                                            child: Text(
+                                              'Last Name',
+                                              style:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFFC1C1C1),
+                                                        fontSize: 25.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                            ),
+                                          ),
+                                        ),
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(1.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 15.0, 0.0),
+                                            child: Icon(
+                                              Icons.check_circle,
+                                              color: Color(0xFF545454),
+                                              size: 40.0,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 20.0, 0.0, 0.0),
+                                  child: Text(
+                                    'Creator Pro',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          color: Color(0xFF6580D9),
+                                          fontSize: 30.0,
+                                        ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
             body: SafeArea(
               top: true,
               child: SingleChildScrollView(
@@ -70,9 +1174,10 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                       children: [
                         Container(
                           width: 1512.0,
-                          height: 132.0,
+                          height: 128.0,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
                           ),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -81,7 +1186,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                 width: 515.0,
                                 height: 125.0,
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryBackground,
                                 ),
                                 child: InkWell(
                                   splashColor: Colors.transparent,
@@ -94,7 +1200,7 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(8.0),
                                     child: Image.asset(
-                                      'assets/images/crazy.png',
+                                      'assets/images/yeye.png',
                                       width: 349.0,
                                       height: 200.0,
                                       fit: BoxFit.contain,
@@ -176,16 +1282,33 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                               ),
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    290.0, 15.0, 0.0, 0.0),
-                                child: Text(
-                                  'Contact',
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .override(
-                                        fontFamily: 'Outfit',
-                                        color: Colors.black,
-                                        fontSize: 18.0,
-                                      ),
+                                    230.0, 15.0, 0.0, 0.0),
+                                child: FFButtonWidget(
+                                  onPressed: () {
+                                    print('Button pressed ...');
+                                  },
+                                  text: 'Contact',
+                                  options: FFButtonOptions(
+                                    height: 40.0,
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        24.0, 0.0, 24.0, 0.0),
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 0.0),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          color: Color(0xFF838383),
+                                          fontSize: 20.0,
+                                        ),
+                                    elevation: 3.0,
+                                    borderSide: BorderSide(
+                                      width: 1.0,
+                                    ),
+                                    borderRadius: BorderRadius.circular(100.0),
+                                  ),
                                 ),
                               ),
                               Padding(
@@ -202,16 +1325,17 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                         24.0, 0.0, 24.0, 0.0),
                                     iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: Colors.white,
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
                                           fontFamily: 'Outfit',
-                                          color: Colors.black,
-                                          fontSize: 18.0,
+                                          color: Color(0xFF838383),
+                                          fontSize: 20.0,
                                         ),
                                     elevation: 3.0,
-                                    borderRadius: BorderRadius.circular(8.0),
+                                    borderRadius: BorderRadius.circular(100.0),
                                   ),
                                 ),
                               ),
@@ -263,7 +1387,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                           width: 1512.0,
                           height: 3000.0,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
                           ),
                           child: Align(
                             alignment: AlignmentDirectional(0.00, -1.00),
@@ -280,7 +1405,7 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Outfit',
-                                            color: Colors.black,
+                                            color: Color(0xFF838383),
                                             fontSize: 75.0,
                                           ),
                                     ),
@@ -295,7 +1420,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                       width: 600.0,
                                       height: 100.0,
                                       decoration: BoxDecoration(
-                                        color: Colors.white,
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                       ),
                                       child: Text(
                                         'We have you covered, whether you\'re an individual content creator, a brand, business or an agency.',
@@ -304,9 +1430,7 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Outfit',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .tertiaryText,
+                                              color: Color(0xFFC1C1C1),
                                               fontSize: 22.0,
                                             ),
                                       ),
@@ -343,14 +1467,10 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                         setState(() =>
                                             _model.switchValue = newValue!);
                                       },
-                                      activeColor:
-                                          FlutterFlowTheme.of(context).primary,
-                                      activeTrackColor:
-                                          FlutterFlowTheme.of(context).accent1,
-                                      inactiveTrackColor: Color(0xFF6580D9),
-                                      inactiveThumbColor:
-                                          FlutterFlowTheme.of(context)
-                                              .secondaryText,
+                                      activeColor: Color(0xFF6580D9),
+                                      activeTrackColor: Colors.white,
+                                      inactiveTrackColor: Color(0xFF545454),
+                                      inactiveThumbColor: Colors.white,
                                     ),
                                   ),
                                 ),
@@ -400,11 +1520,12 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                       width: 400.0,
                                       height: 800.0,
                                       decoration: BoxDecoration(
-                                        color: Colors.white,
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                         boxShadow: [
                                           BoxShadow(
                                             blurRadius: 8.0,
-                                            color: Color(0x33000000),
+                                            color: Color(0xFF303138),
                                             offset: Offset(0.0, 0.0),
                                             spreadRadius: 10.0,
                                           )
@@ -568,7 +1689,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFF838383),
                                                           fontSize: 25.0,
                                                           fontWeight:
                                                               FontWeight.normal,
@@ -590,7 +1712,7 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color: Colors.white,
                                                           fontSize: 40.0,
                                                         ),
                                               ),
@@ -634,7 +1756,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFFC1C1C1),
                                                           fontSize: 20.0,
                                                           fontWeight:
                                                               FontWeight.normal,
@@ -678,8 +1801,9 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                   .fromSTEB(
                                                       0.0, 0.0, 0.0, 20.0),
                                               child: FFButtonWidget(
-                                                onPressed: () {
-                                                  print('Button pressed ...');
+                                                onPressed: () async {
+                                                  scaffoldKey.currentState!
+                                                      .openDrawer();
                                                 },
                                                 text: 'Sign Up',
                                                 options: FFButtonOptions(
@@ -727,7 +1851,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFFC1C1C1),
                                                           fontSize: 18.0,
                                                         ),
                                               ),
@@ -748,7 +1873,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFFC1C1C1),
                                                           fontSize: 18.0,
                                                         ),
                                               ),
@@ -768,7 +1894,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFFC1C1C1),
                                                           fontSize: 18.0,
                                                         ),
                                               ),
@@ -788,7 +1915,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFFC1C1C1),
                                                           fontSize: 18.0,
                                                         ),
                                               ),
@@ -808,11 +1936,12 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                       width: 400.0,
                                       height: 800.0,
                                       decoration: BoxDecoration(
-                                        color: Colors.white,
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                         boxShadow: [
                                           BoxShadow(
                                             blurRadius: 8.0,
-                                            color: Color(0x33000000),
+                                            color: Color(0xFF303138),
                                             offset: Offset(0.0, 0.0),
                                             spreadRadius: 10.0,
                                           )
@@ -871,7 +2000,7 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color: Colors.white,
                                                           fontSize: 40.0,
                                                         ),
                                               ),
@@ -914,7 +2043,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFF838383),
                                                           fontSize: 25.0,
                                                           fontWeight:
                                                               FontWeight.normal,
@@ -937,7 +2067,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFFC1C1C1),
                                                           fontSize: 20.0,
                                                           fontWeight:
                                                               FontWeight.normal,
@@ -1133,7 +2264,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFFC1C1C1),
                                                           fontSize: 18.0,
                                                         ),
                                               ),
@@ -1153,7 +2285,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFFC1C1C1),
                                                           fontSize: 18.0,
                                                         ),
                                               ),
@@ -1173,7 +2306,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFFC1C1C1),
                                                           fontSize: 18.0,
                                                         ),
                                               ),
@@ -1193,7 +2327,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFFC1C1C1),
                                                           fontSize: 18.0,
                                                         ),
                                               ),
@@ -1213,11 +2348,12 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                       width: 400.0,
                                       height: 800.0,
                                       decoration: BoxDecoration(
-                                        color: Colors.white,
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
                                         boxShadow: [
                                           BoxShadow(
                                             blurRadius: 8.0,
-                                            color: Color(0x33000000),
+                                            color: Color(0xFF303138),
                                             offset: Offset(0.0, 0.0),
                                             spreadRadius: 10.0,
                                           )
@@ -1279,7 +2415,7 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color: Colors.white,
                                                         fontSize: 40.0,
                                                       ),
                                                 ),
@@ -1322,7 +2458,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 25.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -1345,7 +2482,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -1493,8 +2631,9 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 20.0),
                                                 child: FFButtonWidget(
-                                                  onPressed: () {
-                                                    print('Button pressed ...');
+                                                  onPressed: () async {
+                                                    scaffoldKey.currentState!
+                                                        .openEndDrawer();
                                                   },
                                                   text: 'Sign Up',
                                                   options: FFButtonOptions(
@@ -1542,7 +2681,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 18.0,
                                                       ),
                                                 ),
@@ -1556,13 +2696,14 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                     .fromSTEB(
                                                         70.0, 0.0, 20.0, 210.0),
                                                 child: Text(
-                                                  'GPT-4 powered predictive analytics and Social listening capabilities',
+                                                  'GPT-4 powered predictive analytics and internet analysis capabilities',
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 18.0,
                                                       ),
                                                 ),
@@ -1582,7 +2723,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 18.0,
                                                       ),
                                                 ),
@@ -1602,7 +2744,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 18.0,
                                                       ),
                                                 ),
@@ -1625,7 +2768,7 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Outfit',
-                                            color: Colors.black,
+                                            color: Color(0xFF838383),
                                             fontSize: 65.0,
                                           ),
                                     ),
@@ -1642,7 +2785,7 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Outfit',
-                                            color: Color(0xFF838383),
+                                            color: Color(0xFFC1C1C1),
                                             fontSize: 25.0,
                                           ),
                                     ),
@@ -1654,10 +2797,267 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                     width: 1512.0,
                                     height: 1300.0,
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
                                     ),
                                     child: Stack(
                                       children: [
+                                        Align(
+                                          alignment:
+                                              AlignmentDirectional(0.00, 0.00),
+                                          child: Stack(
+                                            children: [
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    0.00, 1.00),
+                                                child: Text(
+                                                  'Copyright © 2023 Tempus Creators. All rights reserved.',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        color:
+                                                            Color(0xFF6F6E6E),
+                                                        fontSize: 15.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                                ),
+                                              ),
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    1.00, 1.00),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 0.0, 65.0, 0.0),
+                                                  child: Icon(
+                                                    FFIcons.ktwitch,
+                                                    color: Color(0xFF838383),
+                                                    size: 50.0,
+                                                  ),
+                                                ),
+                                              ),
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    1.00, 1.00),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 0.0, 25.0, 0.0),
+                                                  child: FaIcon(
+                                                    FontAwesomeIcons.facebookF,
+                                                    color: Color(0xFF838383),
+                                                    size: 50.0,
+                                                  ),
+                                                ),
+                                              ),
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    1.00, 1.00),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 0.0, 185.0, 0.0),
+                                                  child: Icon(
+                                                    FFIcons.kinstagram,
+                                                    color: Color(0xFF838383),
+                                                    size: 50.0,
+                                                  ),
+                                                ),
+                                              ),
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    1.00, 1.00),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 0.0, 120.0, 0.0),
+                                                  child: FaIcon(
+                                                    FontAwesomeIcons.youtube,
+                                                    color: Color(0xFF838383),
+                                                    size: 50.0,
+                                                  ),
+                                                ),
+                                              ),
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    -1.00, 1.00),
+                                                child: InkWell(
+                                                  splashColor:
+                                                      Colors.transparent,
+                                                  focusColor:
+                                                      Colors.transparent,
+                                                  hoverColor:
+                                                      Colors.transparent,
+                                                  highlightColor:
+                                                      Colors.transparent,
+                                                  onTap: () async {
+                                                    context.pushNamed('TOSS');
+                                                  },
+                                                  child: Container(
+                                                    width: 100.0,
+                                                    height: 50.0,
+                                                    decoration: BoxDecoration(
+                                                      color: FlutterFlowTheme
+                                                              .of(context)
+                                                          .secondaryBackground,
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              100.0),
+                                                      border: Border.all(
+                                                        color:
+                                                            Color(0xFF838383),
+                                                        width: 2.0,
+                                                      ),
+                                                    ),
+                                                    child: Align(
+                                                      alignment:
+                                                          AlignmentDirectional(
+                                                              0.00, 0.00),
+                                                      child: InkWell(
+                                                        splashColor:
+                                                            Colors.transparent,
+                                                        focusColor:
+                                                            Colors.transparent,
+                                                        hoverColor:
+                                                            Colors.transparent,
+                                                        highlightColor:
+                                                            Colors.transparent,
+                                                        onTap: () async {
+                                                          context.pushNamed(
+                                                              'TOSS');
+                                                        },
+                                                        child: Text(
+                                                          'T.O.S',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Outfit',
+                                                                color: Color(
+                                                                    0xFF838383),
+                                                                fontSize: 30.0,
+                                                              ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    -1.00, 1.00),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          125.0, 0.0, 0.0, 0.0),
+                                                  child: InkWell(
+                                                    splashColor:
+                                                        Colors.transparent,
+                                                    focusColor:
+                                                        Colors.transparent,
+                                                    hoverColor:
+                                                        Colors.transparent,
+                                                    highlightColor:
+                                                        Colors.transparent,
+                                                    onTap: () async {
+                                                      context
+                                                          .pushNamed('privicy');
+                                                    },
+                                                    child: Container(
+                                                      width: 203.0,
+                                                      height: 50.0,
+                                                      decoration: BoxDecoration(
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .secondaryBackground,
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(
+                                                                    100.0),
+                                                        border: Border.all(
+                                                          color:
+                                                              Color(0xFF838383),
+                                                          width: 2.0,
+                                                        ),
+                                                      ),
+                                                      child: Align(
+                                                        alignment:
+                                                            AlignmentDirectional(
+                                                                0.00, 0.00),
+                                                        child: InkWell(
+                                                          splashColor: Colors
+                                                              .transparent,
+                                                          focusColor: Colors
+                                                              .transparent,
+                                                          hoverColor: Colors
+                                                              .transparent,
+                                                          highlightColor: Colors
+                                                              .transparent,
+                                                          onTap: () async {
+                                                            context.pushNamed(
+                                                                'privicy');
+                                                          },
+                                                          child: Text(
+                                                            'Privacy Policy',
+                                                            textAlign: TextAlign
+                                                                .center,
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Outfit',
+                                                                  color: Color(
+                                                                      0xFF838383),
+                                                                  fontSize:
+                                                                      30.0,
+                                                                ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    -1.00, 1.00),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(500.0, 0.0, 0.0,
+                                                          130.0),
+                                                  child: Container(
+                                                    width: 4.0,
+                                                    height: 530.0,
+                                                    decoration: BoxDecoration(
+                                                      color: Color(0xFF303138),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                              Align(
+                                                alignment: AlignmentDirectional(
+                                                    1.00, 1.00),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(0.0, 0.0, 500.0,
+                                                          130.0),
+                                                  child: Container(
+                                                    width: 4.0,
+                                                    height: 530.0,
+                                                    decoration: BoxDecoration(
+                                                      color: Color(0xFF303138),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
                                         Align(
                                           alignment: AlignmentDirectional(
                                               -1.00, -1.00),
@@ -1672,7 +3072,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 40.0,
                                                       ),
                                             ),
@@ -1692,7 +3093,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 40.0,
                                                       ),
                                             ),
@@ -1712,7 +3114,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFF838383),
                                                         fontSize: 40.0,
                                                       ),
                                             ),
@@ -1744,20 +3147,23 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                     EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 textStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFF838383),
                                                           fontSize: 35.0,
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),
                                                 borderSide: BorderSide(
-                                                  color: Colors.black,
-                                                  width: 1.0,
+                                                  color: Color(0xFF838383),
+                                                  width: 2.0,
                                                 ),
                                                 borderRadius:
                                                     BorderRadius.circular(15.0),
@@ -1840,21 +3246,23 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                     EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 textStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFF838383),
                                                           fontSize: 35.0,
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),
-                                                elevation: 3.0,
                                                 borderSide: BorderSide(
-                                                  color: Colors.black,
-                                                  width: 1.0,
+                                                  color: Color(0xFF838383),
+                                                  width: 2.0,
                                                 ),
                                                 borderRadius:
                                                     BorderRadius.circular(15.0),
@@ -1873,16 +3281,15 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                     0.0, 400.0, 0.0, 0.0),
                                             child: Text(
                                               'Fetures Breakdown',
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        color: Colors.black,
-                                                        fontSize: 35.0,
-                                                        fontWeight:
-                                                            FontWeight.w500,
-                                                      ),
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Outfit',
+                                                    color: Color(0xFF838383),
+                                                    fontSize: 35.0,
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
                                             ),
                                           ),
                                         ),
@@ -1893,7 +3300,7 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                             width: 1380.0,
                                             height: 4.0,
                                             decoration: BoxDecoration(
-                                              color: Color(0xFFC1C1C1),
+                                              color: Color(0xFF303138),
                                             ),
                                           ),
                                         ),
@@ -1917,11 +3324,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                             width: 350.0,
                                             height: 100.0,
                                             decoration: BoxDecoration(
-                                              color: Colors.white,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
                                               boxShadow: [
                                                 BoxShadow(
                                                   blurRadius: 8.0,
-                                                  color: Color(0x33000000),
+                                                  color: Color(0xFF303138),
                                                   offset: Offset(0.0, 0.0),
                                                   spreadRadius: 10.0,
                                                 )
@@ -1940,7 +3349,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFFC1C1C1),
                                                           fontSize: 20.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -1960,11 +3370,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -1982,7 +3394,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -2003,11 +3416,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -2026,7 +3441,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -2047,11 +3463,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -2070,7 +3488,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -2091,11 +3510,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -2107,14 +3528,15 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                 alignment: AlignmentDirectional(
                                                     0.00, 0.00),
                                                 child: Text(
-                                                  'Basic tracking for up to 3 social platforms\nDaily metrics on follower counts, likes, and shares\nSmart Content Assistant',
+                                                  'Basic tracking for 4 social platforms\nDaily metrics on follower counts, likes, and shares\nSmart Content Assistant',
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -2135,11 +3557,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -2158,7 +3582,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -2179,11 +3604,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -2202,7 +3629,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -2223,11 +3651,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -2246,7 +3676,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -2267,11 +3698,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -2290,7 +3723,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -2311,11 +3745,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -2327,14 +3763,15 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                 alignment: AlignmentDirectional(
                                                     0.00, 0.00),
                                                 child: Text(
-                                                  'GPT-4 powered predictive analytics\nSocial listening capabilities\n65,000 Tokens every month',
+                                                  'GPT-4 powered predictive analytics\ninternet analysis capabilities',
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -2355,11 +3792,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -2371,14 +3810,15 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                 alignment: AlignmentDirectional(
                                                     0.00, 0.00),
                                                 child: Text(
-                                                  'One-on-one brainstorming sessions with AI\n24/7 Personalized Support\n150,000 Tokens every month ',
+                                                  'One-on-one brainstorming sessions with AI\n24/7 Personalized Support',
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -2399,11 +3839,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -2415,14 +3857,15 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                 alignment: AlignmentDirectional(
                                                     0.00, 0.00),
                                                 child: Text(
-                                                  'Sentiment analysis of recent posts\nStandard Email Support\n5,000 tokens every month',
+                                                  'Sentiment analysis of recent posts\nStandard Email Support',
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -2443,11 +3886,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -2466,7 +3911,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -2487,11 +3933,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -2507,7 +3955,8 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
-                                                          color: Colors.black,
+                                                          color:
+                                                              Color(0xFFC1C1C1),
                                                           fontSize: 20.0,
                                                           fontWeight:
                                                               FontWeight.w500,
@@ -2527,11 +3976,13 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                               width: 350.0,
                                               height: 100.0,
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 8.0,
-                                                    color: Color(0x33000000),
+                                                    color: Color(0xFF303138),
                                                     offset: Offset(0.0, 0.0),
                                                     spreadRadius: 10.0,
                                                   )
@@ -2543,14 +3994,15 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                 alignment: AlignmentDirectional(
                                                     0.00, 0.00),
                                                 child: Text(
-                                                  'A dedicated account manager\nPriority feature requests and troubleshooting\nQuarterly performance reviews to guide your strategy.\n',
+                                                  'A dedicated account manager\nPriority feature requests and troubleshooting\nQuarterly performance reviews to guide your strategy.',
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        color: Colors.black,
+                                                        color:
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 20.0,
                                                         fontWeight:
                                                             FontWeight.w500,
@@ -2558,249 +4010,6 @@ class _PriceingsWidgetState extends State<PriceingsWidget> {
                                                 ),
                                               ),
                                             ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment:
-                                              AlignmentDirectional(0.00, 0.00),
-                                          child: Stack(
-                                            children: [
-                                              Align(
-                                                alignment: AlignmentDirectional(
-                                                    0.00, 1.00),
-                                                child: Text(
-                                                  'Copyright © 2023 Tempus Creators. All rights reserved.',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        color:
-                                                            Color(0xFF6F6E6E),
-                                                        fontSize: 15.0,
-                                                        fontWeight:
-                                                            FontWeight.normal,
-                                                      ),
-                                                ),
-                                              ),
-                                              Align(
-                                                alignment: AlignmentDirectional(
-                                                    1.00, 1.00),
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 50.0, 0.0),
-                                                  child: Icon(
-                                                    FFIcons.ktwitch,
-                                                    color: Colors.black,
-                                                    size: 50.0,
-                                                  ),
-                                                ),
-                                              ),
-                                              Align(
-                                                alignment: AlignmentDirectional(
-                                                    1.00, 1.00),
-                                                child: Icon(
-                                                  FFIcons.klinkedin,
-                                                  color: Colors.black,
-                                                  size: 50.0,
-                                                ),
-                                              ),
-                                              Align(
-                                                alignment: AlignmentDirectional(
-                                                    1.00, 1.00),
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 150.0, 0.0),
-                                                  child: Icon(
-                                                    FFIcons.kinstagram,
-                                                    color: Colors.black,
-                                                    size: 50.0,
-                                                  ),
-                                                ),
-                                              ),
-                                              Align(
-                                                alignment: AlignmentDirectional(
-                                                    1.00, 1.00),
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 100.0, 0.0),
-                                                  child: Icon(
-                                                    FFIcons.ktwitter,
-                                                    color: Colors.black,
-                                                    size: 50.0,
-                                                  ),
-                                                ),
-                                              ),
-                                              Align(
-                                                alignment: AlignmentDirectional(
-                                                    -1.00, 1.00),
-                                                child: InkWell(
-                                                  splashColor:
-                                                      Colors.transparent,
-                                                  focusColor:
-                                                      Colors.transparent,
-                                                  hoverColor:
-                                                      Colors.transparent,
-                                                  highlightColor:
-                                                      Colors.transparent,
-                                                  onTap: () async {
-                                                    context.pushNamed('TOSS');
-                                                  },
-                                                  child: Container(
-                                                    width: 100.0,
-                                                    height: 50.0,
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.white,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              100.0),
-                                                      border: Border.all(
-                                                        width: 2.0,
-                                                      ),
-                                                    ),
-                                                    child: Align(
-                                                      alignment:
-                                                          AlignmentDirectional(
-                                                              0.00, 0.00),
-                                                      child: InkWell(
-                                                        splashColor:
-                                                            Colors.transparent,
-                                                        focusColor:
-                                                            Colors.transparent,
-                                                        hoverColor:
-                                                            Colors.transparent,
-                                                        highlightColor:
-                                                            Colors.transparent,
-                                                        onTap: () async {
-                                                          context.pushNamed(
-                                                              'TOSS');
-                                                        },
-                                                        child: Text(
-                                                          'T.O.S',
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .bodyMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Outfit',
-                                                                color: Colors
-                                                                    .black,
-                                                                fontSize: 30.0,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                              Align(
-                                                alignment: AlignmentDirectional(
-                                                    -1.00, 1.00),
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          125.0, 0.0, 0.0, 0.0),
-                                                  child: InkWell(
-                                                    splashColor:
-                                                        Colors.transparent,
-                                                    focusColor:
-                                                        Colors.transparent,
-                                                    hoverColor:
-                                                        Colors.transparent,
-                                                    highlightColor:
-                                                        Colors.transparent,
-                                                    onTap: () async {
-                                                      context
-                                                          .pushNamed('privicy');
-                                                    },
-                                                    child: Container(
-                                                      width: 203.0,
-                                                      height: 50.0,
-                                                      decoration: BoxDecoration(
-                                                        color: Colors.white,
-                                                        borderRadius:
-                                                            BorderRadius
-                                                                .circular(
-                                                                    100.0),
-                                                        border: Border.all(
-                                                          width: 2.0,
-                                                        ),
-                                                      ),
-                                                      child: Align(
-                                                        alignment:
-                                                            AlignmentDirectional(
-                                                                0.00, 0.00),
-                                                        child: InkWell(
-                                                          splashColor: Colors
-                                                              .transparent,
-                                                          focusColor: Colors
-                                                              .transparent,
-                                                          hoverColor: Colors
-                                                              .transparent,
-                                                          highlightColor: Colors
-                                                              .transparent,
-                                                          onTap: () async {
-                                                            context.pushNamed(
-                                                                'privicy');
-                                                          },
-                                                          child: Text(
-                                                            'Privacy Policy',
-                                                            textAlign: TextAlign
-                                                                .center,
-                                                            style: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .bodyMedium
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
-                                                                  color: Colors
-                                                                      .black,
-                                                                  fontSize:
-                                                                      30.0,
-                                                                ),
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                              Align(
-                                                alignment: AlignmentDirectional(
-                                                    -1.00, 1.00),
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(500.0, 0.0, 0.0,
-                                                          130.0),
-                                                  child: Container(
-                                                    width: 4.0,
-                                                    height: 530.0,
-                                                    decoration: BoxDecoration(
-                                                      color: Color(0xFFC1C1C1),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                              Align(
-                                                alignment: AlignmentDirectional(
-                                                    1.00, 1.00),
-                                                child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(0.0, 0.0, 500.0,
-                                                          130.0),
-                                                  child: Container(
-                                                    width: 4.0,
-                                                    height: 530.0,
-                                                    decoration: BoxDecoration(
-                                                      color: Color(0xFFC1C1C1),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
                                           ),
                                         ),
                                       ],

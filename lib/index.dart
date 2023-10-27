@@ -17,3 +17,11 @@ export '/pages/privicypolicy_2/privicypolicy2_widget.dart'
     show Privicypolicy2Widget;
 export '/pages/t_o_s_2/t_o_s2_widget.dart' show TOS2Widget;
 export '/pages/account_2/account2_widget.dart' show Account2Widget;
+export '/blogs/blogs1/blogs1_widget.dart' show Blogs1Widget;
+export '/blogs/blogs2/blogs2_widget.dart' show Blogs2Widget;
+export '/blogs/blogs3/blogs3_widget.dart' show Blogs3Widget;
+export '/blogs/blogs4/blogs4_widget.dart' show Blogs4Widget;
+export '/blogs/blogs5/blogs5_widget.dart' show Blogs5Widget;
+export '/blogs/blogs6/blogs6_widget.dart' show Blogs6Widget;
+export '/blogs/blogs7/blogs7_widget.dart' show Blogs7Widget;
+export '/blogs/blogs8/blogs8_widget.dart' show Blogs8Widget;
