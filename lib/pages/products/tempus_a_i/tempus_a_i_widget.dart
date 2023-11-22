@@ -29,6 +29,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
 
     _model.textController ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();
+
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
