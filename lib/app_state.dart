@@ -42,7 +42,7 @@ class FFAppState extends ChangeNotifier {
 
   late SharedPreferences prefs;
 
-  bool _darkMode = false;
+  bool _darkMode = true;
   bool get darkMode => _darkMode;
   set darkMode(bool _value) {
     _darkMode = _value;

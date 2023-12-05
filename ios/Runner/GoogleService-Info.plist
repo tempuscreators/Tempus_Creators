@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLIENT_ID</key>
+	<string>272451151531-grfrfr4qjj5guog4kl83qb97imia9fk3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.272451151531-grfrfr4qjj5guog4kl83qb97imia9fk3</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>272451151531-up0thlvhgtf1a3k2rhsure5khvoeu0ak.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBpPhh5Kl_oy_7A1zfQCCHY4lVrGuWbeok</string>
 	<key>GCM_SENDER_ID</key>
@@ -26,5 +32,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:272451151531:ios:b563995256308c676079ee</string>
+	<key>DATABASE_URL</key>
+	<string>https://tempus-creators-db-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "272451151531",
+    "firebase_url": "https://tempus-creators-db-default-rtdb.firebaseio.com",
     "project_id": "tempus-creators-db",
     "storage_bucket": "tempus-creators-db.appspot.com"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.tempus.admin"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "272451151531-up0thlvhgtf1a3k2rhsure5khvoeu0ak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tempus.admin",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "272451151531-ku9k43feca7o5b2qj4klkfn9l1jcas6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDbeERn_PPHCE4_wWCTnW3NgmSQHoxiPUY"
@@ -20,7 +34,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272451151531-ku9k43feca7o5b2qj4klkfn9l1jcas6d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "272451151531-grfrfr4qjj5guog4kl83qb97imia9fk3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tempus.admin"
+              }
+            }
+          ]
         }
       }
     }

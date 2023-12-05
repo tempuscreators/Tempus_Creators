@@ -330,6 +330,40 @@ class TestFBAuthCall {
   }
 }
 
+class InstagramPostLikesCallCall {
+  static Future<ApiCallResponse> call() async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'InstagramPostLikesCall',
+      apiUrl:
+          'https://graph.instagram.com/\$mediaId?fields=id,media_type,media_url,username,timestamp,like_count&access_token={access-token}',
+      callType: ApiCallType.GET,
+      headers: {},
+      params: {},
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+    );
+  }
+}
+
+class InstagramOauthCall {
+  static Future<ApiCallResponse> call() async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'instagram oauth',
+      apiUrl:
+          'https://api.instagram.com/oauth/authorize?client_id=3470296316618709 &redirect_uri=https://app.flutterflow.io/debug&scope=user_profile,user_media&response_type=code',
+      callType: ApiCallType.GET,
+      headers: {},
+      params: {},
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+    );
+  }
+}
+
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;

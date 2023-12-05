@@ -2,7 +2,7 @@
     package="com.tempus.admin"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
         android:label="Tempus Admin"
@@ -57,6 +57,6 @@
             android:value="2" />
 
 
-
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
     </application>
 </manifest>

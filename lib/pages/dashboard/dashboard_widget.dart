@@ -1,4 +1,3 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/components/anylitics1_widget.dart';
 import '/components/anylitics2_widget.dart';
@@ -24,6 +23,7 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'dashboard_model.dart';
@@ -62,9 +62,6 @@ class _DashboardWidgetState extends State<DashboardWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => DashboardModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {});
 
     setupAnimations(
       animationsMap.values.where((anim) =>
@@ -460,17 +457,15 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                                 return Center(
                                                                   child:
                                                                       SizedBox(
-                                                                    width: 50.0,
+                                                                    width: 24.0,
                                                                     height:
-                                                                        50.0,
+                                                                        24.0,
                                                                     child:
-                                                                        CircularProgressIndicator(
-                                                                      valueColor:
-                                                                          AlwaysStoppedAnimation<
-                                                                              Color>(
-                                                                        FlutterFlowTheme.of(context)
-                                                                            .primary,
-                                                                      ),
+                                                                        SpinKitFoldingCube(
+                                                                      color: Color(
+                                                                          0xFF6580D9),
+                                                                      size:
+                                                                          24.0,
                                                                     ),
                                                                   ),
                                                                 );
@@ -558,17 +553,13 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                       if (!snapshot.hasData) {
                                                         return Center(
                                                           child: SizedBox(
-                                                            width: 50.0,
-                                                            height: 50.0,
+                                                            width: 24.0,
+                                                            height: 24.0,
                                                             child:
-                                                                CircularProgressIndicator(
-                                                              valueColor:
-                                                                  AlwaysStoppedAnimation<
-                                                                      Color>(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primary,
-                                                              ),
+                                                                SpinKitFoldingCube(
+                                                              color: Color(
+                                                                  0xFF6580D9),
+                                                              size: 24.0,
                                                             ),
                                                           ),
                                                         );
@@ -854,17 +845,13 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                   if (!snapshot.hasData) {
                                                     return Center(
                                                       child: SizedBox(
-                                                        width: 50.0,
-                                                        height: 50.0,
+                                                        width: 24.0,
+                                                        height: 24.0,
                                                         child:
-                                                            CircularProgressIndicator(
-                                                          valueColor:
-                                                              AlwaysStoppedAnimation<
-                                                                  Color>(
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                          ),
+                                                            SpinKitFoldingCube(
+                                                          color:
+                                                              Color(0xFF6580D9),
+                                                          size: 24.0,
                                                         ),
                                                       ),
                                                     );
@@ -907,17 +894,13 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                   if (!snapshot.hasData) {
                                                     return Center(
                                                       child: SizedBox(
-                                                        width: 50.0,
-                                                        height: 50.0,
+                                                        width: 24.0,
+                                                        height: 24.0,
                                                         child:
-                                                            CircularProgressIndicator(
-                                                          valueColor:
-                                                              AlwaysStoppedAnimation<
-                                                                  Color>(
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                          ),
+                                                            SpinKitFoldingCube(
+                                                          color:
+                                                              Color(0xFF6580D9),
+                                                          size: 24.0,
                                                         ),
                                                       ),
                                                     );
@@ -979,17 +962,13 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                   if (!snapshot.hasData) {
                                                     return Center(
                                                       child: SizedBox(
-                                                        width: 50.0,
-                                                        height: 50.0,
+                                                        width: 24.0,
+                                                        height: 24.0,
                                                         child:
-                                                            CircularProgressIndicator(
-                                                          valueColor:
-                                                              AlwaysStoppedAnimation<
-                                                                  Color>(
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                          ),
+                                                            SpinKitFoldingCube(
+                                                          color:
+                                                              Color(0xFF6580D9),
+                                                          size: 24.0,
                                                         ),
                                                       ),
                                                     );
@@ -1031,28 +1010,20 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                   if (!snapshot.hasData) {
                                                     return Center(
                                                       child: SizedBox(
-                                                        width: 50.0,
-                                                        height: 50.0,
+                                                        width: 24.0,
+                                                        height: 24.0,
                                                         child:
-                                                            CircularProgressIndicator(
-                                                          valueColor:
-                                                              AlwaysStoppedAnimation<
-                                                                  Color>(
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .primary,
-                                                          ),
+                                                            SpinKitFoldingCube(
+                                                          color:
+                                                              Color(0xFF6580D9),
+                                                          size: 24.0,
                                                         ),
                                                       ),
                                                     );
                                                   }
                                                   List<UsersRecord>
                                                       statCard1UsersRecordList =
-                                                      snapshot.data!
-                                                          .where((u) =>
-                                                              u.uid !=
-                                                              currentUserUid)
-                                                          .toList();
+                                                      snapshot.data!;
                                                   return InkWell(
                                                     splashColor:
                                                         Colors.transparent,
@@ -1125,17 +1096,11 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                               if (!snapshot.hasData) {
                                                 return Center(
                                                   child: SizedBox(
-                                                    width: 50.0,
-                                                    height: 50.0,
-                                                    child:
-                                                        CircularProgressIndicator(
-                                                      valueColor:
-                                                          AlwaysStoppedAnimation<
-                                                              Color>(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .primary,
-                                                      ),
+                                                    width: 24.0,
+                                                    height: 24.0,
+                                                    child: SpinKitFoldingCube(
+                                                      color: Color(0xFF6580D9),
+                                                      size: 24.0,
                                                     ),
                                                   ),
                                                 );
@@ -1211,17 +1176,11 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                               if (!snapshot.hasData) {
                                                 return Center(
                                                   child: SizedBox(
-                                                    width: 50.0,
-                                                    height: 50.0,
-                                                    child:
-                                                        CircularProgressIndicator(
-                                                      valueColor:
-                                                          AlwaysStoppedAnimation<
-                                                              Color>(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .primary,
-                                                      ),
+                                                    width: 24.0,
+                                                    height: 24.0,
+                                                    child: SpinKitFoldingCube(
+                                                      color: Color(0xFF6580D9),
+                                                      size: 24.0,
                                                     ),
                                                   ),
                                                 );
@@ -1344,7 +1303,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                                               height: 36.0,
                                                                               decoration: BoxDecoration(
                                                                                 color: FlutterFlowTheme.of(context).tertiaryBackground,
-                                                                                borderRadius: BorderRadius.circular(4.0),
+                                                                                borderRadius: BorderRadius.circular(6.0),
                                                                               ),
                                                                               alignment: AlignmentDirectional(0.00, 0.00),
                                                                               child: Padding(
@@ -1441,17 +1400,11 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                               if (!snapshot.hasData) {
                                                 return Center(
                                                   child: SizedBox(
-                                                    width: 50.0,
-                                                    height: 50.0,
-                                                    child:
-                                                        CircularProgressIndicator(
-                                                      valueColor:
-                                                          AlwaysStoppedAnimation<
-                                                              Color>(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .primary,
-                                                      ),
+                                                    width: 24.0,
+                                                    height: 24.0,
+                                                    child: SpinKitFoldingCube(
+                                                      color: Color(0xFF6580D9),
+                                                      size: 24.0,
                                                     ),
                                                   ),
                                                 );
@@ -2095,17 +2048,11 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                               if (!snapshot.hasData) {
                                                 return Center(
                                                   child: SizedBox(
-                                                    width: 50.0,
-                                                    height: 50.0,
-                                                    child:
-                                                        CircularProgressIndicator(
-                                                      valueColor:
-                                                          AlwaysStoppedAnimation<
-                                                              Color>(
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .primary,
-                                                      ),
+                                                    width: 24.0,
+                                                    height: 24.0,
+                                                    child: SpinKitFoldingCube(
+                                                      color: Color(0xFF6580D9),
+                                                      size: 24.0,
                                                     ),
                                                   ),
                                                 );

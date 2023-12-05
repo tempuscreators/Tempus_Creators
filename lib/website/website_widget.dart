@@ -1,31 +1,35 @@
+import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'temp21_model.dart';
-export 'temp21_model.dart';
+import 'website_model.dart';
+export 'website_model.dart';
 
-class Temp21Widget extends StatefulWidget {
-  const Temp21Widget({Key? key}) : super(key: key);
+class WebsiteWidget extends StatefulWidget {
+  const WebsiteWidget({Key? key}) : super(key: key);
 
   @override
-  _Temp21WidgetState createState() => _Temp21WidgetState();
+  _WebsiteWidgetState createState() => _WebsiteWidgetState();
 }
 
-class _Temp21WidgetState extends State<Temp21Widget> {
-  late Temp21Model _model;
+class _WebsiteWidgetState extends State<WebsiteWidget> {
+  late WebsiteModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Temp21Model());
+    _model = createModel(context, () => WebsiteModel());
 
     _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode1 ??= FocusNode();
@@ -41,6 +45,21 @@ class _Temp21WidgetState extends State<Temp21Widget> {
 
     _model.textController5 ??= TextEditingController();
     _model.textFieldFocusNode5 ??= FocusNode();
+
+    _model.igpasswordController ??= TextEditingController();
+    _model.igpasswordFocusNode ??= FocusNode();
+
+    _model.lgemailController ??= TextEditingController();
+    _model.lgemailFocusNode ??= FocusNode();
+
+    _model.caemailController ??= TextEditingController();
+    _model.caemailFocusNode ??= FocusNode();
+
+    _model.capasswordController ??= TextEditingController();
+    _model.capasswordFocusNode ??= FocusNode();
+
+    _model.caconfirmpasswordController ??= TextEditingController();
+    _model.caconfirmpasswordFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
@@ -66,7 +85,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
     context.watch<FFAppState>();
 
     return Title(
-        title: 'temp2_1',
+        title: 'website',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
         child: GestureDetector(
           onTap: () => _model.unfocusNode.canRequestFocus
@@ -75,8 +94,701 @@ class _Temp21WidgetState extends State<Temp21Widget> {
           child: Scaffold(
             key: scaffoldKey,
             backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-            drawer: Drawer(
-              elevation: 16.0,
+            drawer: Container(
+              width: 350.0,
+              child: Drawer(
+                child: Container(
+                  width: double.infinity,
+                  height: 100.0,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                  ),
+                  child: Stack(
+                    children: [
+                      Align(
+                        alignment: AlignmentDirectional(0.00, 0.00),
+                        child: Container(
+                          width: 1000.0,
+                          height: double.infinity,
+                          decoration: BoxDecoration(
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 8.0,
+                                color: Color(0xFF323232),
+                                offset: Offset(0.0, 0.0),
+                                spreadRadius: 10.0,
+                              )
+                            ],
+                            borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(0.0),
+                              bottomRight: Radius.circular(30.0),
+                              topLeft: Radius.circular(0.0),
+                              topRight: Radius.circular(30.0),
+                            ),
+                          ),
+                          child: Stack(
+                            children: [
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 75.0, 0.0, 0.0),
+                                  child: Text(
+                                    'User Login',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          color: Color(0xFF838383),
+                                          fontSize: 32.0,
+                                        ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      15.0, 400.0, 15.0, 0.0),
+                                  child: TextFormField(
+                                    controller: _model.igpasswordController,
+                                    focusNode: _model.igpasswordFocusNode,
+                                    autofocus: true,
+                                    obscureText: !_model.igpasswordVisibility,
+                                    decoration: InputDecoration(
+                                      labelText: 'Password...',
+                                      labelStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .override(
+                                            fontFamily: 'Noto Sans HK',
+                                            color: Color(0xFF838383),
+                                            fontSize: 22.0,
+                                            useGoogleFonts: false,
+                                          ),
+                                      hintStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .override(
+                                            fontFamily: 'Noto Sans HK',
+                                            color: Color(0xFF838383),
+                                            fontSize: 22.0,
+                                            useGoogleFonts: false,
+                                          ),
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Color(0xFF6580D9),
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Color(0x00000000),
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      errorBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: FlutterFlowTheme.of(context)
+                                              .error,
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      focusedErrorBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: FlutterFlowTheme.of(context)
+                                              .error,
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      suffixIcon: InkWell(
+                                        onTap: () => setState(
+                                          () => _model.igpasswordVisibility =
+                                              !_model.igpasswordVisibility,
+                                        ),
+                                        focusNode:
+                                            FocusNode(skipTraversal: true),
+                                        child: Icon(
+                                          _model.igpasswordVisibility
+                                              ? Icons.visibility_outlined
+                                              : Icons.visibility_off_outlined,
+                                          color: Color(0xFF6580D9),
+                                          size: 22,
+                                        ),
+                                      ),
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          color: Color(0xFF838383),
+                                          fontSize: 22.0,
+                                        ),
+                                    validator: _model
+                                        .igpasswordControllerValidator
+                                        .asValidator(context),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      15.0, 325.0, 15.0, 0.0),
+                                  child: TextFormField(
+                                    controller: _model.lgemailController,
+                                    focusNode: _model.lgemailFocusNode,
+                                    autofocus: true,
+                                    obscureText: false,
+                                    decoration: InputDecoration(
+                                      labelText: 'Email...',
+                                      labelStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .override(
+                                            fontFamily: 'Noto Sans HK',
+                                            color: Color(0xFF838383),
+                                            fontSize: 22.0,
+                                            useGoogleFonts: false,
+                                          ),
+                                      hintStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .override(
+                                            fontFamily: 'Noto Sans HK',
+                                            color: Color(0xFF838383),
+                                            fontSize: 22.0,
+                                            useGoogleFonts: false,
+                                          ),
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Color(0xFF6580D9),
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Color(0x00000000),
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      errorBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: FlutterFlowTheme.of(context)
+                                              .error,
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      focusedErrorBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: FlutterFlowTheme.of(context)
+                                              .error,
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          color: Color(0xFF838383),
+                                          fontSize: 22.0,
+                                        ),
+                                    textAlign: TextAlign.center,
+                                    validator: _model.lgemailControllerValidator
+                                        .asValidator(context),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 475.0, 0.0, 0.0),
+                                  child: FFButtonWidget(
+                                    onPressed: () async {
+                                      GoRouter.of(context).prepareAuthEvent();
+
+                                      final user =
+                                          await authManager.signInWithEmail(
+                                        context,
+                                        _model.lgemailController.text,
+                                        _model.igpasswordController.text,
+                                      );
+                                      if (user == null) {
+                                        return;
+                                      }
+
+                                      setState(() {
+                                        _model.igpasswordController?.clear();
+                                        _model.lgemailController?.clear();
+                                      });
+
+                                      context.goNamedAuth(
+                                          'Tempus_AI', context.mounted);
+                                    },
+                                    text: 'Log In',
+                                    options: FFButtonOptions(
+                                      height: 40.0,
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          24.0, 0.0, 24.0, 0.0),
+                                      iconPadding:
+                                          EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
+                                      color: Color(0xFF6580D9),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .override(
+                                            fontFamily: 'Outfit',
+                                            color: Colors.white,
+                                          ),
+                                      elevation: 3.0,
+                                      borderSide: BorderSide(
+                                        color: Colors.transparent,
+                                        width: 1.0,
+                                      ),
+                                      borderRadius: BorderRadius.circular(30.0),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 135.0, 0.0, 0.0),
+                                  child: Icon(
+                                    Icons.login,
+                                    color: Color(0xFF838383),
+                                    size: 150.0,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            endDrawer: Container(
+              width: 350.0,
+              child: Drawer(
+                child: Container(
+                  width: double.infinity,
+                  height: 100.0,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.of(context).secondaryBackground,
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 4.0,
+                        color: Color(0x33000000),
+                        offset: Offset(0.0, 2.0),
+                      )
+                    ],
+                    borderRadius: BorderRadius.circular(0.0),
+                  ),
+                  child: Stack(
+                    children: [
+                      Align(
+                        alignment: AlignmentDirectional(0.00, 0.00),
+                        child: Container(
+                          width: 1000.0,
+                          height: double.infinity,
+                          decoration: BoxDecoration(
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 8.0,
+                                color: Color(0xFF323232),
+                                offset: Offset(0.0, 0.0),
+                                spreadRadius: 10.0,
+                              )
+                            ],
+                            borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(30.0),
+                              bottomRight: Radius.circular(0.0),
+                              topLeft: Radius.circular(30.0),
+                              topRight: Radius.circular(0.0),
+                            ),
+                          ),
+                          child: Stack(
+                            children: [
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 75.0, 0.0, 0.0),
+                                  child: Text(
+                                    'Create Account',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          color: Color(0xFF838383),
+                                          fontSize: 32.0,
+                                        ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 135.0, 0.0, 0.0),
+                                  child: Icon(
+                                    Icons.create_sharp,
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
+                                    size: 150.0,
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      15.0, 325.0, 15.0, 0.0),
+                                  child: TextFormField(
+                                    controller: _model.caemailController,
+                                    focusNode: _model.caemailFocusNode,
+                                    autofocus: true,
+                                    obscureText: false,
+                                    decoration: InputDecoration(
+                                      labelText: 'Email...',
+                                      labelStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .override(
+                                            fontFamily: 'Noto Sans HK',
+                                            color: Color(0xFF838383),
+                                            fontSize: 22.0,
+                                            useGoogleFonts: false,
+                                          ),
+                                      hintStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .override(
+                                            fontFamily: 'Noto Sans HK',
+                                            color: Color(0xFF838383),
+                                            fontSize: 22.0,
+                                            useGoogleFonts: false,
+                                          ),
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Color(0xFF6580D9),
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Color(0xFF6580D9),
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      errorBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: FlutterFlowTheme.of(context)
+                                              .error,
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      focusedErrorBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: FlutterFlowTheme.of(context)
+                                              .error,
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          color: Color(0xFF838383),
+                                          fontSize: 22.0,
+                                        ),
+                                    validator: _model.caemailControllerValidator
+                                        .asValidator(context),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      15.0, 400.0, 15.0, 0.0),
+                                  child: TextFormField(
+                                    controller: _model.capasswordController,
+                                    focusNode: _model.capasswordFocusNode,
+                                    autofocus: true,
+                                    obscureText: !_model.capasswordVisibility,
+                                    decoration: InputDecoration(
+                                      labelText: 'Password...',
+                                      labelStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .override(
+                                            fontFamily: 'Noto Sans HK',
+                                            color: Color(0xFF838383),
+                                            fontSize: 22.0,
+                                            useGoogleFonts: false,
+                                          ),
+                                      hintStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .override(
+                                            fontFamily: 'Noto Sans HK',
+                                            color: Color(0xFF838383),
+                                            fontSize: 22.0,
+                                            useGoogleFonts: false,
+                                          ),
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Color(0xFF6580D9),
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Color(0xFF6580D9),
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      errorBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: FlutterFlowTheme.of(context)
+                                              .error,
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      focusedErrorBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: FlutterFlowTheme.of(context)
+                                              .error,
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      suffixIcon: InkWell(
+                                        onTap: () => setState(
+                                          () => _model.capasswordVisibility =
+                                              !_model.capasswordVisibility,
+                                        ),
+                                        focusNode:
+                                            FocusNode(skipTraversal: true),
+                                        child: Icon(
+                                          _model.capasswordVisibility
+                                              ? Icons.visibility_outlined
+                                              : Icons.visibility_off_outlined,
+                                          size: 22,
+                                        ),
+                                      ),
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          color: Color(0xFF838383),
+                                          fontSize: 22.0,
+                                        ),
+                                    validator: _model
+                                        .capasswordControllerValidator
+                                        .asValidator(context),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 550.0, 0.0, 0.0),
+                                  child: FFButtonWidget(
+                                    onPressed: () async {
+                                      GoRouter.of(context).prepareAuthEvent();
+                                      if (_model.capasswordController.text !=
+                                          _model.caconfirmpasswordController
+                                              .text) {
+                                        ScaffoldMessenger.of(context)
+                                            .showSnackBar(
+                                          SnackBar(
+                                            content: Text(
+                                              'Passwords don\'t match!',
+                                            ),
+                                          ),
+                                        );
+                                        return;
+                                      }
+
+                                      final user = await authManager
+                                          .createAccountWithEmail(
+                                        context,
+                                        _model.caemailController.text,
+                                        _model.capasswordController.text,
+                                      );
+                                      if (user == null) {
+                                        return;
+                                      }
+
+                                      context.goNamedAuth(
+                                          'Tempus_AI', context.mounted);
+                                    },
+                                    text: 'Create Account',
+                                    options: FFButtonOptions(
+                                      height: 40.0,
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          24.0, 0.0, 24.0, 0.0),
+                                      iconPadding:
+                                          EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
+                                      color: Color(0xFF6580D9),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .override(
+                                            fontFamily: 'Outfit',
+                                            color: Colors.white,
+                                          ),
+                                      elevation: 3.0,
+                                      borderSide: BorderSide(
+                                        color: Colors.transparent,
+                                        width: 1.0,
+                                      ),
+                                      borderRadius: BorderRadius.circular(30.0),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: AlignmentDirectional(0.00, -1.00),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      15.0, 475.0, 15.0, 0.0),
+                                  child: TextFormField(
+                                    controller:
+                                        _model.caconfirmpasswordController,
+                                    focusNode:
+                                        _model.caconfirmpasswordFocusNode,
+                                    autofocus: true,
+                                    obscureText:
+                                        !_model.caconfirmpasswordVisibility,
+                                    decoration: InputDecoration(
+                                      labelText: 'Confirm Password...',
+                                      labelStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .override(
+                                            fontFamily: 'Noto Sans HK',
+                                            color: Color(0xFF838383),
+                                            fontSize: 22.0,
+                                            useGoogleFonts: false,
+                                          ),
+                                      hintStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .override(
+                                            fontFamily: 'Noto Sans HK',
+                                            color: Color(0xFF838383),
+                                            fontSize: 22.0,
+                                            useGoogleFonts: false,
+                                          ),
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Color(0xFF6580D9),
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Color(0xFF6580D9),
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      errorBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: FlutterFlowTheme.of(context)
+                                              .error,
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      focusedErrorBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: FlutterFlowTheme.of(context)
+                                              .error,
+                                          width: 2.0,
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                      ),
+                                      suffixIcon: InkWell(
+                                        onTap: () => setState(
+                                          () => _model
+                                                  .caconfirmpasswordVisibility =
+                                              !_model
+                                                  .caconfirmpasswordVisibility,
+                                        ),
+                                        focusNode:
+                                            FocusNode(skipTraversal: true),
+                                        child: Icon(
+                                          _model.caconfirmpasswordVisibility
+                                              ? Icons.visibility_outlined
+                                              : Icons.visibility_off_outlined,
+                                          size: 22,
+                                        ),
+                                      ),
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          color: Color(0xFF838383),
+                                          fontSize: 22.0,
+                                        ),
+                                    validator: _model
+                                        .caconfirmpasswordControllerValidator
+                                        .asValidator(context),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
             body: SafeArea(
               top: true,
@@ -104,7 +816,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   hoverColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
                                   onTap: () async {
-                                    context.pushNamed('temp2_1');
+                                    context.pushNamed('website');
                                   },
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(8.0),
@@ -129,7 +841,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     if (Navigator.of(context).canPop()) {
                                       context.pop();
                                     }
-                                    context.pushNamed('priceings');
+                                    context.pushNamed('priceings_2');
                                   },
                                   child: Text(
                                     'Fetures ',
@@ -138,7 +850,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                         .override(
                                           fontFamily: 'Outfit',
                                           color: Color(0xFF6580D9),
-                                          fontSize: 22.0,
+                                          fontSize: 20.0,
                                         ),
                                   ),
                                 ),
@@ -161,7 +873,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                         .override(
                                           fontFamily: 'Outfit',
                                           color: Color(0xFF6580D9),
-                                          fontSize: 22.0,
+                                          fontSize: 20.0,
                                         ),
                                   ),
                                 ),
@@ -175,7 +887,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   hoverColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
                                   onTap: () async {
-                                    context.pushNamed('priceings');
+                                    context.pushNamed('priceings_2');
                                   },
                                   child: Text(
                                     'Pricing',
@@ -184,19 +896,19 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                         .override(
                                           fontFamily: 'Outfit',
                                           color: Color(0xFF6580D9),
-                                          fontSize: 22.0,
+                                          fontSize: 20.0,
                                         ),
                                   ),
                                 ),
                               ),
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    230.0, 15.0, 0.0, 0.0),
+                                    160.0, 15.0, 0.0, 0.0),
                                 child: FFButtonWidget(
-                                  onPressed: () {
-                                    print('Button pressed ...');
+                                  onPressed: () async {
+                                    scaffoldKey.currentState!.openEndDrawer();
                                   },
-                                  text: 'Contact',
+                                  text: 'Create Account',
                                   options: FFButtonOptions(
                                     height: 40.0,
                                     padding: EdgeInsetsDirectional.fromSTEB(
@@ -213,9 +925,6 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                           fontSize: 20.0,
                                         ),
                                     elevation: 3.0,
-                                    borderSide: BorderSide(
-                                      width: 1.0,
-                                    ),
                                     borderRadius: BorderRadius.circular(100.0),
                                   ),
                                 ),
@@ -224,8 +933,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     20.0, 15.0, 0.0, 0.0),
                                 child: FFButtonWidget(
-                                  onPressed: () {
-                                    print('Button pressed ...');
+                                  onPressed: () async {
+                                    scaffoldKey.currentState!.openDrawer();
                                   },
                                   text: 'Login',
                                   options: FFButtonOptions(
@@ -255,7 +964,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                       20.0, 15.0, 0.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
-                                      context.pushNamed('priceings');
+                                      context.pushNamed('priceings_2');
                                     },
                                     text: 'Get Started',
                                     options: FFButtonOptions(
@@ -348,7 +1057,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                         alignment:
                                             AlignmentDirectional(-1.00, 0.00),
                                         child: Text(
-                                          'With our comprehensive analytics dashboard paired with a cutting-edge team of AI agents, gives you everything and more to grow your platform and develop your impact.',
+                                          'With our cutting-edge team of AI agents, gives you everything and more to grow your platform and develop your impact.',
                                           textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
@@ -379,8 +1088,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                   buttonSize: 48.0,
                                   fillColor: FlutterFlowTheme.of(context)
                                       .primaryBackground,
-                                  icon: Icon(
-                                    FFIcons.ktwitch,
+                                  icon: FaIcon(
+                                    FontAwesomeIcons.twitch,
                                     color: Color(0xFFDBDBDB),
                                     size: 30.0,
                                   ),
@@ -397,8 +1106,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     buttonSize: 48.0,
                                     fillColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
-                                    icon: Icon(
-                                      FFIcons.kinstagram,
+                                    icon: FaIcon(
+                                      FontAwesomeIcons.instagram,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       size: 30.0,
@@ -437,8 +1146,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     buttonSize: 48.0,
                                     fillColor: FlutterFlowTheme.of(context)
                                         .primaryBackground,
-                                    icon: Icon(
-                                      FFIcons.kfacebook,
+                                    icon: FaIcon(
+                                      FontAwesomeIcons.facebookSquare,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       size: 30.0,
@@ -463,7 +1172,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 0.0, 60.0, 0.0, 0.0),
                             child: FFButtonWidget(
                               onPressed: () async {
-                                context.pushNamed('priceings');
+                                context.pushNamed('website');
                               },
                               text: 'Get Started',
                               options: FFButtonOptions(
@@ -512,12 +1221,12 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                       .secondaryBackground,
                                 ),
                                 child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(0.0),
-                                  child: Image.asset(
-                                    'assets/images/dashboard2.jpeg',
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  child: Image.network(
+                                    'https://picsum.photos/seed/447/600',
                                     width: 300.0,
                                     height: 200.0,
-                                    fit: BoxFit.fill,
+                                    fit: BoxFit.cover,
                                   ),
                                 ),
                               ),
@@ -1003,7 +1712,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                               EdgeInsetsDirectional.fromSTEB(
                                                   10.0, 5.0, 10.0, 0.0),
                                           child: Text(
-                                            'Sentiment analysis will help yo gauge audience reactions, tailor messaging, improve engagement, and build stronger connections with their community.',
+                                            'Sentiment analysis will help you gauge audience reactions, tailor messaging, improve engagement, and build stronger connections with their community.',
                                             textAlign: TextAlign.center,
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
@@ -1040,7 +1749,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 alignment: AlignmentDirectional(0.00, 0.00),
                                 child: FFButtonWidget(
                                   onPressed: () async {
-                                    context.pushNamed('priceings');
+                                    context.pushNamed('priceings_2');
                                   },
                                   text: 'Get Started',
                                   options: FFButtonOptions(
@@ -1088,10 +1797,10 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.00, -1.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 75.0, 50.0, 0.0),
+                                      50.0, 75.0, 50.0, 0.0),
                                   child: Container(
                                     width: 595.0,
                                     decoration: BoxDecoration(
@@ -1113,10 +1822,10 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, 0.00),
+                                alignment: AlignmentDirectional(-1.00, 0.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 140.0, 0.0),
+                                      140.0, 0.0, 140.0, 0.0),
                                   child: Container(
                                     width: 400.0,
                                     height: 575.0,
@@ -1163,10 +1872,10 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, 0.00),
+                                alignment: AlignmentDirectional(1.00, 0.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      50.0, 0.0, 0.0, 0.0),
+                                      50.0, 0.0, 50.0, 0.0),
                                   child: Container(
                                     width: 800.0,
                                     height: 500.0,
@@ -1459,7 +2168,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                     0.0, 0.0, 150.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
-                                                context.pushNamed('priceings');
+                                                context
+                                                    .pushNamed('priceings_2');
                                               },
                                               text: 'Get Started',
                                               options: FFButtonOptions(
@@ -1639,23 +2349,19 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                         )
                                       ],
                                       borderRadius: BorderRadius.only(
-                                        bottomLeft: Radius.circular(100.0),
+                                        bottomLeft: Radius.circular(0.0),
                                         bottomRight: Radius.circular(100.0),
-                                        topLeft: Radius.circular(0.0),
+                                        topLeft: Radius.circular(100.0),
                                         topRight: Radius.circular(100.0),
                                       ),
                                     ),
-                                    child: InkWell(
-                                      splashColor: Colors.transparent,
-                                      focusColor: Colors.transparent,
-                                      hoverColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        context.pushNamed('priceings');
-                                      },
-                                      child: Icon(
-                                        FFIcons.kyoutube,
-                                        color: Color(0xFFFF073A),
+                                    child: Align(
+                                      alignment:
+                                          AlignmentDirectional(0.00, 0.00),
+                                      child: FaIcon(
+                                        FontAwesomeIcons.youtube,
+                                        color:
+                                            FlutterFlowTheme.of(context).error,
                                         size: 100.0,
                                       ),
                                     ),
@@ -1682,22 +2388,17 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                         )
                                       ],
                                       borderRadius: BorderRadius.only(
-                                        bottomLeft: Radius.circular(100.0),
-                                        bottomRight: Radius.circular(0.0),
+                                        bottomLeft: Radius.circular(0.0),
+                                        bottomRight: Radius.circular(100.0),
                                         topLeft: Radius.circular(100.0),
                                         topRight: Radius.circular(100.0),
                                       ),
                                     ),
-                                    child: InkWell(
-                                      splashColor: Colors.transparent,
-                                      focusColor: Colors.transparent,
-                                      hoverColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        context.pushNamed('priceings');
-                                      },
-                                      child: Icon(
-                                        FFIcons.kfacebook,
+                                    child: Align(
+                                      alignment:
+                                          AlignmentDirectional(0.00, 0.00),
+                                      child: FaIcon(
+                                        FontAwesomeIcons.facebookF,
                                         color: FlutterFlowTheme.of(context)
                                             .primary,
                                         size: 100.0,
@@ -1735,19 +2436,10 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     child: Align(
                                       alignment:
                                           AlignmentDirectional(0.00, 0.00),
-                                      child: InkWell(
-                                        splashColor: Colors.transparent,
-                                        focusColor: Colors.transparent,
-                                        hoverColor: Colors.transparent,
-                                        highlightColor: Colors.transparent,
-                                        onTap: () async {
-                                          context.pushNamed('priceings');
-                                        },
-                                        child: FaIcon(
-                                          FontAwesomeIcons.instagram,
-                                          color: Color(0xFFDB07BC),
-                                          size: 100.0,
-                                        ),
+                                      child: FaIcon(
+                                        FontAwesomeIcons.instagram,
+                                        color: Color(0xFFDB07BC),
+                                        size: 100.0,
                                       ),
                                     ),
                                   ),
@@ -1773,22 +2465,17 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                         )
                                       ],
                                       borderRadius: BorderRadius.only(
-                                        bottomLeft: Radius.circular(100.0),
+                                        bottomLeft: Radius.circular(0.0),
                                         bottomRight: Radius.circular(100.0),
                                         topLeft: Radius.circular(100.0),
-                                        topRight: Radius.circular(0.0),
+                                        topRight: Radius.circular(100.0),
                                       ),
                                     ),
-                                    child: InkWell(
-                                      splashColor: Colors.transparent,
-                                      focusColor: Colors.transparent,
-                                      hoverColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        context.pushNamed('priceings');
-                                      },
-                                      child: Icon(
-                                        FFIcons.ktwitch,
+                                    child: Align(
+                                      alignment:
+                                          AlignmentDirectional(0.00, 0.00),
+                                      child: FaIcon(
+                                        FontAwesomeIcons.twitch,
                                         color: Color(0xFF6441A5),
                                         size: 100.0,
                                       ),
@@ -1834,64 +2521,10 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                             .override(
                                               fontFamily: 'Outfit',
                                               color: Color(0xFF6580D9),
-                                              fontSize: 22.0,
+                                              fontSize: 34.0,
                                               fontWeight: FontWeight.w600,
                                             ),
                                       ),
-                                    ),
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.00, -1.00),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 180.0, 200.0, 0.0),
-                                    child: Text(
-                                      'Much more',
-                                      textAlign: TextAlign.start,
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Outfit',
-                                            color: Color(0xFF6580D9),
-                                            fontSize: 40.0,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.00, -1.00),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        200.0, 180.0, 0.0, 0.0),
-                                    child: Text(
-                                      'than just a\n',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Outfit',
-                                            color: Color(0xFF838383),
-                                            fontSize: 40.0,
-                                            fontWeight: FontWeight.normal,
-                                          ),
-                                    ),
-                                  ),
-                                ),
-                                Align(
-                                  alignment: AlignmentDirectional(0.00, -1.00),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 230.0, 0.0, 0.0),
-                                    child: Text(
-                                      'simple scheduler',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Outfit',
-                                            color: Color(0xFF838383),
-                                            fontSize: 40.0,
-                                            fontWeight: FontWeight.normal,
-                                          ),
                                     ),
                                   ),
                                 ),
@@ -1968,7 +2601,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                         260.0, 0.0, 0.0, 86.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
-                                        context.pushNamed('priceings');
+                                        context.pushNamed('priceings_2');
                                       },
                                       text: 'Get Started',
                                       options: FFButtonOptions(
@@ -2009,6 +2642,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                     ),
                     Row(
                       mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(
@@ -2052,25 +2686,6 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                           padding: EdgeInsetsDirectional.fromSTEB(
                               15.0, 0.0, 0.0, 0.0),
                           child: Icon(
-                            Icons.mail,
-                            color: Color(0xFF838383),
-                            size: 75.0,
-                          ),
-                        ),
-                        Text(
-                          'Social Inbox',
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Outfit',
-                                    color: Color(0xFF838383),
-                                    fontSize: 25.0,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                        ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              15.0, 0.0, 0.0, 0.0),
-                          child: Icon(
                             Icons.co_present_outlined,
                             color: Color(0xFF838383),
                             size: 75.0,
@@ -2086,39 +2701,42 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     fontWeight: FontWeight.w500,
                                   ),
                         ),
-                        Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              85.0, 0.0, 85.0, 0.0),
-                          child: FFButtonWidget(
-                            onPressed: () async {
-                              context.pushNamed('about_us');
-                            },
-                            text: 'Read More',
-                            options: FFButtonOptions(
-                              width: 175.0,
-                              height: 60.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: Color(0xFF6580D9),
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    fontFamily: 'Outfit',
-                                    color: Colors.white,
-                                    fontSize: 22.0,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                              elevation: 3.0,
-                              borderSide: BorderSide(
-                                color: Colors.transparent,
-                                width: 1.0,
+                        Align(
+                          alignment: AlignmentDirectional(0.00, 0.00),
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                50.0, 0.0, 85.0, 0.0),
+                            child: FFButtonWidget(
+                              onPressed: () async {
+                                context.pushNamed('about_us');
+                              },
+                              text: 'Read More',
+                              options: FFButtonOptions(
+                                width: 175.0,
+                                height: 60.0,
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    24.0, 0.0, 24.0, 0.0),
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
+                                color: Color(0xFF6580D9),
+                                textStyle: FlutterFlowTheme.of(context)
+                                    .titleSmall
+                                    .override(
+                                      fontFamily: 'Outfit',
+                                      color: Colors.white,
+                                      fontSize: 22.0,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                elevation: 3.0,
+                                borderSide: BorderSide(
+                                  color: Colors.transparent,
+                                  width: 1.0,
+                                ),
+                                borderRadius: BorderRadius.circular(30.0),
+                                hoverColor: FlutterFlowTheme.of(context)
+                                    .secondaryBackground,
+                                hoverTextColor: Color(0xFF6580D9),
                               ),
-                              borderRadius: BorderRadius.circular(30.0),
-                              hoverColor: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              hoverTextColor: Color(0xFF6580D9),
                             ),
                           ),
                         ),
@@ -2172,12 +2790,17 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                       boxShadow: [
                                         BoxShadow(
                                           blurRadius: 8.0,
-                                          color: Color(0x33000000),
+                                          color: Color(0xFF303138),
                                           offset: Offset(-10.0, 0.0),
                                           spreadRadius: 10.0,
                                         )
                                       ],
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(30.0),
+                                        bottomRight: Radius.circular(0.0),
+                                        topLeft: Radius.circular(30.0),
+                                        topRight: Radius.circular(0.0),
+                                      ),
                                     ),
                                     child: Align(
                                       alignment:
@@ -2223,7 +2846,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       .secondaryBackground,
                                                 ),
                                                 child: Text(
-                                                  'We would love to here form you if you have any questions, comments or concerns regarding our services. ',
+                                                  'We would love to here form you if you have any questions, comments or concerns regarding our services.',
                                                   textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -2232,7 +2855,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                         fontFamily: 'Outfit',
                                                         color:
                                                             Color(0xFF838383),
-                                                        fontSize: 25.0,
+                                                        fontSize: 24.0,
                                                         fontWeight:
                                                             FontWeight.normal,
                                                       ),
@@ -2254,7 +2877,6 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       _model.textController1,
                                                   focusNode: _model
                                                       .textFieldFocusNode1,
-                                                  autofocus: true,
                                                   obscureText: false,
                                                   decoration: InputDecoration(
                                                     labelText: 'First Name...',
@@ -2364,7 +2986,6 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       _model.textController2,
                                                   focusNode: _model
                                                       .textFieldFocusNode2,
-                                                  autofocus: true,
                                                   obscureText: false,
                                                   decoration: InputDecoration(
                                                     labelText: 'Last Name...',
@@ -2467,7 +3088,6 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       _model.textController3,
                                                   focusNode: _model
                                                       .textFieldFocusNode3,
-                                                  autofocus: true,
                                                   obscureText: false,
                                                   decoration: InputDecoration(
                                                     labelText: 'Email...',
@@ -2569,7 +3189,6 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       _model.textController4,
                                                   focusNode: _model
                                                       .textFieldFocusNode4,
-                                                  autofocus: true,
                                                   obscureText: false,
                                                   decoration: InputDecoration(
                                                     labelText:
@@ -2672,7 +3291,6 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                       _model.textController5,
                                                   focusNode: _model
                                                       .textFieldFocusNode5,
-                                                  autofocus: true,
                                                   obscureText: false,
                                                   decoration: InputDecoration(
                                                     labelText: 'Message...',
@@ -2768,8 +3386,27 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                                   .fromSTEB(
                                                       0.0, 0.0, 0.0, 45.0),
                                               child: FFButtonWidget(
-                                                onPressed: () {
-                                                  print('Button pressed ...');
+                                                onPressed: () async {
+                                                  await UsersRecord.collection
+                                                      .doc()
+                                                      .set(
+                                                          createUsersRecordData(
+                                                        email: _model
+                                                            .textController3
+                                                            .text,
+                                                        firstName: _model
+                                                            .textController1
+                                                            .text,
+                                                        lastName: _model
+                                                            .textController2
+                                                            .text,
+                                                        message: _model
+                                                            .textController5
+                                                            .text,
+                                                        phoneNumber: _model
+                                                            .textController4
+                                                            .text,
+                                                      ));
                                                 },
                                                 text: 'Send Message',
                                                 options: FFButtonOptions(
@@ -2822,11 +3459,17 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                       boxShadow: [
                                         BoxShadow(
                                           blurRadius: 8.0,
-                                          color: Color(0x33000000),
+                                          color: Color(0xFF303138),
                                           offset: Offset(10.0, 0.0),
                                           spreadRadius: 10.0,
                                         )
                                       ],
+                                      borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(0.0),
+                                        bottomRight: Radius.circular(30.0),
+                                        topLeft: Radius.circular(0.0),
+                                        topRight: Radius.circular(30.0),
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -2842,7 +3485,12 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(0.0),
+                                        bottomRight: Radius.circular(0.0),
+                                        topLeft: Radius.circular(0.0),
+                                        topRight: Radius.circular(30.0),
+                                      ),
                                     ),
                                     child: Stack(
                                       children: [
@@ -3037,7 +3685,12 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.only(
+                                        bottomLeft: Radius.circular(0.0),
+                                        bottomRight: Radius.circular(30.0),
+                                        topLeft: Radius.circular(0.0),
+                                        topRight: Radius.circular(0.0),
+                                      ),
                                     ),
                                     child: Stack(
                                       children: [
@@ -3096,7 +3749,7 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 alignment: AlignmentDirectional(1.00, 1.00),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 0.0, 100.0, 75.0),
+                                      0.0, 15.0, 100.0, 60.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       context.pushNamed('faqs');
@@ -3169,8 +3822,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 65.0, 0.0),
-                                  child: Icon(
-                                    FFIcons.ktwitch,
+                                  child: FaIcon(
+                                    FontAwesomeIcons.twitch,
                                     color: Color(0xFF838383),
                                     size: 50.0,
                                   ),
@@ -3193,8 +3846,8 @@ class _Temp21WidgetState extends State<Temp21Widget> {
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 185.0, 0.0),
-                                  child: Icon(
-                                    FFIcons.kinstagram,
+                                  child: FaIcon(
+                                    FontAwesomeIcons.instagram,
                                     color: Color(0xFF838383),
                                     size: 50.0,
                                   ),

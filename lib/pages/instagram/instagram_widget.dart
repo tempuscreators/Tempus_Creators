@@ -1,14 +1,12 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/components/header/header_widget.dart';
 import '/components/nav_menu_1/nav_menu1_widget.dart';
-import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -31,32 +29,6 @@ class _InstagramWidgetState extends State<InstagramWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => InstagramModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      Function() _navigate = () {};
-      if (valueOrDefault(currentUserDocument?.role, '') != 'admin') {
-        GoRouter.of(context).prepareAuthEvent();
-        await authManager.signOut();
-        GoRouter.of(context).clearRedirectLocation();
-
-        _navigate = () => context.goNamedAuth('Dashboard', context.mounted);
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(
-              'Session expired!',
-              style: TextStyle(
-                color: FlutterFlowTheme.of(context).primaryText,
-              ),
-            ),
-            duration: Duration(milliseconds: 4000),
-            backgroundColor: FlutterFlowTheme.of(context).secondary,
-          ),
-        );
-      }
-
-      _navigate();
-    });
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
@@ -1665,40 +1637,6 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                               ],
                                               borderRadius:
                                                   BorderRadius.circular(30.0),
-                                            ),
-                                            child: Container(
-                                              width: 370.0,
-                                              height: 230.0,
-                                              child: FlutterFlowLineChart(
-                                                data: [
-                                                  FFLineChartData(
-                                                    xData: [],
-                                                    yData: [],
-                                                    settings: LineChartBarData(
-                                                      color: Color(0xFFDB07BC),
-                                                      barWidth: 5.0,
-                                                    ),
-                                                  )
-                                                ],
-                                                chartStylingInfo:
-                                                    ChartStylingInfo(
-                                                  backgroundColor:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .secondaryBackground,
-                                                  showGrid: true,
-                                                  borderColor:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .secondaryText,
-                                                  borderWidth: 1.0,
-                                                ),
-                                                axisBounds: AxisBounds(
-                                                  maxY: 210.0,
-                                                ),
-                                                xAxisLabelInfo: AxisLabelInfo(),
-                                                yAxisLabelInfo: AxisLabelInfo(),
-                                              ),
                                             ),
                                           ),
                                         ),

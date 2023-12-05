@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -91,7 +92,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                   hoverColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
                                   onTap: () async {
-                                    context.pushNamed('temp2_1');
+                                    context.pushNamed('website');
                                   },
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(8.0),
@@ -116,7 +117,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     if (Navigator.of(context).canPop()) {
                                       context.pop();
                                     }
-                                    context.pushNamed('priceings');
+                                    context.pushNamed('priceings_2');
                                   },
                                   child: Text(
                                     'Fetures ',
@@ -162,7 +163,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                   hoverColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
                                   onTap: () async {
-                                    context.pushNamed('priceings');
+                                    context.pushNamed('website');
                                   },
                                   child: Text(
                                     'Pricing',
@@ -211,8 +212,8 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     20.0, 15.0, 0.0, 0.0),
                                 child: FFButtonWidget(
-                                  onPressed: () {
-                                    print('Button pressed ...');
+                                  onPressed: () async {
+                                    context.pushNamed('website');
                                   },
                                   text: 'Login',
                                   options: FFButtonOptions(
@@ -242,7 +243,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                       20.0, 15.0, 0.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
-                                      context.pushNamed('priceings');
+                                      context.pushNamed('priceings_2');
                                     },
                                     text: 'Get Started',
                                     options: FFButtonOptions(
