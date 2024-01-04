@@ -36,7 +36,7 @@ class StockStruct extends FFFirebaseStruct {
       );
 
   static StockStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? StockStruct.fromMap(data) : null;
+      data is Map ? StockStruct.fromMap(data.cast<String, dynamic>()) : null;
 
   Map<String, dynamic> toMap() => {
         'quantity': _quantity,

@@ -37,8 +37,9 @@ class ProductImageStruct extends FFFirebaseStruct {
         thumbnail: data['thumbnail'] as String?,
       );
 
-  static ProductImageStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? ProductImageStruct.fromMap(data) : null;
+  static ProductImageStruct? maybeFromMap(dynamic data) => data is Map
+      ? ProductImageStruct.fromMap(data.cast<String, dynamic>())
+      : null;
 
   Map<String, dynamic> toMap() => {
         'galley': _galley,

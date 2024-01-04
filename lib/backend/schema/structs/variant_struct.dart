@@ -35,7 +35,7 @@ class VariantStruct extends FFFirebaseStruct {
       );
 
   static VariantStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? VariantStruct.fromMap(data) : null;
+      data is Map ? VariantStruct.fromMap(data.cast<String, dynamic>()) : null;
 
   Map<String, dynamic> toMap() => {
         'id': _id,

@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:go_router/go_router.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
@@ -80,13 +81,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? DashboardWidget() : DashboardWidget(),
+          appStateNotifier.loggedIn ? TempusAIWidget() : DashboardWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? DashboardWidget() : DashboardWidget(),
+              appStateNotifier.loggedIn ? TempusAIWidget() : DashboardWidget(),
           routes: [
             FFRoute(
               name: 'Dashboard',
@@ -136,16 +137,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => PrivicyWidget(),
             ),
             FFRoute(
-              name: 'temp2_1',
-              path: 'temp21',
-              builder: (context, params) => Temp21Widget(),
-            ),
-            FFRoute(
-              name: 'priceings',
-              path: 'priceings',
-              builder: (context, params) => PriceingsWidget(),
-            ),
-            FFRoute(
               name: 'about_us',
               path: 'aboutUs',
               builder: (context, params) => AboutUsWidget(),
@@ -174,6 +165,56 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'Account_2',
               path: 'account2',
               builder: (context, params) => Account2Widget(),
+            ),
+            FFRoute(
+              name: 'blogs1',
+              path: 'blogs1',
+              builder: (context, params) => Blogs1Widget(),
+            ),
+            FFRoute(
+              name: 'blogs2',
+              path: 'blogs2',
+              builder: (context, params) => Blogs2Widget(),
+            ),
+            FFRoute(
+              name: 'blogs3',
+              path: 'blogs3',
+              builder: (context, params) => Blogs3Widget(),
+            ),
+            FFRoute(
+              name: 'blogs4',
+              path: 'blogs4',
+              builder: (context, params) => Blogs4Widget(),
+            ),
+            FFRoute(
+              name: 'blogs5',
+              path: 'blogs5',
+              builder: (context, params) => Blogs5Widget(),
+            ),
+            FFRoute(
+              name: 'blogs6',
+              path: 'blogs6',
+              builder: (context, params) => Blogs6Widget(),
+            ),
+            FFRoute(
+              name: 'blogs7',
+              path: 'blogs7',
+              builder: (context, params) => Blogs7Widget(),
+            ),
+            FFRoute(
+              name: 'blogs8',
+              path: 'blogs8',
+              builder: (context, params) => Blogs8Widget(),
+            ),
+            FFRoute(
+              name: 'priceings_2',
+              path: 'priceings2',
+              builder: (context, params) => Priceings2Widget(),
+            ),
+            FFRoute(
+              name: 'website',
+              path: 'website',
+              builder: (context, params) => WebsiteWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
@@ -357,12 +398,11 @@ class FFRoute {
           final child = appStateNotifier.loading
               ? Center(
                   child: SizedBox(
-                    width: 50.0,
-                    height: 50.0,
-                    child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(
-                        FlutterFlowTheme.of(context).primary,
-                      ),
+                    width: 24.0,
+                    height: 24.0,
+                    child: SpinKitFoldingCube(
+                      color: Color(0xFF6580D9),
+                      size: 24.0,
                     ),
                   ),
                 )
@@ -374,13 +414,20 @@ class FFRoute {
                   key: state.pageKey,
                   child: child,
                   transitionDuration: transitionInfo.duration,
-                  transitionsBuilder: PageTransition(
+                  transitionsBuilder:
+                      (context, animation, secondaryAnimation, child) =>
+                          PageTransition(
                     type: transitionInfo.transitionType,
                     duration: transitionInfo.duration,
                     reverseDuration: transitionInfo.duration,
                     alignment: transitionInfo.alignment,
                     child: child,
-                  ).transitionsBuilder,
+                  ).buildTransitions(
+                    context,
+                    animation,
+                    secondaryAnimation,
+                    child,
+                  ),
                 )
               : MaterialPage(key: state.pageKey, child: child);
         },

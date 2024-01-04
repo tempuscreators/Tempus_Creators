@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:typed_data';
+import '../schema/structs/index.dart';
 
 import '/flutter_flow/flutter_flow_util.dart';
 import 'api_manager.dart';
@@ -30,14 +31,15 @@ class ParentBucketCall {
       encodeBodyUtf8: false,
       decodeUtf8: false,
       cache: false,
+      alwaysAllowBody: false,
     );
   }
 
-  dynamic url(dynamic response) => getJsonField(
+  List? url(dynamic response) => getJsonField(
         response,
         r'''$.items[:].name''',
         true,
-      );
+      ) as List?;
 }
 
 class DeleteFileCall {
@@ -52,14 +54,15 @@ class DeleteFileCall {
       encodeBodyUtf8: false,
       decodeUtf8: false,
       cache: false,
+      alwaysAllowBody: false,
     );
   }
 
-  dynamic url(dynamic response) => getJsonField(
+  List? url(dynamic response) => getJsonField(
         response,
         r'''$.items[:].name''',
         true,
-      );
+      ) as List?;
 }
 
 /// End firebaseStorage Group Code
@@ -101,21 +104,22 @@ class SendFullPromptCall {
       encodeBodyUtf8: false,
       decodeUtf8: false,
       cache: false,
+      alwaysAllowBody: false,
     );
   }
 
-  dynamic createdTimestamp(dynamic response) => getJsonField(
+  int? createdTimestamp(dynamic response) => castToType<int>(getJsonField(
         response,
         r'''$.created''',
-      );
-  dynamic role(dynamic response) => getJsonField(
+      ));
+  String? role(dynamic response) => castToType<String>(getJsonField(
         response,
         r'''$.choices[:].message.role''',
-      );
-  dynamic messageContent(dynamic response) => getJsonField(
+      ));
+  String? messageContent(dynamic response) => castToType<String>(getJsonField(
         response,
         r'''$.choices[:].message.content''',
-      );
+      ));
 }
 
 /// End GPTapi Group Code
@@ -154,6 +158,7 @@ class StorageCall {
       encodeBodyUtf8: false,
       decodeUtf8: false,
       cache: false,
+      alwaysAllowBody: false,
     );
   }
 }
@@ -171,29 +176,46 @@ class YTlikesAPICall {
       encodeBodyUtf8: false,
       decodeUtf8: false,
       cache: false,
+      alwaysAllowBody: false,
     );
   }
 
-  static dynamic view(dynamic response) => getJsonField(
+  static List<String>? view(dynamic response) => (getJsonField(
         response,
         r'''$.items[:].statistics.viewCount''',
         true,
-      );
-  static dynamic like(dynamic response) => getJsonField(
+      ) as List?)
+          ?.withoutNulls
+          .map((x) => castToType<String>(x))
+          .withoutNulls
+          .toList();
+  static List<String>? like(dynamic response) => (getJsonField(
         response,
         r'''$.items[:].statistics.likeCount''',
         true,
-      );
-  static dynamic fave(dynamic response) => getJsonField(
+      ) as List?)
+          ?.withoutNulls
+          .map((x) => castToType<String>(x))
+          .withoutNulls
+          .toList();
+  static List<String>? fave(dynamic response) => (getJsonField(
         response,
         r'''$.items[:].statistics.favoriteCount''',
         true,
-      );
-  static dynamic comment(dynamic response) => getJsonField(
+      ) as List?)
+          ?.withoutNulls
+          .map((x) => castToType<String>(x))
+          .withoutNulls
+          .toList();
+  static List<String>? comment(dynamic response) => (getJsonField(
         response,
         r'''$.items[:].statistics.commentCount''',
         true,
-      );
+      ) as List?)
+          ?.withoutNulls
+          .map((x) => castToType<String>(x))
+          .withoutNulls
+          .toList();
 }
 
 class InstaAPICall {
@@ -209,6 +231,7 @@ class InstaAPICall {
       encodeBodyUtf8: false,
       decodeUtf8: false,
       cache: false,
+      alwaysAllowBody: false,
     );
   }
 }
@@ -231,6 +254,7 @@ class TwitchOauthorizCall {
       encodeBodyUtf8: false,
       decodeUtf8: false,
       cache: false,
+      alwaysAllowBody: false,
     );
   }
 }
@@ -249,6 +273,7 @@ class TwitchTokenPostCall {
       encodeBodyUtf8: false,
       decodeUtf8: false,
       cache: false,
+      alwaysAllowBody: false,
     );
   }
 }
@@ -269,14 +294,19 @@ class TwitchFollowCall {
       encodeBodyUtf8: false,
       decodeUtf8: false,
       cache: false,
+      alwaysAllowBody: false,
     );
   }
 
-  static dynamic followers(dynamic response) => getJsonField(
+  static List<int>? followers(dynamic response) => (getJsonField(
         response,
         r'''$.total''',
         true,
-      );
+      ) as List?)
+          ?.withoutNulls
+          .map((x) => castToType<int>(x))
+          .withoutNulls
+          .toList();
 }
 
 class FBOauthCall {
@@ -292,6 +322,7 @@ class FBOauthCall {
       encodeBodyUtf8: false,
       decodeUtf8: false,
       cache: false,
+      alwaysAllowBody: false,
     );
   }
 }
@@ -309,6 +340,7 @@ class FBLikesCall {
       encodeBodyUtf8: false,
       decodeUtf8: false,
       cache: false,
+      alwaysAllowBody: false,
     );
   }
 }
@@ -326,6 +358,43 @@ class TestFBAuthCall {
       encodeBodyUtf8: false,
       decodeUtf8: false,
       cache: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+class InstagramPostLikesCallCall {
+  static Future<ApiCallResponse> call() async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'InstagramPostLikesCall',
+      apiUrl:
+          'https://graph.instagram.com/\$mediaId?fields=id,media_type,media_url,username,timestamp,like_count&access_token=3470296316618709',
+      callType: ApiCallType.GET,
+      headers: {},
+      params: {},
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+class InstagramOauthCall {
+  static Future<ApiCallResponse> call() async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'instagram oauth',
+      apiUrl:
+          'https://www.facebook.com/v18.0/dialog/oauth?client_id=3470296316618709&redirect_uri=https://app.flutterflow.io/debug/w8fHVeh7nERGEY8XXwUX&state=',
+      callType: ApiCallType.GET,
+      headers: {},
+      params: {},
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      alwaysAllowBody: false,
     );
   }
 }

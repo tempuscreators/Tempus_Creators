@@ -46,8 +46,9 @@ class DimensionStruct extends FFFirebaseStruct {
         height: castToType<double>(data['height']),
       );
 
-  static DimensionStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? DimensionStruct.fromMap(data) : null;
+  static DimensionStruct? maybeFromMap(dynamic data) => data is Map
+      ? DimensionStruct.fromMap(data.cast<String, dynamic>())
+      : null;
 
   Map<String, dynamic> toMap() => {
         'length': _length,

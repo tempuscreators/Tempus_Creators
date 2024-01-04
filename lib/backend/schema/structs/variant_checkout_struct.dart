@@ -44,8 +44,9 @@ class VariantCheckoutStruct extends FFFirebaseStruct {
         attributeValue: data['attribute_value'] as String?,
       );
 
-  static VariantCheckoutStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? VariantCheckoutStruct.fromMap(data) : null;
+  static VariantCheckoutStruct? maybeFromMap(dynamic data) => data is Map
+      ? VariantCheckoutStruct.fromMap(data.cast<String, dynamic>())
+      : null;
 
   Map<String, dynamic> toMap() => {
         'variant_value': _variantValue,

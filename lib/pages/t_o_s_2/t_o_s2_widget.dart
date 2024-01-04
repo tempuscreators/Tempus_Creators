@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -123,7 +124,7 @@ class _TOS2WidgetState extends State<TOS2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, -1.00),
+                                                  0.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -153,8 +154,8 @@ class _TOS2WidgetState extends State<TOS2Widget> {
                                                 .secondaryBackground,
                                           ),
                                           child: Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, -1.00),
+                                            alignment:
+                                                AlignmentDirectional(0.0, -1.0),
                                             child: Text(
                                               'Hello World',
                                               style:

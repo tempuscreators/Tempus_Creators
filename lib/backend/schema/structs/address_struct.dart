@@ -116,7 +116,7 @@ class AddressStruct extends FFFirebaseStruct {
       );
 
   static AddressStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? AddressStruct.fromMap(data) : null;
+      data is Map ? AddressStruct.fromMap(data.cast<String, dynamic>()) : null;
 
   Map<String, dynamic> toMap() => {
         'id': _id,

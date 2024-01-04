@@ -5,6 +5,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'account2_model.dart';
@@ -122,7 +123,7 @@ class _Account2WidgetState extends State<Account2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, -1.00),
+                                                  0.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(

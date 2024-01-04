@@ -3,6 +3,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'blogs_model.dart';
@@ -57,7 +59,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
               : FocusScope.of(context).unfocus(),
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+            backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
             body: SafeArea(
               top: true,
               child: SingleChildScrollView(
@@ -71,7 +73,8 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                           width: 1512.0,
                           height: 100.0,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
                           ),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -80,7 +83,8 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                 width: 515.0,
                                 height: 125.0,
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryBackground,
                                 ),
                                 child: InkWell(
                                   splashColor: Colors.transparent,
@@ -88,12 +92,12 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                   hoverColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
                                   onTap: () async {
-                                    context.pushNamed('temp2_1');
+                                    context.pushNamed('website');
                                   },
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(8.0),
                                     child: Image.asset(
-                                      'assets/images/crazy.png',
+                                      'assets/images/yeye.png',
                                       width: 349.0,
                                       height: 200.0,
                                       fit: BoxFit.contain,
@@ -113,7 +117,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     if (Navigator.of(context).canPop()) {
                                       context.pop();
                                     }
-                                    context.pushNamed('priceings');
+                                    context.pushNamed('priceings_2');
                                   },
                                   child: Text(
                                     'Fetures ',
@@ -159,7 +163,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                   hoverColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
                                   onTap: () async {
-                                    context.pushNamed('priceings');
+                                    context.pushNamed('website');
                                   },
                                   child: Text(
                                     'Pricing',
@@ -175,24 +179,41 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                               ),
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    290.0, 15.0, 0.0, 0.0),
-                                child: Text(
-                                  'Contact',
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .override(
-                                        fontFamily: 'Outfit',
-                                        color: Colors.black,
-                                        fontSize: 18.0,
-                                      ),
+                                    230.0, 15.0, 0.0, 0.0),
+                                child: FFButtonWidget(
+                                  onPressed: () {
+                                    print('Button pressed ...');
+                                  },
+                                  text: 'Contact',
+                                  options: FFButtonOptions(
+                                    height: 40.0,
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        24.0, 0.0, 24.0, 0.0),
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 0.0),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                    textStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .override(
+                                          fontFamily: 'Outfit',
+                                          color: Color(0xFF838383),
+                                          fontSize: 20.0,
+                                        ),
+                                    elevation: 3.0,
+                                    borderSide: BorderSide(
+                                      width: 1.0,
+                                    ),
+                                    borderRadius: BorderRadius.circular(100.0),
+                                  ),
                                 ),
                               ),
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     20.0, 15.0, 0.0, 0.0),
                                 child: FFButtonWidget(
-                                  onPressed: () {
-                                    print('Button pressed ...');
+                                  onPressed: () async {
+                                    context.pushNamed('website');
                                   },
                                   text: 'Login',
                                   options: FFButtonOptions(
@@ -201,27 +222,28 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                         24.0, 0.0, 24.0, 0.0),
                                     iconPadding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: Colors.white,
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
                                           fontFamily: 'Outfit',
-                                          color: Colors.black,
-                                          fontSize: 18.0,
+                                          color: Color(0xFF838383),
+                                          fontSize: 20.0,
                                         ),
                                     elevation: 3.0,
-                                    borderRadius: BorderRadius.circular(8.0),
+                                    borderRadius: BorderRadius.circular(100.0),
                                   ),
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, 0.00),
+                                alignment: AlignmentDirectional(1.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       20.0, 15.0, 0.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
-                                      context.pushNamed('priceings');
+                                      context.pushNamed('priceings_2');
                                     },
                                     text: 'Get Started',
                                     options: FFButtonOptions(
@@ -261,17 +283,17 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                         children: [
                           Container(
                             width: 1512.0,
-                            height: 2000.0,
+                            height: 2500.0,
                             decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(-1.00, -1.00),
+                              alignment: AlignmentDirectional(-1.0, -1.0),
                               child: Stack(
                                 children: [
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(0.00, -1.00),
+                                    alignment: AlignmentDirectional(0.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 100.0, 0.0, 0.0),
@@ -289,8 +311,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 250.0, 0.0, 0.0),
@@ -303,7 +324,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 8.0,
-                                              color: Color(0x33000000),
+                                              color: Color(0xFF303138),
                                               offset: Offset(0.0, -10.0),
                                               spreadRadius: 10.0,
                                             )
@@ -325,8 +346,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 250.0, 150.0, 0.0),
@@ -338,7 +358,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 8.0,
-                                              color: Color(0x33000000),
+                                              color: Color(0xFF303138),
                                               offset: Offset(0.0, -10.0),
                                               spreadRadius: 10.0,
                                             )
@@ -360,8 +380,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 595.0, 0.0, 0.0),
@@ -383,19 +402,20 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Stack(
                                             children: [
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, 0.00),
+                                                    1.0, 0.0),
                                                 child: FFButtonWidget(
-                                                  onPressed: () {
-                                                    print('Button pressed ...');
+                                                  onPressed: () async {
+                                                    context.pushNamed('blogs5');
                                                   },
                                                   text: '',
                                                   icon: Icon(
                                                     Icons.arrow_forward,
+                                                    color: Colors.white,
                                                     size: 75.0,
                                                   ),
                                                   options: FFButtonOptions(
@@ -406,9 +426,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                             .fromSTEB(370.0,
                                                                 0.0, 20.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 0.0,
-                                                                0.0, 0.0),
+                                                        EdgeInsets.all(0.0),
                                                     color: Color(0xFF6580D9),
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
@@ -416,34 +434,37 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color: Colors.white,
+                                                          fontSize: 22.0,
                                                         ),
                                                     elevation: 3.0,
                                                     borderRadius:
                                                         BorderRadius.circular(
                                                             30.0),
-                                                    hoverColor:
-                                                        Color(0xFF838383),
+                                                    hoverColor: FlutterFlowTheme
+                                                            .of(context)
+                                                        .secondaryBackground,
                                                     hoverTextColor:
-                                                        Colors.black,
+                                                        Color(0xFF6580D9),
                                                   ),
                                                 ),
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    -1.00, 0.00),
+                                                    -1.0, 0.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           35.0, 0.0, 0.0, 0.0),
                                                   child: Text(
-                                                    'Hello World',
+                                                    'AI Querying: A \nComprehensive Guide',
+                                                    textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Outfit',
                                                           color: Colors.white,
-                                                          fontSize: 25.0,
+                                                          fontSize: 30.0,
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),
@@ -457,8 +478,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 595.0, 150.0, 0.0),
@@ -482,17 +502,17 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           children: [
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
+                                                  0.0, 0.0),
                                               child: Stack(
                                                 children: [
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            1.00, 0.00),
+                                                            1.0, 0.0),
                                                     child: FFButtonWidget(
-                                                      onPressed: () {
-                                                        print(
-                                                            'Button pressed ...');
+                                                      onPressed: () async {
+                                                        context.pushNamed(
+                                                            'blogs2');
                                                       },
                                                       text: '',
                                                       icon: Icon(
@@ -538,16 +558,18 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                             BorderRadius
                                                                 .circular(30.0),
                                                         hoverColor:
-                                                            Color(0xFF838383),
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .secondaryBackground,
                                                         hoverTextColor:
-                                                            Colors.black,
+                                                            Color(0xFF6580D9),
                                                       ),
                                                     ),
                                                   ),
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 0.00),
+                                                            -1.0, 0.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -557,14 +579,16 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                                   0.0,
                                                                   0.0),
                                                       child: Text(
-                                                        'Hello World',
+                                                        'Sentiment Analysis: A game Changer for  Creators',
+                                                        textAlign:
+                                                            TextAlign.start,
                                                         style: FlutterFlowTheme
                                                                 .of(context)
                                                             .bodyMedium
                                                             .override(
                                                               fontFamily:
                                                                   'Outfit',
-                                                              fontSize: 25.0,
+                                                              fontSize: 30.0,
                                                               fontWeight:
                                                                   FontWeight
                                                                       .normal,
@@ -581,8 +605,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 800.0, 0.0, 0.0),
@@ -594,7 +617,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 8.0,
-                                              color: Color(0x33000000),
+                                              color: Color(0xFF303138),
                                               offset: Offset(0.0, -10.0),
                                               spreadRadius: 10.0,
                                             )
@@ -616,8 +639,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 1145.0, 0.0, 0.0),
@@ -641,10 +663,10 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           children: [
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  1.00, 0.00),
+                                                  1.0, 0.0),
                                               child: FFButtonWidget(
-                                                onPressed: () {
-                                                  print('Button pressed ...');
+                                                onPressed: () async {
+                                                  context.pushNamed('blogs8');
                                                 },
                                                 text: '',
                                                 icon: Icon(
@@ -677,26 +699,31 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           30.0),
-                                                  hoverColor: Color(0xFF838383),
-                                                  hoverTextColor: Colors.black,
+                                                  hoverColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .secondaryBackground,
+                                                  hoverTextColor:
+                                                      Color(0xFF6580D9),
                                                 ),
                                               ),
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 0.00),
+                                                  -1.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 0.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Hello World',
+                                                  'Elevating Content Strategy: \nWith the power of AI',
+                                                  textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        fontSize: 25.0,
+                                                        fontSize: 30.0,
                                                         fontWeight:
                                                             FontWeight.normal,
                                                       ),
@@ -709,8 +736,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 800.0, 150.0, 0.0),
@@ -722,7 +748,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 8.0,
-                                              color: Color(0x33000000),
+                                              color: Color(0xFF303138),
                                               offset: Offset(0.0, -10.0),
                                               spreadRadius: 10.0,
                                             )
@@ -744,8 +770,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 1145.0, 150.0, 0.0),
@@ -769,10 +794,10 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           children: [
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  1.00, 0.00),
+                                                  1.0, 0.0),
                                               child: FFButtonWidget(
-                                                onPressed: () {
-                                                  print('Button pressed ...');
+                                                onPressed: () async {
+                                                  context.pushNamed('blogs1');
                                                 },
                                                 text: '',
                                                 icon: Icon(
@@ -805,26 +830,31 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           30.0),
-                                                  hoverColor: Color(0xFF838383),
-                                                  hoverTextColor: Colors.black,
+                                                  hoverColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .secondaryBackground,
+                                                  hoverTextColor:
+                                                      Color(0xFF6580D9),
                                                 ),
                                               ),
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 0.00),
+                                                  -1.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 0.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Hello World',
+                                                  'Unlocking the Power of\nSocial Listening ',
+                                                  textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        fontSize: 25.0,
+                                                        fontSize: 30.0,
                                                         fontWeight:
                                                             FontWeight.normal,
                                                       ),
@@ -837,8 +867,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 1350.0, 0.0, 0.0),
@@ -850,7 +879,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 8.0,
-                                              color: Color(0x33000000),
+                                              color: Color(0xFF303138),
                                               offset: Offset(0.0, -10.0),
                                               spreadRadius: 10.0,
                                             )
@@ -872,8 +901,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 1350.0, 150.0, 0.0),
@@ -885,7 +913,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           boxShadow: [
                                             BoxShadow(
                                               blurRadius: 8.0,
-                                              color: Color(0x33000000),
+                                              color: Color(0xFF303138),
                                               offset: Offset(0.0, -10.0),
                                               spreadRadius: 10.0,
                                             )
@@ -907,8 +935,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 1695.0, 0.0, 0.0),
@@ -933,8 +960,8 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                               AlignmentDirectional(1.0, 0.0),
                                           children: [
                                             FFButtonWidget(
-                                              onPressed: () {
-                                                print('Button pressed ...');
+                                              onPressed: () async {
+                                                context.pushNamed('blogs3');
                                               },
                                               text: '',
                                               icon: Icon(
@@ -966,25 +993,29 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                 ),
                                                 borderRadius:
                                                     BorderRadius.circular(30.0),
-                                                hoverColor: Color(0xFF838383),
-                                                hoverTextColor: Colors.black,
+                                                hoverColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                hoverTextColor:
+                                                    Color(0xFF6580D9),
                                               ),
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 0.00),
+                                                  -1.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 0.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Hello World',
+                                                  ' Navigating the \nAnalytics Landscape',
+                                                  textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        fontSize: 25.0,
+                                                        fontSize: 30.0,
                                                         fontWeight:
                                                             FontWeight.normal,
                                                       ),
@@ -997,8 +1028,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 1695.0, 150.0, 0.0),
@@ -1023,8 +1053,8 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                               AlignmentDirectional(1.0, 0.0),
                                           children: [
                                             FFButtonWidget(
-                                              onPressed: () {
-                                                print('Button pressed ...');
+                                              onPressed: () async {
+                                                context.pushNamed('blogs4');
                                               },
                                               text: '',
                                               icon: Icon(
@@ -1056,25 +1086,29 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                 ),
                                                 borderRadius:
                                                     BorderRadius.circular(30.0),
-                                                hoverColor: Color(0xFF838383),
-                                                hoverTextColor: Colors.black,
+                                                hoverColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                hoverTextColor:
+                                                    Color(0xFF6580D9),
                                               ),
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 0.00),
+                                                  -1.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         20.0, 0.0, 0.0, 0.0),
                                                 child: Text(
-                                                  'Hello World',
+                                                  'Navigating \nMulti-Agent AI',
+                                                  textAlign: TextAlign.center,
                                                   style: FlutterFlowTheme.of(
                                                           context)
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Outfit',
-                                                        fontSize: 25.0,
+                                                        fontSize: 30.0,
                                                         fontWeight:
                                                             FontWeight.normal,
                                                       ),
@@ -1087,7 +1121,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.00, 1.01),
+                                    alignment: AlignmentDirectional(0.0, 1.01),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
@@ -1095,13 +1129,14 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           width: 1512.0,
                                           height: 65.0,
                                           decoration: BoxDecoration(
-                                            color: Colors.white,
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryBackground,
                                           ),
                                           child: Stack(
                                             children: [
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    0.00, 0.00),
+                                                    0.0, 0.0),
                                                 child: Text(
                                                   'Copyright © 2023 Tempus Creators. All rights reserved.',
                                                   style: FlutterFlowTheme.of(
@@ -1110,7 +1145,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         color:
-                                                            Color(0xFF6F6E6E),
+                                                            Color(0xFFC1C1C1),
                                                         fontSize: 15.0,
                                                         fontWeight:
                                                             FontWeight.normal,
@@ -1119,58 +1154,63 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, 0.00),
+                                                    1.0, 0.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
-                                                          0.0, 0.0, 50.0, 0.0),
+                                                          0.0, 0.0, 65.0, 0.0),
                                                   child: Icon(
                                                     FFIcons.ktwitch,
-                                                    color: Colors.black,
+                                                    color: Color(0xFF838383),
                                                     size: 50.0,
                                                   ),
                                                 ),
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, 0.00),
-                                                child: Icon(
-                                                  FFIcons.klinkedin,
-                                                  color: Colors.black,
-                                                  size: 50.0,
+                                                    1.0, 0.0),
+                                                child: Padding(
+                                                  padding: EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 0.0, 25.0, 0.0),
+                                                  child: FaIcon(
+                                                    FontAwesomeIcons.facebookF,
+                                                    color: Color(0xFF838383),
+                                                    size: 50.0,
+                                                  ),
                                                 ),
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, 0.00),
+                                                    1.0, 0.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
-                                                          0.0, 0.0, 150.0, 0.0),
+                                                          0.0, 0.0, 185.0, 0.0),
                                                   child: Icon(
                                                     FFIcons.kinstagram,
-                                                    color: Colors.black,
+                                                    color: Color(0xFF838383),
                                                     size: 50.0,
                                                   ),
                                                 ),
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, 0.00),
+                                                    1.0, 0.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
-                                                          0.0, 0.0, 100.0, 0.0),
-                                                  child: Icon(
-                                                    FFIcons.ktwitter,
-                                                    color: Colors.black,
+                                                          0.0, 0.0, 120.0, 0.0),
+                                                  child: FaIcon(
+                                                    FontAwesomeIcons.youtube,
+                                                    color: Color(0xFF838383),
                                                     size: 50.0,
                                                   ),
                                                 ),
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    -1.00, 0.00),
+                                                    -1.0, 0.0),
                                                 child: InkWell(
                                                   splashColor:
                                                       Colors.transparent,
@@ -1187,18 +1227,22 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                     width: 100.0,
                                                     height: 100.0,
                                                     decoration: BoxDecoration(
-                                                      color: Colors.white,
+                                                      color: FlutterFlowTheme
+                                                              .of(context)
+                                                          .secondaryBackground,
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               100.0),
                                                       border: Border.all(
+                                                        color:
+                                                            Color(0xFF838383),
                                                         width: 2.0,
                                                       ),
                                                     ),
                                                     child: Align(
                                                       alignment:
                                                           AlignmentDirectional(
-                                                              0.00, 0.00),
+                                                              0.0, 0.0),
                                                       child: InkWell(
                                                         splashColor:
                                                             Colors.transparent,
@@ -1220,8 +1264,8 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                               .override(
                                                                 fontFamily:
                                                                     'Outfit',
-                                                                color: Colors
-                                                                    .black,
+                                                                color: Color(
+                                                                    0xFF838383),
                                                                 fontSize: 30.0,
                                                               ),
                                                         ),
@@ -1232,7 +1276,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    -1.00, 0.00),
+                                                    -1.0, 0.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -1254,19 +1298,23 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                       width: 203.0,
                                                       height: 100.0,
                                                       decoration: BoxDecoration(
-                                                        color: Colors.white,
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .secondaryBackground,
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(
                                                                     100.0),
                                                         border: Border.all(
+                                                          color:
+                                                              Color(0xFF838383),
                                                           width: 2.0,
                                                         ),
                                                       ),
                                                       child: Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, 0.00),
+                                                                0.0, 0.0),
                                                         child: InkWell(
                                                           splashColor: Colors
                                                               .transparent,
@@ -1290,8 +1338,8 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                                 .override(
                                                                   fontFamily:
                                                                       'Outfit',
-                                                                  color: Colors
-                                                                      .black,
+                                                                  color: Color(
+                                                                      0xFF838383),
                                                                   fontSize:
                                                                       30.0,
                                                                 ),
@@ -1306,6 +1354,258 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           ),
                                         ),
                                       ],
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          150.0, 1900.0, 0.0, 0.0),
+                                      child: Container(
+                                        width: 500.0,
+                                        height: 300.0,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          boxShadow: [
+                                            BoxShadow(
+                                              blurRadius: 8.0,
+                                              color: Color(0xFF303138),
+                                              offset: Offset(0.0, -10.0),
+                                              spreadRadius: 10.0,
+                                            )
+                                          ],
+                                          borderRadius:
+                                              BorderRadius.circular(100.0),
+                                        ),
+                                        child: ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(100.0),
+                                          child: Image.network(
+                                            'https://picsum.photos/seed/452/600',
+                                            width: 300.0,
+                                            height: 200.0,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: AlignmentDirectional(1.0, -1.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 1900.0, 150.0, 0.0),
+                                      child: Container(
+                                        width: 500.0,
+                                        height: 300.0,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          boxShadow: [
+                                            BoxShadow(
+                                              blurRadius: 8.0,
+                                              color: Color(0xFF303138),
+                                              offset: Offset(0.0, -10.0),
+                                              spreadRadius: 10.0,
+                                            )
+                                          ],
+                                          borderRadius:
+                                              BorderRadius.circular(100.0),
+                                        ),
+                                        child: ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(100.0),
+                                          child: Image.network(
+                                            'https://picsum.photos/seed/16/600',
+                                            width: 300.0,
+                                            height: 200.0,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          150.0, 2245.0, 0.0, 0.0),
+                                      child: Container(
+                                        width: 500.0,
+                                        height: 100.0,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          boxShadow: [
+                                            BoxShadow(
+                                              blurRadius: 8.0,
+                                              color: Color(0x33000000),
+                                              offset: Offset(0.0, 8.0),
+                                              spreadRadius: 8.0,
+                                            )
+                                          ],
+                                          borderRadius:
+                                              BorderRadius.circular(30.0),
+                                        ),
+                                        child: Stack(
+                                          children: [
+                                            FFButtonWidget(
+                                              onPressed: () async {
+                                                context.pushNamed('blogs7');
+                                              },
+                                              text: '',
+                                              icon: Icon(
+                                                Icons.arrow_forward,
+                                                size: 75.0,
+                                              ),
+                                              options: FFButtonOptions(
+                                                width: double.infinity,
+                                                height: double.infinity,
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        370.0, 0.0, 20.0, 0.0),
+                                                iconPadding:
+                                                    EdgeInsetsDirectional
+                                                        .fromSTEB(
+                                                            0.0, 0.0, 0.0, 0.0),
+                                                color: Color(0xFF6580D9),
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Outfit',
+                                                          color: Colors.white,
+                                                        ),
+                                                elevation: 3.0,
+                                                borderSide: BorderSide(
+                                                  color: Colors.transparent,
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(30.0),
+                                                hoverColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                hoverTextColor:
+                                                    Color(0xFF6580D9),
+                                              ),
+                                            ),
+                                            Align(
+                                              alignment: AlignmentDirectional(
+                                                  -1.0, 0.0),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        20.0, 0.0, 0.0, 0.0),
+                                                child: Text(
+                                                  'The AI Revolution: \nTransforming the World',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        fontSize: 30.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Align(
+                                    alignment: AlignmentDirectional(1.0, -1.0),
+                                    child: Padding(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 2245.0, 150.0, 0.0),
+                                      child: Container(
+                                        width: 500.0,
+                                        height: 100.0,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          boxShadow: [
+                                            BoxShadow(
+                                              blurRadius: 8.0,
+                                              color: Color(0x33000000),
+                                              offset: Offset(0.0, 8.0),
+                                              spreadRadius: 8.0,
+                                            )
+                                          ],
+                                          borderRadius:
+                                              BorderRadius.circular(30.0),
+                                        ),
+                                        child: Stack(
+                                          children: [
+                                            FFButtonWidget(
+                                              onPressed: () async {
+                                                context.pushNamed('blogs6');
+                                              },
+                                              text: '',
+                                              icon: Icon(
+                                                Icons.arrow_forward,
+                                                size: 75.0,
+                                              ),
+                                              options: FFButtonOptions(
+                                                width: double.infinity,
+                                                height: double.infinity,
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        370.0, 0.0, 20.0, 0.0),
+                                                iconPadding:
+                                                    EdgeInsetsDirectional
+                                                        .fromSTEB(
+                                                            0.0, 0.0, 0.0, 0.0),
+                                                color: Color(0xFF6580D9),
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Outfit',
+                                                          color: Colors.white,
+                                                        ),
+                                                elevation: 3.0,
+                                                borderSide: BorderSide(
+                                                  color: Colors.transparent,
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(30.0),
+                                                hoverColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
+                                                hoverTextColor:
+                                                    Color(0xFF6580D9),
+                                              ),
+                                            ),
+                                            Align(
+                                              alignment: AlignmentDirectional(
+                                                  -1.0, 0.0),
+                                              child: Padding(
+                                                padding: EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        20.0, 0.0, 0.0, 0.0),
+                                                child: Text(
+                                                  'Decoding the Algorithms',
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Outfit',
+                                                        fontSize: 30.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                      ),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ],

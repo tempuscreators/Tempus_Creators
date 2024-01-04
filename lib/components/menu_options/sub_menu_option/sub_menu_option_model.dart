@@ -4,6 +4,7 @@ import 'package:styled_divider/styled_divider.dart';
 import 'sub_menu_option_widget.dart' show SubMenuOptionWidget;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 

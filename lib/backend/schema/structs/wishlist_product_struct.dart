@@ -35,8 +35,9 @@ class WishlistProductStruct extends FFFirebaseStruct {
         wishlistRef: data['wishlist_ref'] as DocumentReference?,
       );
 
-  static WishlistProductStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? WishlistProductStruct.fromMap(data) : null;
+  static WishlistProductStruct? maybeFromMap(dynamic data) => data is Map
+      ? WishlistProductStruct.fromMap(data.cast<String, dynamic>())
+      : null;
 
   Map<String, dynamic> toMap() => {
         'product_ref': _productRef,

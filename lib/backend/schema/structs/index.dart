@@ -12,6 +12,7 @@ export 'product_struct.dart';
 export 'product_image_struct.dart';
 export 'product_video_struct.dart';
 export 'stock_struct.dart';
+export 'user_info_struct.dart';
 export 'variant_struct.dart';
 export 'variant_checkout_struct.dart';
 export 'variant_value_struct.dart';

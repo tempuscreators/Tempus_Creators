@@ -1,14 +1,15 @@
+import '/backend/api_requests/api_calls.dart';
 import '/components/nav_menu_1/nav_menu1_widget.dart';
 import '/components/user_card_1/user_card1_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'header_model.dart';
@@ -71,8 +72,10 @@ class _HeaderWidgetState extends State<HeaderWidget>
 
     _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode1 ??= FocusNode();
+
     _model.textController2 ??= TextEditingController();
     _model.textFieldFocusNode2 ??= FocusNode();
+
     setupAnimations(
       animationsMap.values.where((anim) =>
           anim.trigger == AnimationTrigger.onActionTrigger ||
@@ -200,21 +203,43 @@ class _HeaderWidgetState extends State<HeaderWidget>
                             child: Stack(
                               alignment: AlignmentDirectional(0.0, 0.0),
                               children: [
-                                FlutterFlowIconButton(
-                                  borderColor: Colors.transparent,
-                                  borderRadius: 24.0,
-                                  borderWidth: 1.0,
-                                  buttonSize: 48.0,
-                                  fillColor: FlutterFlowTheme.of(context)
-                                      .tertiaryBackground,
-                                  icon: Icon(
-                                    FFIcons.kbell,
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    size: 24.0,
-                                  ),
-                                  onPressed: () {
-                                    print('IconButton pressed ...');
+                                FutureBuilder<ApiCallResponse>(
+                                  future: InstagramOauthCall.call(),
+                                  builder: (context, snapshot) {
+                                    // Customize what your widget looks like when it's loading.
+                                    if (!snapshot.hasData) {
+                                      return Center(
+                                        child: SizedBox(
+                                          width: 24.0,
+                                          height: 24.0,
+                                          child: SpinKitFoldingCube(
+                                            color: Color(0xFF6580D9),
+                                            size: 24.0,
+                                          ),
+                                        ),
+                                      );
+                                    }
+                                    final iconButtonInstagramOauthResponse =
+                                        snapshot.data!;
+                                    return FlutterFlowIconButton(
+                                      borderColor: Colors.transparent,
+                                      borderRadius: 24.0,
+                                      borderWidth: 1.0,
+                                      buttonSize: 48.0,
+                                      fillColor: FlutterFlowTheme.of(context)
+                                          .tertiaryBackground,
+                                      icon: Icon(
+                                        FFIcons.kbell,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        size: 24.0,
+                                      ),
+                                      onPressed: () async {
+                                        await InstagramOauthCall.call();
+                                        await launchURL(
+                                            'https://api.instagram.com/oauth/authorize');
+                                      },
+                                    );
                                   },
                                 ),
                                 if (responsiveVisibility(
@@ -225,8 +250,7 @@ class _HeaderWidgetState extends State<HeaderWidget>
                                   desktop: false,
                                 ))
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Container(
                                       width: 20.0,
                                       height: 20.0,
@@ -235,8 +259,7 @@ class _HeaderWidgetState extends State<HeaderWidget>
                                             FlutterFlowTheme.of(context).error,
                                         shape: BoxShape.circle,
                                       ),
-                                      alignment:
-                                          AlignmentDirectional(0.00, 0.00),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: Text(
                                         '1',
                                         style: FlutterFlowTheme.of(context)
@@ -266,21 +289,7 @@ class _HeaderWidgetState extends State<HeaderWidget>
                               size: 24.0,
                             ),
                             onPressed: () async {
-                              ScaffoldMessenger.of(context).clearSnackBars();
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(
-                                  content: Text(
-                                    'We\'ve disabled light mode  for better user experience.',
-                                    style: TextStyle(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                    ),
-                                  ),
-                                  duration: Duration(milliseconds: 4000),
-                                  backgroundColor:
-                                      FlutterFlowTheme.of(context).secondary,
-                                ),
-                              );
+                              context.pushNamed('website');
                             },
                           ),
                         ].divide(SizedBox(width: 24.0)),
@@ -314,18 +323,15 @@ class _HeaderWidgetState extends State<HeaderWidget>
                               hoverColor: Colors.transparent,
                               highlightColor: Colors.transparent,
                               onTap: () async {
-                                await showAlignedDialog(
+                                await showDialog(
                                   context: context,
-                                  isGlobal: true,
-                                  avoidOverflow: false,
-                                  targetAnchor: AlignmentDirectional(0.0, 0.0)
-                                      .resolve(Directionality.of(context)),
-                                  followerAnchor:
-                                      AlignmentDirectional(-1.0, -1.0)
-                                          .resolve(Directionality.of(context)),
                                   builder: (dialogContext) {
-                                    return Material(
-                                      color: Colors.transparent,
+                                    return Dialog(
+                                      insetPadding: EdgeInsets.zero,
+                                      backgroundColor: Colors.transparent,
+                                      alignment: AlignmentDirectional(
+                                              -1.0, -1.0)
+                                          .resolve(Directionality.of(context)),
                                       child: NavMenu1Widget(),
                                     );
                                   },
@@ -462,7 +468,7 @@ class _HeaderWidgetState extends State<HeaderWidget>
                                     ))
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(1.00, -1.00),
+                                            AlignmentDirectional(1.0, -1.0),
                                         child: Container(
                                           width: 20.0,
                                           height: 20.0,
@@ -472,7 +478,7 @@ class _HeaderWidgetState extends State<HeaderWidget>
                                             shape: BoxShape.circle,
                                           ),
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Text(
                                             '1',
                                             style: FlutterFlowTheme.of(context)

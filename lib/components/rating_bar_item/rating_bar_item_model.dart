@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'rating_bar_item_widget.dart' show RatingBarItemWidget;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'package:provider/provider.dart';

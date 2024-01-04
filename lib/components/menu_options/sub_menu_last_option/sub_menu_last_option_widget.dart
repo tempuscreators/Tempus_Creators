@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:styled_divider/styled_divider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'sub_menu_last_option_model.dart';
@@ -60,7 +61,7 @@ class _SubMenuLastOptionWidgetState extends State<SubMenuLastOptionWidget> {
           Colors.transparent,
         ),
       ),
-      alignment: AlignmentDirectional(0.00, 0.00),
+      alignment: AlignmentDirectional(0.0, 0.0),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.start,

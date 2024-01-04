@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'product_card1_model.dart';
@@ -80,12 +81,11 @@ class _ProductCard1WidgetState extends State<ProductCard1Widget> {
                     height: 36.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).tertiaryBackground,
-                      borderRadius: BorderRadius.circular(4.0),
+                      borderRadius: BorderRadius.circular(6.0),
                     ),
-                    alignment: AlignmentDirectional(0.00, 0.00),
+                    alignment: AlignmentDirectional(0.0, 0.0),
                     child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(6.0, 6.0, 6.0, 6.0),
+                      padding: EdgeInsets.all(6.0),
                       child: Image.network(
                         valueOrDefault<String>(
                           widget.productPhoto,

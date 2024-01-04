@@ -37,7 +37,7 @@ class PriceStruct extends FFFirebaseStruct {
       );
 
   static PriceStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? PriceStruct.fromMap(data) : null;
+      data is Map ? PriceStruct.fromMap(data.cast<String, dynamic>()) : null;
 
   Map<String, dynamic> toMap() => {
         'price': _price,
