@@ -60,7 +60,7 @@ class _OptionBtnWidgetState extends State<OptionBtnWidget> {
         color: Color(0xFF303138),
         borderRadius: BorderRadius.circular(100.0),
       ),
-      alignment: AlignmentDirectional(0.00, 0.00),
+      alignment: AlignmentDirectional(0.0, 0.0),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         children: [

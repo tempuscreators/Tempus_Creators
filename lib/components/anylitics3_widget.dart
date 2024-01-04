@@ -109,7 +109,7 @@ class _Anylitics3WidgetState extends State<Anylitics3Widget> {
                     itemBuilder: (context, commentIndex) {
                       final commentItem = comment[commentIndex];
                       return Align(
-                        alignment: AlignmentDirectional(0.00, 0.00),
+                        alignment: AlignmentDirectional(0.0, 0.0),
                         child: FutureBuilder<ApiCallResponse>(
                           future: YTlikesAPICall.call(),
                           builder: (context, snapshot) {

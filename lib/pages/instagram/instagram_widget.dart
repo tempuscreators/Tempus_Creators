@@ -107,7 +107,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, -1.00),
+                                            AlignmentDirectional(-1.0, -1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -139,7 +139,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, -1.00),
+                                                            0.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -169,7 +169,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 0.00),
+                                                            0.0, 0.0),
                                                     child: Text(
                                                       '49,523',
                                                       style:
@@ -188,7 +188,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            1.00, -1.00),
+                                                            1.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -209,7 +209,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 1.00),
+                                                            -1.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -229,7 +229,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 1.00),
+                                                            -1.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -282,7 +282,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, -1.00),
+                                                            0.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -314,7 +314,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 0.00),
+                                                            0.0, 0.0),
                                                     child: Text(
                                                       '456',
                                                       style:
@@ -333,7 +333,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            1.00, -1.00),
+                                                            1.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -354,7 +354,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 1.00),
+                                                            -1.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -374,7 +374,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 1.00),
+                                                            0.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -411,7 +411,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, -1.00),
+                                            AlignmentDirectional(0.0, -1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -443,7 +443,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, -1.00),
+                                                            0.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -473,7 +473,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 0.00),
+                                                            0.0, 0.0),
                                                     child: Text(
                                                       '1,125',
                                                       style:
@@ -492,7 +492,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            1.00, -1.00),
+                                                            1.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -513,7 +513,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 1.00),
+                                                            -1.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -533,7 +533,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 1.00),
+                                                            -1.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -586,7 +586,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, -1.00),
+                                                            0.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -618,7 +618,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 0.00),
+                                                            0.0, 0.0),
                                                     child: Text(
                                                       '4',
                                                       style:
@@ -637,7 +637,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            1.00, -1.00),
+                                                            1.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -658,7 +658,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 1.00),
+                                                            -1.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -678,7 +678,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 1.00),
+                                                            0.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -715,7 +715,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(1.00, -1.00),
+                                            AlignmentDirectional(1.0, -1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -747,7 +747,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, -1.00),
+                                                            0.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -777,7 +777,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 0.00),
+                                                            0.0, 0.0),
                                                     child: Text(
                                                       '21,452',
                                                       style:
@@ -796,7 +796,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            1.00, -1.00),
+                                                            1.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -817,7 +817,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 1.00),
+                                                            -1.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -837,7 +837,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 1.00),
+                                                            -1.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -890,7 +890,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, -1.00),
+                                                            0.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -922,7 +922,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 0.00),
+                                                            0.0, 0.0),
                                                     child: Text(
                                                       '1,952',
                                                       style:
@@ -941,7 +941,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            1.00, -1.00),
+                                                            1.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -962,7 +962,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 1.00),
+                                                            -1.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -982,7 +982,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 1.00),
+                                                            0.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1019,7 +1019,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, 0.00),
+                                            AlignmentDirectional(-1.0, 0.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -1051,7 +1051,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, -1.00),
+                                                            0.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1081,7 +1081,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            1.00, -1.00),
+                                                            1.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1102,7 +1102,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 0.00),
+                                                            0.0, 0.0),
                                                     child: Text(
                                                       '36,758',
                                                       style:
@@ -1121,7 +1121,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 1.00),
+                                                            0.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1148,7 +1148,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 1.00),
+                                                            -1.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1191,7 +1191,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, -1.00),
+                                                            0.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1223,7 +1223,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            1.00, -1.00),
+                                                            1.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1244,7 +1244,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 0.00),
+                                                            0.0, 0.0),
                                                     child: Text(
                                                       '867',
                                                       style:
@@ -1263,7 +1263,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 1.00),
+                                                            0.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1292,7 +1292,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 1.00),
+                                                            -1.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1317,7 +1317,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(1.00, 0.00),
+                                            AlignmentDirectional(1.0, 0.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -1349,7 +1349,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, -1.00),
+                                                            0.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1379,7 +1379,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            1.00, -1.00),
+                                                            1.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1400,7 +1400,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 0.00),
+                                                            0.0, 0.0),
                                                     child: Text(
                                                       '109,996',
                                                       style:
@@ -1419,7 +1419,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 1.00),
+                                                            0.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1446,7 +1446,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 1.00),
+                                                            -1.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1489,7 +1489,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, -1.00),
+                                                            0.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1521,7 +1521,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            1.00, -1.00),
+                                                            1.0, -1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1542,7 +1542,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 0.00),
+                                                            0.0, 0.0),
                                                     child: Text(
                                                       '3,652',
                                                       style:
@@ -1561,7 +1561,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 1.00),
+                                                            0.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1590,7 +1590,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 1.00),
+                                                            -1.0, 1.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -1615,7 +1615,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, 1.00),
+                                            AlignmentDirectional(0.0, 1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -1643,7 +1643,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, 1.00),
+                                            AlignmentDirectional(0.0, 1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -1658,7 +1658,7 @@ class _InstagramWidgetState extends State<InstagramWidget> {
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
+                                                  0.0, 0.0),
                                               child: Text(
                                                 'Yearly follower growth',
                                                 style:

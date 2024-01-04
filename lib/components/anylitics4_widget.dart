@@ -119,7 +119,7 @@ class _Anylitics4WidgetState extends State<Anylitics4Widget> {
                         itemBuilder: (context, viewcountIndex) {
                           final viewcountItem = viewcount[viewcountIndex];
                           return Align(
-                            alignment: AlignmentDirectional(0.00, 0.00),
+                            alignment: AlignmentDirectional(0.0, 0.0),
                             child: FutureBuilder<ApiCallResponse>(
                               future: YTlikesAPICall.call(),
                               builder: (context, snapshot) {

@@ -123,7 +123,7 @@ class _Account2WidgetState extends State<Account2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, -1.00),
+                                                  0.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(

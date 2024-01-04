@@ -105,8 +105,9 @@ class AttributeValueStruct extends FFFirebaseStruct {
         weight: castToType<double>(data['weight']),
       );
 
-  static AttributeValueStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? AttributeValueStruct.fromMap(data) : null;
+  static AttributeValueStruct? maybeFromMap(dynamic data) => data is Map
+      ? AttributeValueStruct.fromMap(data.cast<String, dynamic>())
+      : null;
 
   Map<String, dynamic> toMap() => {
         'attribute_value': _attributeValue,

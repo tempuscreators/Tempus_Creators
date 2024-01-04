@@ -67,7 +67,7 @@ class _RatingBarItemWidgetState extends State<RatingBarItemWidget> {
         Container(
           width: 70.0,
           decoration: BoxDecoration(),
-          alignment: AlignmentDirectional(-1.00, 0.00),
+          alignment: AlignmentDirectional(-1.0, 0.0),
           child: Text(
             widget.title!,
             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -91,7 +91,7 @@ class _RatingBarItemWidgetState extends State<RatingBarItemWidget> {
         Container(
           width: 24.0,
           decoration: BoxDecoration(),
-          alignment: AlignmentDirectional(1.00, 0.00),
+          alignment: AlignmentDirectional(1.0, 0.0),
           child: Text(
             valueOrDefault<String>(
               widget.totalRatings?.toString(),

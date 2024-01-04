@@ -61,7 +61,7 @@ class _SubMenuLastOptionWidgetState extends State<SubMenuLastOptionWidget> {
           Colors.transparent,
         ),
       ),
-      alignment: AlignmentDirectional(0.00, 0.00),
+      alignment: AlignmentDirectional(0.0, 0.0),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.start,

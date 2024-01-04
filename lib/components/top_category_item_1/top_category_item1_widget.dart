@@ -96,7 +96,7 @@ class _TopCategoryItem1WidgetState extends State<TopCategoryItem1Widget> {
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).secondaryBackground,
           ),
-          alignment: AlignmentDirectional(1.00, 0.00),
+          alignment: AlignmentDirectional(1.0, 0.0),
           child: Text(
             valueOrDefault<String>(
               widget.sales?.toString(),

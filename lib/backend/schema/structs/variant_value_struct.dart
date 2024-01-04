@@ -119,8 +119,9 @@ class VariantValueStruct extends FFFirebaseStruct {
         ),
       );
 
-  static VariantValueStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? VariantValueStruct.fromMap(data) : null;
+  static VariantValueStruct? maybeFromMap(dynamic data) => data is Map
+      ? VariantValueStruct.fromMap(data.cast<String, dynamic>())
+      : null;
 
   Map<String, dynamic> toMap() => {
         'variant_value': _variantValue,

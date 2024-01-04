@@ -63,7 +63,7 @@ class UserInfoStruct extends FFFirebaseStruct {
       );
 
   static UserInfoStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? UserInfoStruct.fromMap(data) : null;
+      data is Map ? UserInfoStruct.fromMap(data.cast<String, dynamic>()) : null;
 
   Map<String, dynamic> toMap() => {
         'first_name': _firstName,

@@ -122,7 +122,7 @@ class _Anylitics1WidgetState extends State<Anylitics1Widget> {
                         itemBuilder: (context, yTlikesIndex) {
                           final yTlikesItem = yTlikes[yTlikesIndex];
                           return Align(
-                            alignment: AlignmentDirectional(0.00, 0.00),
+                            alignment: AlignmentDirectional(0.0, 0.0),
                             child: FutureBuilder<ApiCallResponse>(
                               future: YTlikesAPICall.call(),
                               builder: (context, snapshot) {

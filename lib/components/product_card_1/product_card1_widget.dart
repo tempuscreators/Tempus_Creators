@@ -83,10 +83,9 @@ class _ProductCard1WidgetState extends State<ProductCard1Widget> {
                       color: FlutterFlowTheme.of(context).tertiaryBackground,
                       borderRadius: BorderRadius.circular(6.0),
                     ),
-                    alignment: AlignmentDirectional(0.00, 0.00),
+                    alignment: AlignmentDirectional(0.0, 0.0),
                     child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(6.0, 6.0, 6.0, 6.0),
+                      padding: EdgeInsets.all(6.0),
                       child: Image.network(
                         valueOrDefault<String>(
                           widget.productPhoto,

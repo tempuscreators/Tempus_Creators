@@ -238,7 +238,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            1.00, 0.00),
+                                                            1.0, 0.0),
                                                     child: Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -246,7 +246,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, 0.00),
+                                                                  -1.0, 0.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -365,7 +365,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, 0.00),
+                                                                  1.0, 0.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -435,7 +435,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                -1.00, 0.00),
+                                                                -1.0, 0.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -582,12 +582,8 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      24.0,
-                                                                      24.0,
-                                                                      24.0,
-                                                                      24.0),
+                                                              EdgeInsets.all(
+                                                                  24.0),
                                                           child: Column(
                                                             mainAxisSize:
                                                                 MainAxisSize
@@ -713,9 +709,10 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
                                                                       ),
-                                                                      alignment: AlignmentDirectional(
-                                                                          1.00,
-                                                                          0.00),
+                                                                      alignment:
+                                                                          AlignmentDirectional(
+                                                                              1.0,
+                                                                              0.0),
                                                                       child:
                                                                           Text(
                                                                         'Sales',
@@ -1200,9 +1197,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                           12.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(24.0, 24.0,
-                                                          24.0, 24.0),
+                                                  padding: EdgeInsets.all(24.0),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -1305,9 +1300,9 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                                                 color: FlutterFlowTheme.of(context).tertiaryBackground,
                                                                                 borderRadius: BorderRadius.circular(6.0),
                                                                               ),
-                                                                              alignment: AlignmentDirectional(0.00, 0.00),
+                                                                              alignment: AlignmentDirectional(0.0, 0.0),
                                                                               child: Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(6.0, 6.0, 6.0, 6.0),
+                                                                                padding: EdgeInsets.all(6.0),
                                                                                 child: Image.network(
                                                                                   valueOrDefault<String>(
                                                                                     topProductsItem.thumbnail.path,
@@ -1424,9 +1419,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                           12.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(24.0, 24.0,
-                                                          24.0, 24.0),
+                                                  padding: EdgeInsets.all(24.0),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -2072,9 +2065,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                           12.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(24.0, 24.0,
-                                                          24.0, 24.0),
+                                                  padding: EdgeInsets.all(24.0),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -2192,8 +2183,7 @@ class _DashboardWidgetState extends State<DashboardWidget>
                                                               ),
                                                               alignment:
                                                                   AlignmentDirectional(
-                                                                      1.00,
-                                                                      0.00),
+                                                                      1.0, 0.0),
                                                               child: Text(
                                                                 'Sales',
                                                                 style: FlutterFlowTheme.of(

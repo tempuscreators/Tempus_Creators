@@ -123,7 +123,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                             children: [
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    -1.00, -1.00),
+                                                    -1.0, -1.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -188,7 +188,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 0.00),
+                                                                    0.0, 0.0),
                                                             child: Text(
                                                               '7,450,854',
                                                               style: FlutterFlowTheme
@@ -207,8 +207,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -239,8 +238,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -261,8 +259,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    1.00,
-                                                                    -1.00),
+                                                                    1.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -339,7 +336,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 0.00),
+                                                                    0.0, 0.0),
                                                             child: Text(
                                                               '7,450,854',
                                                               style: FlutterFlowTheme
@@ -358,8 +355,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -390,8 +386,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -412,8 +407,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    1.00,
-                                                                    -1.00),
+                                                                    1.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -440,7 +434,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    0.00, -1.00),
+                                                    0.0, -1.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -476,8 +470,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    1.00,
-                                                                    -1.00),
+                                                                    1.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -499,8 +492,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -521,8 +513,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00,
-                                                                    -1.00),
+                                                                    0.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -553,7 +544,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 0.00),
+                                                                    0.0, 0.0),
                                                             child: Text(
                                                               '179,658',
                                                               style: FlutterFlowTheme
@@ -572,8 +563,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -659,7 +649,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 0.00),
+                                                                    0.0, 0.0),
                                                             child: Text(
                                                               '7,450,854',
                                                               style: FlutterFlowTheme
@@ -678,8 +668,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -710,8 +699,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -732,8 +720,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    1.00,
-                                                                    -1.00),
+                                                                    1.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -760,7 +747,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, -1.00),
+                                                    1.0, -1.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -796,8 +783,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    1.00,
-                                                                    -1.00),
+                                                                    1.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -819,8 +805,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -841,8 +826,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00,
-                                                                    -1.00),
+                                                                    0.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -873,7 +857,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 0.00),
+                                                                    0.0, 0.0),
                                                             child: Text(
                                                               '805,145',
                                                               style: FlutterFlowTheme
@@ -892,8 +876,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -979,7 +962,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 0.00),
+                                                                    0.0, 0.0),
                                                             child: Text(
                                                               '7,450,854',
                                                               style: FlutterFlowTheme
@@ -998,8 +981,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1030,8 +1012,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1052,8 +1033,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    1.00,
-                                                                    -1.00),
+                                                                    1.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1080,7 +1060,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    -1.00, -1.00),
+                                                    -1.0, -1.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(100.0, 300.0,
@@ -1109,14 +1089,13 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                     child: Align(
                                                       alignment:
                                                           AlignmentDirectional(
-                                                              0.00, -1.00),
+                                                              0.0, -1.0),
                                                       child: Stack(
                                                         children: [
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00,
-                                                                    -1.00),
+                                                                    0.0, -1.0),
                                                             child: Container(
                                                               width: double
                                                                   .infinity,
@@ -1147,8 +1126,8 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                               child: Align(
                                                                 alignment:
                                                                     AlignmentDirectional(
-                                                                        0.00,
-                                                                        -1.00),
+                                                                        0.0,
+                                                                        -1.0),
                                                                 child:
                                                                     SingleChildScrollView(
                                                                   child: Column(
@@ -1158,8 +1137,8 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                                     children: [
                                                                       Align(
                                                                         alignment: AlignmentDirectional(
-                                                                            0.00,
-                                                                            -1.00),
+                                                                            0.0,
+                                                                            -1.0),
                                                                         child:
                                                                             Container(
                                                                           width:
@@ -1176,12 +1155,12 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                                           child:
                                                                               Align(
                                                                             alignment:
-                                                                                AlignmentDirectional(0.00, -1.00),
+                                                                                AlignmentDirectional(0.0, -1.0),
                                                                             child:
                                                                                 Stack(
                                                                               children: [
                                                                                 Align(
-                                                                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                                                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                                                                   child: Padding(
                                                                                     padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                                                                                     child: Icon(
@@ -1192,7 +1171,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                                                   ),
                                                                                 ),
                                                                                 Align(
-                                                                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                                                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                                                                   child: Padding(
                                                                                     padding: EdgeInsetsDirectional.fromSTEB(38.0, 15.0, 0.0, 0.0),
                                                                                     child: Text(
@@ -1205,7 +1184,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                                                   ),
                                                                                 ),
                                                                                 Align(
-                                                                                  alignment: AlignmentDirectional(0.00, -1.00),
+                                                                                  alignment: AlignmentDirectional(0.0, -1.0),
                                                                                   child: Padding(
                                                                                     padding: EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
                                                                                     child: Container(
@@ -1215,7 +1194,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                                                         borderRadius: BorderRadius.circular(30.0),
                                                                                       ),
                                                                                       child: Align(
-                                                                                        alignment: AlignmentDirectional(0.00, -1.00),
+                                                                                        alignment: AlignmentDirectional(0.0, -1.0),
                                                                                         child: Text(
                                                                                           '',
                                                                                           textAlign: TextAlign.center,
@@ -1229,7 +1208,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                                                   ),
                                                                                 ),
                                                                                 Align(
-                                                                                  alignment: AlignmentDirectional(1.00, -1.00),
+                                                                                  alignment: AlignmentDirectional(1.0, -1.0),
                                                                                   child: Padding(
                                                                                     padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 10.0, 0.0),
                                                                                     child: Icon(
@@ -1258,7 +1237,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    -1.00, 0.00),
+                                                    -1.0, 0.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(175.0, 200.0,
@@ -1294,8 +1273,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    1.00,
-                                                                    -1.00),
+                                                                    1.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1317,8 +1295,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1339,7 +1316,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 0.00),
+                                                                    0.0, 0.0),
                                                             child: Text(
                                                               '24,179,385',
                                                               style: FlutterFlowTheme
@@ -1358,8 +1335,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00,
-                                                                    -1.00),
+                                                                    0.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1387,7 +1363,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 1.00),
+                                                                    0.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1441,8 +1417,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    1.00,
-                                                                    -1.00),
+                                                                    1.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1464,8 +1439,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1486,7 +1460,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 0.00),
+                                                                    0.0, 0.0),
                                                             child: Text(
                                                               '24,179,385',
                                                               style: FlutterFlowTheme
@@ -1505,8 +1479,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00,
-                                                                    -1.00),
+                                                                    0.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1534,7 +1507,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 1.00),
+                                                                    0.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1567,7 +1540,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, 0.00),
+                                                    1.0, 0.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(0.0, 200.0,
@@ -1603,8 +1576,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    1.00,
-                                                                    -1.00),
+                                                                    1.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1626,8 +1598,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1648,7 +1619,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 0.00),
+                                                                    0.0, 0.0),
                                                             child: Text(
                                                               '1,154,832',
                                                               style: FlutterFlowTheme
@@ -1667,8 +1638,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00,
-                                                                    -1.00),
+                                                                    0.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1696,7 +1666,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 1.00),
+                                                                    0.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1750,8 +1720,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    1.00,
-                                                                    -1.00),
+                                                                    1.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1773,8 +1742,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1795,7 +1763,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 0.00),
+                                                                    0.0, 0.0),
                                                             child: Text(
                                                               '24,179,385',
                                                               style: FlutterFlowTheme
@@ -1814,8 +1782,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00,
-                                                                    -1.00),
+                                                                    0.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1843,7 +1810,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 1.00),
+                                                                    0.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1876,7 +1843,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    0.00, 1.00),
+                                                    0.0, 1.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -1907,7 +1874,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    0.00, 1.00),
+                                                    0.0, 1.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -1923,7 +1890,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                     child: Align(
                                                       alignment:
                                                           AlignmentDirectional(
-                                                              0.00, 0.00),
+                                                              0.0, 0.0),
                                                       child: Text(
                                                         'Yearly follower growth',
                                                         style: FlutterFlowTheme
@@ -1946,7 +1913,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    -1.00, 1.00),
+                                                    -1.0, 1.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -1977,7 +1944,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, -1.00),
+                                                                  0.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2008,7 +1975,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             '18 - 24',
                                                             style: FlutterFlowTheme
@@ -2027,7 +1994,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 1.00),
+                                                                  0.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2061,7 +2028,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2087,7 +2054,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    -1.00, 1.00),
+                                                    -1.0, 1.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -2118,7 +2085,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, -1.00),
+                                                                  0.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2149,7 +2116,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             '18 - 24',
                                                             style: FlutterFlowTheme
@@ -2168,7 +2135,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 1.00),
+                                                                  0.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2202,7 +2169,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2228,7 +2195,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    -1.00, 1.00),
+                                                    -1.0, 1.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -2259,7 +2226,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, -1.00),
+                                                                  0.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2290,7 +2257,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             '18 - 24',
                                                             style: FlutterFlowTheme
@@ -2309,7 +2276,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 1.00),
+                                                                  0.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2343,7 +2310,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2369,7 +2336,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    -1.00, 1.00),
+                                                    -1.0, 1.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(375.0, 0.0, 0.0,
@@ -2400,7 +2367,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2422,7 +2389,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             'Male',
                                                             style: FlutterFlowTheme
@@ -2441,7 +2408,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, -1.00),
+                                                                  0.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2475,7 +2442,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 1.00),
+                                                                  0.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2513,7 +2480,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, 1.00),
+                                                    1.0, 1.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(0.0, 0.0, 375.0,
@@ -2544,7 +2511,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             '13:21',
                                                             style: FlutterFlowTheme
@@ -2563,7 +2530,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 1.00),
+                                                                  0.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2597,7 +2564,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, -1.00),
+                                                                  0.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2631,7 +2598,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2657,7 +2624,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, 1.00),
+                                                    1.0, 1.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -2688,7 +2655,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2710,7 +2677,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             'USA',
                                                             style: FlutterFlowTheme
@@ -2729,7 +2696,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, -1.00),
+                                                                  0.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2761,7 +2728,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 1.00),
+                                                                  0.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2799,7 +2766,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, -1.00),
+                                                    1.0, -1.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(0.0, 300.0,
@@ -2827,7 +2794,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, 1.00),
+                                                                  1.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2849,7 +2816,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, -1.00),
+                                                                  0.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -2880,7 +2847,7 @@ class _YoutubeWidgetState extends State<YoutubeWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, -1.00),
+                                                                  0.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional

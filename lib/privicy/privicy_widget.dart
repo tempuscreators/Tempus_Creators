@@ -269,7 +269,7 @@ class _PrivicyWidgetState extends State<PrivicyWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(1.00, 0.00),
+                                              AlignmentDirectional(1.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -315,7 +315,7 @@ class _PrivicyWidgetState extends State<PrivicyWidget> {
                                   ],
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.00, -1.00),
+                                  alignment: AlignmentDirectional(0.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 100.0, 0.0, 0.0),
@@ -346,7 +346,7 @@ class _PrivicyWidgetState extends State<PrivicyWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.00, 1.00),
+                                  alignment: AlignmentDirectional(0.0, 1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 555.0, 0.0, 0.0),
@@ -354,7 +354,7 @@ class _PrivicyWidgetState extends State<PrivicyWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 1.00),
+                                              AlignmentDirectional(0.0, 1.0),
                                           child: Text(
                                             'Copyright © 2023 Tempus Creators. All rights reserved.',
                                             style: FlutterFlowTheme.of(context)
@@ -369,7 +369,7 @@ class _PrivicyWidgetState extends State<PrivicyWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(1.00, 1.00),
+                                              AlignmentDirectional(1.0, 1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -383,7 +383,7 @@ class _PrivicyWidgetState extends State<PrivicyWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(1.00, 1.00),
+                                              AlignmentDirectional(1.0, 1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -397,7 +397,7 @@ class _PrivicyWidgetState extends State<PrivicyWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(1.00, 1.00),
+                                              AlignmentDirectional(1.0, 1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -411,7 +411,7 @@ class _PrivicyWidgetState extends State<PrivicyWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(1.00, 1.00),
+                                              AlignmentDirectional(1.0, 1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -425,7 +425,7 @@ class _PrivicyWidgetState extends State<PrivicyWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.00, 0.00),
+                                              AlignmentDirectional(-1.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -451,7 +451,7 @@ class _PrivicyWidgetState extends State<PrivicyWidget> {
                                               ),
                                               child: Align(
                                                 alignment: AlignmentDirectional(
-                                                    0.00, 0.00),
+                                                    0.0, 0.0),
                                                 child: InkWell(
                                                   splashColor:
                                                       Colors.transparent,
@@ -483,7 +483,7 @@ class _PrivicyWidgetState extends State<PrivicyWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.00, 0.00),
+                                              AlignmentDirectional(-1.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -515,7 +515,7 @@ class _PrivicyWidgetState extends State<PrivicyWidget> {
                                                 child: Align(
                                                   alignment:
                                                       AlignmentDirectional(
-                                                          0.00, 0.00),
+                                                          0.0, 0.0),
                                                   child: InkWell(
                                                     splashColor:
                                                         Colors.transparent,

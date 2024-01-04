@@ -106,7 +106,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                   child: Stack(
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.00, 0.00),
+                        alignment: AlignmentDirectional(0.0, 0.0),
                         child: Container(
                           width: 1000.0,
                           height: double.infinity,
@@ -131,7 +131,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.00, -1.00),
+                                alignment: AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 75.0, 0.0, 0.0),
@@ -148,7 +148,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, -1.00),
+                                alignment: AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       15.0, 400.0, 15.0, 0.0),
@@ -239,7 +239,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, -1.00),
+                                alignment: AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       15.0, 325.0, 15.0, 0.0),
@@ -315,7 +315,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, -1.00),
+                                alignment: AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 475.0, 0.0, 0.0),
@@ -367,7 +367,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, -1.00),
+                                alignment: AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 135.0, 0.0, 0.0),
@@ -407,7 +407,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                   child: Stack(
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.00, 0.00),
+                        alignment: AlignmentDirectional(0.0, 0.0),
                         child: Container(
                           width: 1000.0,
                           height: double.infinity,
@@ -432,7 +432,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.00, -1.00),
+                                alignment: AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 75.0, 0.0, 0.0),
@@ -449,7 +449,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, -1.00),
+                                alignment: AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 135.0, 0.0, 0.0),
@@ -462,7 +462,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, -1.00),
+                                alignment: AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       15.0, 325.0, 15.0, 0.0),
@@ -537,7 +537,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, -1.00),
+                                alignment: AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       15.0, 400.0, 15.0, 0.0),
@@ -627,7 +627,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, -1.00),
+                                alignment: AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 550.0, 0.0, 0.0),
@@ -687,7 +687,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, -1.00),
+                                alignment: AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       15.0, 475.0, 15.0, 0.0),
@@ -958,7 +958,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, 0.00),
+                                alignment: AlignmentDirectional(1.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       20.0, 15.0, 0.0, 0.0),
@@ -1018,7 +1018,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.00, 0.00),
+                                    alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       'Elevate Your Content Game: Insights, Inspiration, and Impact in One Dashboard',
                                       textAlign: TextAlign.center,
@@ -1036,7 +1036,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.00, 0.00),
+                            alignment: AlignmentDirectional(0.0, 0.0),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 30.0, 0.0, 0.0),
@@ -1045,7 +1045,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(0.00, 0.00),
+                                    alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Container(
                                       width: 700.0,
                                       height: 100.0,
@@ -1055,7 +1055,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, 0.00),
+                                            AlignmentDirectional(-1.0, 0.0),
                                         child: Text(
                                           'With our cutting-edge team of AI agents, gives you everything and more to grow your platform and develop your impact.',
                                           textAlign: TextAlign.center,
@@ -1209,7 +1209,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(0.00, 0.00),
+                            alignment: AlignmentDirectional(0.0, 0.0),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 150.0, 0.0, 0.0),
@@ -1278,7 +1278,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.00, -1.00),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 0.0, 100.0, 0.0, 0.0),
@@ -1390,7 +1390,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       75.0, 50.0, 0.0, 0.0),
@@ -1412,13 +1412,13 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                     ),
                                     child: Align(
                                       alignment:
-                                          AlignmentDirectional(-1.00, 0.00),
+                                          AlignmentDirectional(-1.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Align(
                                             alignment: AlignmentDirectional(
-                                                -1.00, -1.00),
+                                                -1.0, -1.0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(
@@ -1431,8 +1431,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                             ),
                                           ),
                                           Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, 0.00),
+                                            alignment:
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: Text(
                                               ' DALL-E image creation ',
                                               textAlign: TextAlign.start,
@@ -1472,7 +1472,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, 1.00),
+                                alignment: AlignmentDirectional(0.0, 1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 15.0),
@@ -1496,7 +1496,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, -1.00),
+                                              AlignmentDirectional(0.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -1517,7 +1517,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -1538,8 +1538,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                           ),
                                         ),
                                         Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
+                                          alignment:
+                                              AlignmentDirectional(-1.0, -1.0),
                                           child: Container(
                                             width: 125.0,
                                             height: 125.0,
@@ -1580,7 +1580,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, -1.00),
+                                alignment: AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 50.0, 0.0, 0.0),
@@ -1605,8 +1605,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
+                                          alignment:
+                                              AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -1621,7 +1621,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Text(
                                             'Social listening  ',
                                             style: FlutterFlowTheme.of(context)
@@ -1655,7 +1655,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, -1.00),
+                                alignment: AlignmentDirectional(1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 50.0, 75.0, 0.0),
@@ -1679,8 +1679,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
+                                          alignment:
+                                              AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -1695,7 +1695,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Text(
                                             'Sentiment analysis',
                                             style: FlutterFlowTheme.of(context)
@@ -1746,7 +1746,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.00, 0.00),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed: () async {
                                     context.pushNamed('priceings_2');
@@ -1797,7 +1797,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       50.0, 75.0, 50.0, 0.0),
@@ -1822,7 +1822,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, 0.00),
+                                alignment: AlignmentDirectional(-1.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       140.0, 0.0, 140.0, 0.0),
@@ -1846,7 +1846,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -1872,7 +1872,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, 0.00),
+                                alignment: AlignmentDirectional(1.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       50.0, 0.0, 50.0, 0.0),
@@ -1954,7 +1954,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, -1.00),
+                                alignment: AlignmentDirectional(1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 75.0, 0.0),
@@ -1980,7 +1980,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, 0.00),
+                                alignment: AlignmentDirectional(1.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 75.0, 330.0),
@@ -2006,7 +2006,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, 1.00),
+                                alignment: AlignmentDirectional(1.0, 1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 75.0, 50.0),
@@ -2020,8 +2020,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                     child: Stack(
                                       children: [
                                         Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
+                                          alignment:
+                                              AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -2034,8 +2034,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                           ),
                                         ),
                                         Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
+                                          alignment:
+                                              AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -2056,8 +2056,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                           ),
                                         ),
                                         Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
+                                          alignment:
+                                              AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -2079,7 +2079,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.00, 0.00),
+                                              AlignmentDirectional(-1.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -2117,7 +2117,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                             child: Stack(
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0.00, 0.00),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Container(
                                     width: 1400.0,
                                     height: 350.0,
@@ -2130,7 +2130,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(-1.00, 0.00),
+                                              AlignmentDirectional(-1.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -2150,8 +2150,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                         Opacity(
                                           opacity: 0.4,
                                           child: Align(
-                                            alignment: AlignmentDirectional(
-                                                0.45, 0.00),
+                                            alignment:
+                                                AlignmentDirectional(0.45, 0.0),
                                             child: FaIcon(
                                               FontAwesomeIcons.gripHorizontal,
                                               color: Colors.white,
@@ -2161,7 +2161,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(1.00, 0.00),
+                                              AlignmentDirectional(1.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -2208,7 +2208,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                           opacity: 0.4,
                                           child: Align(
                                             alignment: AlignmentDirectional(
-                                                -0.37, 0.70),
+                                                -0.37, 0.7),
                                             child: FaIcon(
                                               FontAwesomeIcons.gripVertical,
                                               color: Colors.white,
@@ -2261,7 +2261,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 .secondaryBackground,
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(-1.00, 1.00),
+                            alignment: AlignmentDirectional(-1.0, 1.0),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   80.0, 0.0, 0.0, 0.0),
@@ -2330,7 +2330,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.00, 0.00),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 800.0, 0.0),
@@ -2356,8 +2356,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       ),
                                     ),
                                     child: Align(
-                                      alignment:
-                                          AlignmentDirectional(0.00, 0.00),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: FaIcon(
                                         FontAwesomeIcons.youtube,
                                         color:
@@ -2369,7 +2368,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, 0.00),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       275.0, 0.0, 0.0, 0.0),
@@ -2395,8 +2394,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       ),
                                     ),
                                     child: Align(
-                                      alignment:
-                                          AlignmentDirectional(0.00, 0.00),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: FaIcon(
                                         FontAwesomeIcons.facebookF,
                                         color: FlutterFlowTheme.of(context)
@@ -2408,7 +2406,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, 0.00),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 275.0, 0.0),
@@ -2434,8 +2432,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       ),
                                     ),
                                     child: Align(
-                                      alignment:
-                                          AlignmentDirectional(0.00, 0.00),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: FaIcon(
                                         FontAwesomeIcons.instagram,
                                         color: Color(0xFFDB07BC),
@@ -2446,7 +2443,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.00, 0.00),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       800.0, 0.0, 0.0, 0.0),
@@ -2472,8 +2469,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       ),
                                     ),
                                     child: Align(
-                                      alignment:
-                                          AlignmentDirectional(0.00, 0.00),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: FaIcon(
                                         FontAwesomeIcons.twitch,
                                         color: Color(0xFF6441A5),
@@ -2491,7 +2487,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                     Stack(
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.00, 0.00),
+                          alignment: AlignmentDirectional(0.0, 0.0),
                           child: Container(
                             width: 1512.0,
                             height: 850.0,
@@ -2502,7 +2498,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                             child: Stack(
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0.00, -1.00),
+                                  alignment: AlignmentDirectional(0.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 125.0, 0.0, 0.0),
@@ -2529,7 +2525,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.00, 0.00),
+                                  alignment: AlignmentDirectional(1.0, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 200.0, 100.0, 0.0),
@@ -2546,7 +2542,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         150.0, 288.0, 0.0, 0.0),
@@ -2558,7 +2554,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, 0.00),
+                                  alignment: AlignmentDirectional(-1.0, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         150.0, 0.0, 0.0, 35.0),
@@ -2576,7 +2572,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, 0.00),
+                                  alignment: AlignmentDirectional(-1.0, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         150.0, 270.0, 925.0, 0.0),
@@ -2595,7 +2591,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, 1.00),
+                                  alignment: AlignmentDirectional(-1.0, 1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         260.0, 0.0, 0.0, 86.0),
@@ -2702,7 +2698,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                   ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.00, 0.00),
+                          alignment: AlignmentDirectional(0.0, 0.0),
                           child: Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 50.0, 0.0, 85.0, 0.0),
@@ -2759,7 +2755,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.00, -1.00),
+                                alignment: AlignmentDirectional(0.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 150.0, 0.0, 0.0),
@@ -2777,7 +2773,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       100.0, 250.0, 0.0, 0.0),
@@ -2804,12 +2800,12 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                     ),
                                     child: Align(
                                       alignment:
-                                          AlignmentDirectional(-1.00, 0.00),
+                                          AlignmentDirectional(-1.0, 0.0),
                                       child: Stack(
                                         children: [
                                           Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, -1.00),
+                                            alignment:
+                                                AlignmentDirectional(0.0, -1.0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(
@@ -2832,7 +2828,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                           ),
                                           Align(
                                             alignment: AlignmentDirectional(
-                                                -1.00, -1.00),
+                                                -1.0, -1.0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(
@@ -2864,8 +2860,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                             ),
                                           ),
                                           Align(
-                                            alignment: AlignmentDirectional(
-                                                1.00, -1.00),
+                                            alignment:
+                                                AlignmentDirectional(1.0, -1.0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(
@@ -2973,8 +2969,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                             ),
                                           ),
                                           Align(
-                                            alignment: AlignmentDirectional(
-                                                1.00, -1.00),
+                                            alignment:
+                                                AlignmentDirectional(1.0, -1.0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(
@@ -3075,8 +3071,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                             ),
                                           ),
                                           Align(
-                                            alignment: AlignmentDirectional(
-                                                -1.00, 0.00),
+                                            alignment:
+                                                AlignmentDirectional(-1.0, 0.0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(
@@ -3176,8 +3172,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                             ),
                                           ),
                                           Align(
-                                            alignment: AlignmentDirectional(
-                                                1.00, 0.00),
+                                            alignment:
+                                                AlignmentDirectional(1.0, 0.0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(
@@ -3278,8 +3274,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                             ),
                                           ),
                                           Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, 1.00),
+                                            alignment:
+                                                AlignmentDirectional(0.0, 1.0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(
@@ -3379,8 +3375,8 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                             ),
                                           ),
                                           Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, 1.00),
+                                            alignment:
+                                                AlignmentDirectional(0.0, 1.0),
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(
@@ -3448,7 +3444,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, -1.00),
+                                alignment: AlignmentDirectional(1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 250.0, 100.0, 0.0),
@@ -3475,7 +3471,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, -1.00),
+                                alignment: AlignmentDirectional(1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 250.0, 100.0, 0.0),
@@ -3496,7 +3492,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, -1.00),
+                                              AlignmentDirectional(0.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -3518,7 +3514,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -3546,7 +3542,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, -1.00),
+                                alignment: AlignmentDirectional(1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 375.0, 100.0, 0.0),
@@ -3561,7 +3557,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, -1.00),
+                                              AlignmentDirectional(0.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -3583,7 +3579,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -3611,7 +3607,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, -1.00),
+                                alignment: AlignmentDirectional(1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 500.0, 100.0, 0.0),
@@ -3626,7 +3622,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, -1.00),
+                                              AlignmentDirectional(0.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -3648,7 +3644,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -3675,7 +3671,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, -1.00),
+                                alignment: AlignmentDirectional(1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 625.0, 100.0, 0.0),
@@ -3696,7 +3692,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, -1.00),
+                                              AlignmentDirectional(0.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -3718,7 +3714,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -3746,7 +3742,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, 1.00),
+                                alignment: AlignmentDirectional(1.0, 1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 15.0, 100.0, 60.0),
@@ -3804,7 +3800,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.00, 1.00),
+                                alignment: AlignmentDirectional(0.0, 1.0),
                                 child: Text(
                                   'Copyright © 2023 Tempus Creators. All rights reserved.',
                                   style: FlutterFlowTheme.of(context)
@@ -3818,7 +3814,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, 1.00),
+                                alignment: AlignmentDirectional(1.0, 1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 65.0, 0.0),
@@ -3830,7 +3826,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, 1.00),
+                                alignment: AlignmentDirectional(1.0, 1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 25.0, 0.0),
@@ -3842,7 +3838,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, 1.00),
+                                alignment: AlignmentDirectional(1.0, 1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 185.0, 0.0),
@@ -3854,7 +3850,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, 1.00),
+                                alignment: AlignmentDirectional(1.0, 1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 120.0, 0.0),
@@ -3866,7 +3862,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, 0.00),
+                                alignment: AlignmentDirectional(-1.0, 0.0),
                                 child: InkWell(
                                   splashColor: Colors.transparent,
                                   focusColor: Colors.transparent,
@@ -3887,8 +3883,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       ),
                                     ),
                                     child: Align(
-                                      alignment:
-                                          AlignmentDirectional(0.00, 0.00),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
                                         focusColor: Colors.transparent,
@@ -3913,7 +3908,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, 0.00),
+                                alignment: AlignmentDirectional(-1.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       125.0, 0.0, 0.0, 0.0),
@@ -3940,7 +3935,7 @@ class _WebsiteWidgetState extends State<WebsiteWidget> {
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, 0.00),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
                                           focusColor: Colors.transparent,

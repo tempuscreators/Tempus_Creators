@@ -35,7 +35,7 @@ class ImageStruct extends FFFirebaseStruct {
       );
 
   static ImageStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? ImageStruct.fromMap(data) : null;
+      data is Map ? ImageStruct.fromMap(data.cast<String, dynamic>()) : null;
 
   Map<String, dynamic> toMap() => {
         'path': _path,

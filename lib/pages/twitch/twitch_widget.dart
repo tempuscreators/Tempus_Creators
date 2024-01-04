@@ -112,7 +112,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                           children: [
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, -1.00),
+                                                  -1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -148,7 +148,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, -1.00),
+                                                                  -1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -179,7 +179,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             '4:56',
                                                             style: FlutterFlowTheme
@@ -198,7 +198,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -219,7 +219,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, 1.00),
+                                                                  -1.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -240,7 +240,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, 1.00),
+                                                                  -1.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -297,7 +297,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, -1.00),
+                                                                  -1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -328,7 +328,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             '4:56',
                                                             style: FlutterFlowTheme
@@ -347,7 +347,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -368,7 +368,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, 1.00),
+                                                                  -1.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -389,7 +389,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, 1.00),
+                                                                  -1.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -425,7 +425,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, -1.00),
+                                                  0.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -459,14 +459,13 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                     child: Align(
                                                       alignment:
                                                           AlignmentDirectional(
-                                                              0.00, 0.00),
+                                                              0.0, 0.0),
                                                       child: Stack(
                                                         children: [
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00,
-                                                                    -1.00),
+                                                                    0.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -497,7 +496,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 0.00),
+                                                                    0.0, 0.0),
                                                             child: Text(
                                                               '341',
                                                               style: FlutterFlowTheme
@@ -516,8 +515,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    1.00,
-                                                                    -1.00),
+                                                                    1.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -538,8 +536,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -560,8 +557,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -619,7 +615,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, -1.00),
+                                                                  -1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -650,7 +646,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             '4:56',
                                                             style: FlutterFlowTheme
@@ -669,7 +665,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -690,7 +686,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, 1.00),
+                                                                  -1.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -711,7 +707,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, 1.00),
+                                                                  -1.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -747,7 +743,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  1.00, -1.00),
+                                                  1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -781,14 +777,13 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                     child: Align(
                                                       alignment:
                                                           AlignmentDirectional(
-                                                              1.00, 0.00),
+                                                              1.0, 0.0),
                                                       child: Stack(
                                                         children: [
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00,
-                                                                    -1.00),
+                                                                    0.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -819,8 +814,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    1.00,
-                                                                    -1.00),
+                                                                    1.0, -1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -841,7 +835,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 0.00),
+                                                                    0.0, 0.0),
                                                             child: Text(
                                                               '157',
                                                               style: FlutterFlowTheme
@@ -860,8 +854,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -882,8 +875,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    -1.00,
-                                                                    1.00),
+                                                                    -1.0, 1.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -941,7 +933,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, -1.00),
+                                                                  -1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -972,7 +964,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             '4:56',
                                                             style: FlutterFlowTheme
@@ -991,7 +983,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1012,7 +1004,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, 1.00),
+                                                                  -1.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1033,7 +1025,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, 1.00),
+                                                                  -1.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1069,7 +1061,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 0.00),
+                                                  -1.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1105,7 +1097,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, -1.00),
+                                                                  0.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1136,7 +1128,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1157,7 +1149,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             '79',
                                                             style: FlutterFlowTheme
@@ -1176,7 +1168,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 1.00),
+                                                                  0.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1204,7 +1196,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, 1.00),
+                                                                  -1.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1251,7 +1243,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, -1.00),
+                                                                  0.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1282,7 +1274,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1303,7 +1295,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             '79',
                                                             style: FlutterFlowTheme
@@ -1322,7 +1314,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 1.00),
+                                                                  0.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1350,7 +1342,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, 1.00),
+                                                                  -1.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1376,7 +1368,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  1.00, 0.00),
+                                                  1.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1412,7 +1404,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, -1.00),
+                                                                  0.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1443,7 +1435,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1464,7 +1456,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             '\$347',
                                                             style: FlutterFlowTheme
@@ -1483,7 +1475,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, 1.00),
+                                                                  -1.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1504,7 +1496,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 1.00),
+                                                                  0.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1558,7 +1550,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, -1.00),
+                                                                  0.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1589,7 +1581,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  1.00, -1.00),
+                                                                  1.0, -1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1610,7 +1602,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 0.00),
+                                                                  0.0, 0.0),
                                                           child: Text(
                                                             '79',
                                                             style: FlutterFlowTheme
@@ -1629,7 +1621,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.00, 1.00),
+                                                                  0.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1657,7 +1649,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                         Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  -1.00, 1.00),
+                                                                  -1.0, 1.0),
                                                           child: Padding(
                                                             padding:
                                                                 EdgeInsetsDirectional
@@ -1683,7 +1675,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 1.00),
+                                                  0.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1714,7 +1706,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 1.00),
+                                                  0.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1730,7 +1722,7 @@ class _TwitchWidgetState extends State<TwitchWidget> {
                                                   child: Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            0.00, 0.00),
+                                                            0.0, 0.0),
                                                     child: Text(
                                                       'Yearly follower growth',
                                                       style: FlutterFlowTheme

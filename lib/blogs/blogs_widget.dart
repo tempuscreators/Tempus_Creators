@@ -237,7 +237,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, 0.00),
+                                alignment: AlignmentDirectional(1.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       20.0, 15.0, 0.0, 0.0),
@@ -289,12 +289,11 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                   .secondaryBackground,
                             ),
                             child: Align(
-                              alignment: AlignmentDirectional(-1.00, -1.00),
+                              alignment: AlignmentDirectional(-1.0, -1.0),
                               child: Stack(
                                 children: [
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(0.00, -1.00),
+                                    alignment: AlignmentDirectional(0.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 100.0, 0.0, 0.0),
@@ -312,8 +311,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 250.0, 0.0, 0.0),
@@ -348,8 +346,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 250.0, 150.0, 0.0),
@@ -383,8 +380,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 595.0, 0.0, 0.0),
@@ -406,12 +402,12 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Stack(
                                             children: [
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, 0.00),
+                                                    1.0, 0.0),
                                                 child: FFButtonWidget(
                                                   onPressed: () async {
                                                     context.pushNamed('blogs5');
@@ -430,9 +426,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                             .fromSTEB(370.0,
                                                                 0.0, 20.0, 0.0),
                                                     iconPadding:
-                                                        EdgeInsetsDirectional
-                                                            .fromSTEB(0.0, 0.0,
-                                                                0.0, 0.0),
+                                                        EdgeInsets.all(0.0),
                                                     color: Color(0xFF6580D9),
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
@@ -456,7 +450,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    -1.00, 0.00),
+                                                    -1.0, 0.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -484,8 +478,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 595.0, 150.0, 0.0),
@@ -509,13 +502,13 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           children: [
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
+                                                  0.0, 0.0),
                                               child: Stack(
                                                 children: [
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            1.00, 0.00),
+                                                            1.0, 0.0),
                                                     child: FFButtonWidget(
                                                       onPressed: () async {
                                                         context.pushNamed(
@@ -576,7 +569,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                   Align(
                                                     alignment:
                                                         AlignmentDirectional(
-                                                            -1.00, 0.00),
+                                                            -1.0, 0.0),
                                                     child: Padding(
                                                       padding:
                                                           EdgeInsetsDirectional
@@ -612,8 +605,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 800.0, 0.0, 0.0),
@@ -647,8 +639,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 1145.0, 0.0, 0.0),
@@ -672,7 +663,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           children: [
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  1.00, 0.00),
+                                                  1.0, 0.0),
                                               child: FFButtonWidget(
                                                 onPressed: () async {
                                                   context.pushNamed('blogs8');
@@ -719,7 +710,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 0.00),
+                                                  -1.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -745,8 +736,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 800.0, 150.0, 0.0),
@@ -780,8 +770,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 1145.0, 150.0, 0.0),
@@ -805,7 +794,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                           children: [
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  1.00, 0.00),
+                                                  1.0, 0.0),
                                               child: FFButtonWidget(
                                                 onPressed: () async {
                                                   context.pushNamed('blogs1');
@@ -852,7 +841,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 0.00),
+                                                  -1.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -878,8 +867,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 1350.0, 0.0, 0.0),
@@ -913,8 +901,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 1350.0, 150.0, 0.0),
@@ -948,8 +935,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 1695.0, 0.0, 0.0),
@@ -1016,7 +1002,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 0.00),
+                                                  -1.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1042,8 +1028,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 1695.0, 150.0, 0.0),
@@ -1110,7 +1095,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 0.00),
+                                                  -1.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1136,7 +1121,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.00, 1.01),
+                                    alignment: AlignmentDirectional(0.0, 1.01),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
@@ -1151,7 +1136,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                             children: [
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    0.00, 0.00),
+                                                    0.0, 0.0),
                                                 child: Text(
                                                   'Copyright © 2023 Tempus Creators. All rights reserved.',
                                                   style: FlutterFlowTheme.of(
@@ -1169,7 +1154,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, 0.00),
+                                                    1.0, 0.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -1183,7 +1168,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, 0.00),
+                                                    1.0, 0.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -1197,7 +1182,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, 0.00),
+                                                    1.0, 0.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -1211,7 +1196,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    1.00, 0.00),
+                                                    1.0, 0.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -1225,7 +1210,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    -1.00, 0.00),
+                                                    -1.0, 0.0),
                                                 child: InkWell(
                                                   splashColor:
                                                       Colors.transparent,
@@ -1257,7 +1242,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                     child: Align(
                                                       alignment:
                                                           AlignmentDirectional(
-                                                              0.00, 0.00),
+                                                              0.0, 0.0),
                                                       child: InkWell(
                                                         splashColor:
                                                             Colors.transparent,
@@ -1291,7 +1276,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                               ),
                                               Align(
                                                 alignment: AlignmentDirectional(
-                                                    -1.00, 0.00),
+                                                    -1.0, 0.0),
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(
@@ -1329,7 +1314,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                                       child: Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, 0.00),
+                                                                0.0, 0.0),
                                                         child: InkWell(
                                                           splashColor: Colors
                                                               .transparent,
@@ -1372,8 +1357,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 1900.0, 0.0, 0.0),
@@ -1408,8 +1392,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 1900.0, 150.0, 0.0),
@@ -1444,8 +1427,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(-1.00, -1.00),
+                                    alignment: AlignmentDirectional(-1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           150.0, 2245.0, 0.0, 0.0),
@@ -1511,7 +1493,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 0.00),
+                                                  -1.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1536,8 +1518,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 2245.0, 150.0, 0.0),
@@ -1603,7 +1584,7 @@ class _BlogsWidgetState extends State<BlogsWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 0.00),
+                                                  -1.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(

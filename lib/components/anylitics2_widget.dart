@@ -122,7 +122,7 @@ class _Anylitics2WidgetState extends State<Anylitics2Widget> {
                         itemBuilder: (context, yTfaveIndex) {
                           final yTfaveItem = yTfave[yTfaveIndex];
                           return Align(
-                            alignment: AlignmentDirectional(0.00, 0.00),
+                            alignment: AlignmentDirectional(0.0, 0.0),
                             child: FutureBuilder<ApiCallResponse>(
                               future: TwitchFollowCall.call(),
                               builder: (context, snapshot) {

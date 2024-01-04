@@ -57,8 +57,9 @@ class AttributeStruct extends FFFirebaseStruct {
         ),
       );
 
-  static AttributeStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? AttributeStruct.fromMap(data) : null;
+  static AttributeStruct? maybeFromMap(dynamic data) => data is Map
+      ? AttributeStruct.fromMap(data.cast<String, dynamic>())
+      : null;
 
   Map<String, dynamic> toMap() => {
         'id': _id,

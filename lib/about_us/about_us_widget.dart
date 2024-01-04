@@ -75,11 +75,11 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                       child: Stack(
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(0.00, 0.00),
+                            alignment: AlignmentDirectional(0.0, 0.0),
                             child: Stack(
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0.00, 1.00),
+                                  alignment: AlignmentDirectional(0.0, 1.0),
                                   child: Text(
                                     'Copyright © 2023 Tempus Creators. All rights reserved.',
                                     style: FlutterFlowTheme.of(context)
@@ -93,7 +93,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.00, 1.00),
+                                  alignment: AlignmentDirectional(1.0, 1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 65.0, 0.0),
@@ -105,7 +105,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.00, 1.00),
+                                  alignment: AlignmentDirectional(1.0, 1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 25.0, 0.0),
@@ -117,7 +117,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.00, 1.00),
+                                  alignment: AlignmentDirectional(1.0, 1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 185.0, 0.0),
@@ -129,7 +129,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.00, 1.00),
+                                  alignment: AlignmentDirectional(1.0, 1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 120.0, 0.0),
@@ -141,7 +141,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, 1.00),
+                                  alignment: AlignmentDirectional(-1.0, 1.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
                                     focusColor: Colors.transparent,
@@ -165,7 +165,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, 0.00),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
                                           focusColor: Colors.transparent,
@@ -190,7 +190,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, 1.00),
+                                  alignment: AlignmentDirectional(-1.0, 1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         125.0, 0.0, 0.0, 0.0),
@@ -217,7 +217,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -246,7 +246,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         100.0, 350.0, 0.0, 0.0),
@@ -273,7 +273,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, 0.00),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -296,7 +296,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.00, -1.00),
+                                  alignment: AlignmentDirectional(1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 650.0, 100.0, 0.0),
@@ -323,7 +323,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, 0.00),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -346,7 +346,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         100.0, 950.0, 0.0, 0.0),
@@ -373,7 +373,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, 0.00),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -396,7 +396,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.00, -1.00),
+                                  alignment: AlignmentDirectional(1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 1250.0, 100.0, 0.0),
@@ -423,7 +423,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, 0.00),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -446,7 +446,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         100.0, 1550.0, 0.0, 0.0),
@@ -469,7 +469,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, 0.00),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -492,7 +492,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.00, 1.00),
+                                  alignment: AlignmentDirectional(1.0, 1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 225.0, 300.0),
@@ -529,7 +529,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.00, -1.00),
+                                  alignment: AlignmentDirectional(1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 325.0, 200.0, 0.0),
@@ -546,7 +546,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         200.0, 625.0, 0.0, 0.0),
@@ -563,7 +563,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.00, -1.00),
+                                  alignment: AlignmentDirectional(1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 925.0, 200.0, 0.0),
@@ -580,7 +580,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         200.0, 1225.0, 0.0, 0.0),
@@ -600,7 +600,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.00, -1.00),
+                            alignment: AlignmentDirectional(0.0, -1.0),
                             child: Container(
                               width: 1512.0,
                               height: 100.0,
@@ -783,7 +783,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(1.00, 0.00),
+                                            AlignmentDirectional(1.0, 0.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -827,7 +827,7 @@ class _AboutUsWidgetState extends State<AboutUsWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.00, -1.00),
+                            alignment: AlignmentDirectional(0.0, -1.0),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 150.0, 0.0, 0.0),

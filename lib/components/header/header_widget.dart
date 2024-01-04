@@ -5,7 +5,6 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'package:aligned_dialog/aligned_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
@@ -251,8 +250,7 @@ class _HeaderWidgetState extends State<HeaderWidget>
                                   desktop: false,
                                 ))
                                   Align(
-                                    alignment:
-                                        AlignmentDirectional(1.00, -1.00),
+                                    alignment: AlignmentDirectional(1.0, -1.0),
                                     child: Container(
                                       width: 20.0,
                                       height: 20.0,
@@ -261,8 +259,7 @@ class _HeaderWidgetState extends State<HeaderWidget>
                                             FlutterFlowTheme.of(context).error,
                                         shape: BoxShape.circle,
                                       ),
-                                      alignment:
-                                          AlignmentDirectional(0.00, 0.00),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: Text(
                                         '1',
                                         style: FlutterFlowTheme.of(context)
@@ -326,18 +323,15 @@ class _HeaderWidgetState extends State<HeaderWidget>
                               hoverColor: Colors.transparent,
                               highlightColor: Colors.transparent,
                               onTap: () async {
-                                await showAlignedDialog(
+                                await showDialog(
                                   context: context,
-                                  isGlobal: true,
-                                  avoidOverflow: false,
-                                  targetAnchor: AlignmentDirectional(0.0, 0.0)
-                                      .resolve(Directionality.of(context)),
-                                  followerAnchor:
-                                      AlignmentDirectional(-1.0, -1.0)
-                                          .resolve(Directionality.of(context)),
                                   builder: (dialogContext) {
-                                    return Material(
-                                      color: Colors.transparent,
+                                    return Dialog(
+                                      insetPadding: EdgeInsets.zero,
+                                      backgroundColor: Colors.transparent,
+                                      alignment: AlignmentDirectional(
+                                              -1.0, -1.0)
+                                          .resolve(Directionality.of(context)),
                                       child: NavMenu1Widget(),
                                     );
                                   },
@@ -474,7 +468,7 @@ class _HeaderWidgetState extends State<HeaderWidget>
                                     ))
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(1.00, -1.00),
+                                            AlignmentDirectional(1.0, -1.0),
                                         child: Container(
                                           width: 20.0,
                                           height: 20.0,
@@ -484,7 +478,7 @@ class _HeaderWidgetState extends State<HeaderWidget>
                                             shape: BoxShape.circle,
                                           ),
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Text(
                                             '1',
                                             style: FlutterFlowTheme.of(context)

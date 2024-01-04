@@ -244,7 +244,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(1.00, 0.00),
+                                    alignment: AlignmentDirectional(1.0, 0.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           20.0, 15.0, 0.0, 0.0),
@@ -305,7 +305,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       100.0, 65.0, 0.0, 0.0),
@@ -346,8 +346,8 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                           ),
                                         ),
                                         Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
+                                          alignment:
+                                              AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -372,7 +372,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       100.0, 225.0, 0.0, 0.0),
@@ -395,8 +395,8 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                     child: Stack(
                                       children: [
                                         Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
+                                          alignment:
+                                              AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -417,7 +417,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -443,7 +443,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       100.0, 385.0, 0.0, 0.0),
@@ -466,8 +466,8 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                     child: Stack(
                                       children: [
                                         Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
+                                          alignment:
+                                              AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -488,7 +488,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -514,7 +514,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       100.0, 545.0, 0.0, 0.0),
@@ -538,7 +538,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -559,8 +559,8 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                           ),
                                         ),
                                         Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
+                                          alignment:
+                                              AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -585,7 +585,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       100.0, 705.0, 0.0, 0.0),
@@ -625,7 +625,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -651,7 +651,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       100.0, 865.0, 0.0, 0.0),
@@ -690,7 +690,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -716,7 +716,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       100.0, 1025.0, 0.0, 0.0),
@@ -755,7 +755,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.5),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -781,7 +781,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       100.0, 1185.0, 0.0, 0.0),
@@ -820,7 +820,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -846,7 +846,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       100.0, 1345.0, 0.0, 0.0),
@@ -869,8 +869,8 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                     child: Stack(
                                       children: [
                                         Align(
-                                          alignment: AlignmentDirectional(
-                                              -1.00, -1.00),
+                                          alignment:
+                                              AlignmentDirectional(-1.0, -1.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -891,7 +891,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
@@ -917,7 +917,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.00, -1.00),
+                                alignment: AlignmentDirectional(-1.0, -1.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       100.0, 1505.0, 0.0, 0.0),
@@ -956,7 +956,7 @@ class _FaqsWidgetState extends State<FaqsWidget> {
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(

@@ -220,9 +220,6 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                           fontSize: 20.0,
                                         ),
                                     elevation: 3.0,
-                                    borderSide: BorderSide(
-                                      width: 1.0,
-                                    ),
                                     borderRadius: BorderRadius.circular(100.0),
                                   ),
                                 ),
@@ -256,7 +253,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.00, 0.00),
+                                alignment: AlignmentDirectional(1.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       20.0, 15.0, 0.0, 0.0),
@@ -307,16 +304,16 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                 .secondaryBackground,
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.00, -1.00),
+                            alignment: AlignmentDirectional(0.0, -1.0),
                             child: Stack(
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0.00, 0.00),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Stack(
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, 1.00),
+                                            AlignmentDirectional(0.0, 1.0),
                                         child: Text(
                                           'Copyright © 2023 Tempus Creators. All rights reserved.',
                                           style: FlutterFlowTheme.of(context)
@@ -331,7 +328,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(1.00, 1.00),
+                                            AlignmentDirectional(1.0, 1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -345,7 +342,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(1.00, 1.00),
+                                            AlignmentDirectional(1.0, 1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -359,7 +356,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(1.00, 1.00),
+                                            AlignmentDirectional(1.0, 1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -373,7 +370,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(1.00, 1.00),
+                                            AlignmentDirectional(1.0, 1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -387,7 +384,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, 1.00),
+                                            AlignmentDirectional(-1.0, 1.0),
                                         child: InkWell(
                                           splashColor: Colors.transparent,
                                           focusColor: Colors.transparent,
@@ -412,7 +409,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
+                                                  0.0, 0.0),
                                               child: InkWell(
                                                 splashColor: Colors.transparent,
                                                 focusColor: Colors.transparent,
@@ -441,7 +438,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, 1.00),
+                                            AlignmentDirectional(-1.0, 1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -471,7 +468,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                               ),
                                               child: Align(
                                                 alignment: AlignmentDirectional(
-                                                    0.00, 0.00),
+                                                    0.0, 0.0),
                                                 child: InkWell(
                                                   splashColor:
                                                       Colors.transparent,
@@ -506,7 +503,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, -1.00),
+                                            AlignmentDirectional(-1.0, -1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -525,7 +522,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, -1.00),
+                                            AlignmentDirectional(-1.0, -1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -545,7 +542,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, -1.00),
+                                            AlignmentDirectional(-1.0, -1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -570,7 +567,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
+                                                  0.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -597,7 +594,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, -1.00),
+                                            AlignmentDirectional(-1.0, -1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -622,7 +619,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
+                                                  0.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -649,7 +646,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, -1.00),
+                                            AlignmentDirectional(-1.0, -1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -674,7 +671,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
+                                                  0.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -701,7 +698,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, -1.00),
+                                            AlignmentDirectional(-1.0, -1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -726,7 +723,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
+                                                  0.0, 0.0),
                                               child: Text(
                                                 'Sentiment analysis of recent posts',
                                                 textAlign: TextAlign.center,
@@ -748,7 +745,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, -1.00),
+                                            AlignmentDirectional(-1.0, -1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -773,7 +770,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
+                                                  0.0, 0.0),
                                               child: Text(
                                                 'Standard Email Support',
                                                 textAlign: TextAlign.center,
@@ -795,7 +792,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.00, -1.00),
+                                            AlignmentDirectional(-1.0, -1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -820,7 +817,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
+                                                  0.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -847,7 +844,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, 1.00),
+                                            AlignmentDirectional(0.0, 1.0),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -875,7 +872,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                                 Align(
                                                   alignment:
                                                       AlignmentDirectional(
-                                                          0.00, 1.00),
+                                                          0.0, 1.0),
                                                   child: Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
@@ -989,7 +986,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                                 Align(
                                                   alignment:
                                                       AlignmentDirectional(
-                                                          1.00, 1.00),
+                                                          1.0, 1.0),
                                                   child: Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
@@ -1063,7 +1060,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                                 Align(
                                                   alignment:
                                                       AlignmentDirectional(
-                                                          0.00, -1.00),
+                                                          0.0, -1.0),
                                                   child: Padding(
                                                     padding:
                                                         EdgeInsetsDirectional
@@ -1085,8 +1082,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00,
-                                                                    -1.00),
+                                                                    0.0, -1.0),
                                                             child: Text(
                                                               'For fetures comeing soon!',
                                                               style: FlutterFlowTheme
@@ -1105,7 +1101,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                                           Align(
                                                             alignment:
                                                                 AlignmentDirectional(
-                                                                    0.00, 0.00),
+                                                                    0.0, 0.0),
                                                             child: Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
@@ -1148,7 +1144,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         300.0, 75.0, 300.0, 0.0),
@@ -1165,7 +1161,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         125.0, 195.0, 0.0, 0.0),
@@ -1178,7 +1174,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, -1.00),
+                                            AlignmentDirectional(0.0, -1.0),
                                         child: Text(
                                           'We have you covered, whether you\'re an individual content creator, a brand, business or an agency.',
                                           textAlign: TextAlign.center,
@@ -1195,7 +1191,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         240.0, 300.0, 0.0, 0.0),
@@ -1214,7 +1210,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         385.0, 300.0, 0.0, 0.0),
@@ -1235,7 +1231,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         450.0, 300.0, 0.0, 0.0),
@@ -1254,7 +1250,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(-1.00, -1.00),
+                                  alignment: AlignmentDirectional(-1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         448.0, 335.0, 0.0, 0.0),
@@ -1271,7 +1267,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(1.00, -1.00),
+                                  alignment: AlignmentDirectional(1.0, -1.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 160.0, 150.0, 0.0),
@@ -1294,12 +1290,12 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.00, 0.00),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: Stack(
                                           children: [
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1318,7 +1314,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1332,7 +1328,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1351,7 +1347,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1370,7 +1366,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1389,7 +1385,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1403,7 +1399,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, -1.00),
+                                                  0.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1424,7 +1420,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, -1.00),
+                                                  -1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1438,7 +1434,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, -1.00),
+                                                  -1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1462,7 +1458,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, -1.00),
+                                                  -1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1482,7 +1478,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, -1.00),
+                                                  -1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1505,7 +1501,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
+                                                  0.0, 0.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1529,7 +1525,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1543,7 +1539,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1557,7 +1553,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 1.00),
+                                                  0.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(100.0, 0.0, 100.0,
@@ -1636,7 +1632,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1658,7 +1654,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1680,7 +1676,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1701,7 +1697,7 @@ class _Priceings2WidgetState extends State<Priceings2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(

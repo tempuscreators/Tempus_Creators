@@ -67,7 +67,7 @@ class _SalesCard2WidgetState extends State<SalesCard2Widget> {
         borderRadius: BorderRadius.circular(12.0),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 24.0),
+        padding: EdgeInsets.all(24.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,

@@ -124,7 +124,7 @@ class _TOS2WidgetState extends State<TOS2Widget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, -1.00),
+                                                  0.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -154,8 +154,8 @@ class _TOS2WidgetState extends State<TOS2Widget> {
                                                 .secondaryBackground,
                                           ),
                                           child: Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, -1.00),
+                                            alignment:
+                                                AlignmentDirectional(0.0, -1.0),
                                             child: Text(
                                               'Hello World',
                                               style:

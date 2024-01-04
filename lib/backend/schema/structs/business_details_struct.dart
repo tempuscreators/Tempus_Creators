@@ -45,8 +45,9 @@ class BusinessDetailsStruct extends FFFirebaseStruct {
         pincode: castToType<int>(data['pincode']),
       );
 
-  static BusinessDetailsStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? BusinessDetailsStruct.fromMap(data) : null;
+  static BusinessDetailsStruct? maybeFromMap(dynamic data) => data is Map
+      ? BusinessDetailsStruct.fromMap(data.cast<String, dynamic>())
+      : null;
 
   Map<String, dynamic> toMap() => {
         'legalName': _legalName,

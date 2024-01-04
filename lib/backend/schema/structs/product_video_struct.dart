@@ -35,8 +35,9 @@ class ProductVideoStruct extends FFFirebaseStruct {
         videoUrl: data['video_url'] as String?,
       );
 
-  static ProductVideoStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? ProductVideoStruct.fromMap(data) : null;
+  static ProductVideoStruct? maybeFromMap(dynamic data) => data is Map
+      ? ProductVideoStruct.fromMap(data.cast<String, dynamic>())
+      : null;
 
   Map<String, dynamic> toMap() => {
         'title': _title,

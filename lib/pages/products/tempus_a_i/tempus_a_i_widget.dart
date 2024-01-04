@@ -76,7 +76,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(0.00, -1.00),
+                      alignment: AlignmentDirectional(0.0, -1.0),
                       child: Padding(
                         padding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
@@ -176,7 +176,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                 ),
                 child: Align(
-                  alignment: AlignmentDirectional(0.00, -1.00),
+                  alignment: AlignmentDirectional(0.0, -1.0),
                   child: Padding(
                     padding:
                         EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
@@ -245,7 +245,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                           children: [
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
+                                                  0.0, 0.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
@@ -282,7 +282,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 1.00),
+                                                  0.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -313,7 +313,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                -1.00, 0.00),
+                                                                -1.0, 0.0),
                                                         child: Container(
                                                           width: 900.0,
                                                           child: TextFormField(
@@ -393,7 +393,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                1.00, 0.00),
+                                                                1.0, 0.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -418,7 +418,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  1.00, -1.00),
+                                                  1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -449,7 +449,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, -1.00),
+                                                                0.0, -1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -469,7 +469,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, 1.00),
+                                                                0.0, 1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -502,7 +502,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  1.00, -1.00),
+                                                  1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -533,7 +533,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, -1.00),
+                                                                0.0, -1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -553,7 +553,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, 1.00),
+                                                                0.0, 1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -586,7 +586,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  1.00, -1.00),
+                                                  1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -617,7 +617,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, -1.00),
+                                                                0.0, -1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -637,7 +637,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, 1.00),
+                                                                0.0, 1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -670,7 +670,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  1.00, -1.00),
+                                                  1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -701,7 +701,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, -1.00),
+                                                                0.0, -1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -721,7 +721,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, 1.00),
+                                                                0.0, 1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -754,7 +754,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, -1.00),
+                                                  -1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -785,7 +785,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, -1.00),
+                                                                0.0, -1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -805,7 +805,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, 1.00),
+                                                                0.0, 1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -838,7 +838,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, -1.00),
+                                                  -1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -869,7 +869,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, -1.00),
+                                                                0.0, -1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -889,7 +889,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, 1.00),
+                                                                0.0, 1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -922,7 +922,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, -1.00),
+                                                  -1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -953,7 +953,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, -1.00),
+                                                                0.0, -1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -973,7 +973,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, 1.00),
+                                                                0.0, 1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -1006,7 +1006,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, -1.00),
+                                                  -1.0, -1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
@@ -1037,7 +1037,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, -1.00),
+                                                                0.0, -1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -1057,7 +1057,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, 1.00),
+                                                                0.0, 1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -1092,7 +1092,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(135.0, 100.0, 0.0,
@@ -1172,7 +1172,7 @@ class _TempusAIWidgetState extends State<TempusAIWidget> {
                                             ),
                                             Align(
                                               alignment: AlignmentDirectional(
-                                                  -1.00, 1.00),
+                                                  -1.0, 1.0),
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(

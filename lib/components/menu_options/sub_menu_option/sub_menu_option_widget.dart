@@ -60,7 +60,7 @@ class _SubMenuOptionWidgetState extends State<SubMenuOptionWidget> {
           Colors.transparent,
         ),
       ),
-      alignment: AlignmentDirectional(0.00, 0.00),
+      alignment: AlignmentDirectional(0.0, 0.0),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         children: [

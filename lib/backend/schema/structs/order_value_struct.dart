@@ -69,8 +69,9 @@ class OrderValueStruct extends FFFirebaseStruct {
         totalAmount: castToType<double>(data['total_amount']),
       );
 
-  static OrderValueStruct? maybeFromMap(dynamic data) =>
-      data is Map<String, dynamic> ? OrderValueStruct.fromMap(data) : null;
+  static OrderValueStruct? maybeFromMap(dynamic data) => data is Map
+      ? OrderValueStruct.fromMap(data.cast<String, dynamic>())
+      : null;
 
   Map<String, dynamic> toMap() => {
         'sub_total': _subTotal,

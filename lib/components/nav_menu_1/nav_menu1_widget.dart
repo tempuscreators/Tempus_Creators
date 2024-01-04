@@ -184,8 +184,7 @@ class _NavMenu1WidgetState extends State<NavMenu1Widget> {
                             height: 60.0,
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
+                            iconPadding: EdgeInsets.all(0.0),
                             color: Color(0xFF303138),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
@@ -195,9 +194,6 @@ class _NavMenu1WidgetState extends State<NavMenu1Widget> {
                                   fontSize: 22.0,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
-                              width: 1.0,
-                            ),
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                         ),

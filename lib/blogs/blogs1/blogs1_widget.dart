@@ -233,7 +233,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(1.00, 0.00),
+                            alignment: AlignmentDirectional(1.0, 0.0),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   20.0, 15.0, 0.0, 0.0),
@@ -283,12 +283,11 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                             alignment: AlignmentDirectional(-1.0, 1.0),
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.00, 0.00),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Stack(
                                   children: [
                                     Align(
-                                      alignment:
-                                          AlignmentDirectional(0.00, 1.00),
+                                      alignment: AlignmentDirectional(0.0, 1.0),
                                       child: Text(
                                         'Copyright © 2023 Tempus Creators. All rights reserved.',
                                         style: FlutterFlowTheme.of(context)
@@ -302,8 +301,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment:
-                                          AlignmentDirectional(1.00, 1.00),
+                                      alignment: AlignmentDirectional(1.0, 1.0),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 65.0, 0.0),
@@ -315,8 +313,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment:
-                                          AlignmentDirectional(1.00, 1.00),
+                                      alignment: AlignmentDirectional(1.0, 1.0),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 25.0, 0.0),
@@ -328,8 +325,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment:
-                                          AlignmentDirectional(1.00, 1.00),
+                                      alignment: AlignmentDirectional(1.0, 1.0),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 185.0, 0.0),
@@ -341,8 +337,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment:
-                                          AlignmentDirectional(1.00, 1.00),
+                                      alignment: AlignmentDirectional(1.0, 1.0),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 120.0, 0.0),
@@ -355,7 +350,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.00, 1.00),
+                                          AlignmentDirectional(-1.0, 1.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
                                         focusColor: Colors.transparent,
@@ -378,8 +373,8 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                             ),
                                           ),
                                           child: Align(
-                                            alignment: AlignmentDirectional(
-                                                0.00, 0.00),
+                                            alignment:
+                                                AlignmentDirectional(0.0, 0.0),
                                             child: InkWell(
                                               splashColor: Colors.transparent,
                                               focusColor: Colors.transparent,
@@ -408,7 +403,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.00, 1.00),
+                                          AlignmentDirectional(-1.0, 1.0),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             125.0, 0.0, 0.0, 0.0),
@@ -436,7 +431,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
-                                                  0.00, 0.00),
+                                                  0.0, 0.0),
                                               child: InkWell(
                                                 splashColor: Colors.transparent,
                                                 focusColor: Colors.transparent,
@@ -467,7 +462,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(-1.00, -1.00),
+                                          AlignmentDirectional(-1.0, -1.0),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             40.0, 40.0, 0.0, 0.0),
@@ -489,8 +484,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment:
-                                          AlignmentDirectional(0.00, 0.00),
+                                      alignment: AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 50.0, 0.0, 0.0),
@@ -518,7 +512,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, -1.00),
+                                                                0.0, -1.0),
                                                         child: Text(
                                                           'Published 10/25/2023 by Brodie Wendt',
                                                           style: FlutterFlowTheme
@@ -539,7 +533,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                                       Align(
                                                         alignment:
                                                             AlignmentDirectional(
-                                                                0.00, -1.00),
+                                                                0.0, -1.0),
                                                         child: Padding(
                                                           padding:
                                                               EdgeInsetsDirectional
@@ -580,7 +574,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(0.00, -1.00),
+                                          AlignmentDirectional(0.0, -1.0),
                                       child: Container(
                                         width: 500.0,
                                         height: 125.0,
@@ -590,7 +584,7 @@ class _Blogs1WidgetState extends State<Blogs1Widget> {
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.00, 0.00),
+                                              AlignmentDirectional(0.0, 0.0),
                                           child: Text(
                                             'Unlocking the Power of Social Listening ',
                                             textAlign: TextAlign.center,
